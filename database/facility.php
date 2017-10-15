@@ -5,7 +5,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
@@ -17,13 +16,6 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-=======
-
-  float: left;
-
-
-
->>>>>>> ead1124276982b5aef5393ae682ce53cf7239e63
     <table>
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
