@@ -18,6 +18,8 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
+
+  
   <div id="body">
     <table>
       <tr>
