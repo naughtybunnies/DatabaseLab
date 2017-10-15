@@ -113,7 +113,6 @@ table{ /*ตาราง*/
 	margin: 2% 25% 2% 25%;
 
 }
-<<<<<<< HEAD
 
 #formcontainer{
 	position: absolute;
@@ -122,8 +121,6 @@ table{ /*ตาราง*/
 		-ms-transform: translateY(-50%);
 				transform: translateY(-50%);
 	left: 50px;
-=======
 #space{ /*เว้นช่องว่างระหว่างตาราง*/
 	margin: 5px 0 15px 0;
->>>>>>> 6d4f3be8d53320f2a648f90ca0aa1a3a6b85a451
 }

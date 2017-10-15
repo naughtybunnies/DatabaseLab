@@ -6,17 +6,8 @@
 
 <body>
 
-    <div id="menubar">
-      <!--แถบบน-->
-      <div id="logo"><a href="home.php">CU@MyPlace</a></div>
+  float: left;
 
-      <ul id="menu">
-        <li><a href="room.php">Room</a></li>
-        <li><a href="facility.php">Facility</a></li>
-        <li><a href="#">Special Offer</a></li>
-        <li><a href="#">Review</a></li>
-      </ul>
-    </div>
 
 
     <table>
