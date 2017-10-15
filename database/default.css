@@ -27,7 +27,7 @@ table{ /*ตาราง*/
   float: left;
   table-layout: fixed;
  }
- 
+
 #logo{
 	position: absolute;
   top: 50%;
@@ -102,10 +102,15 @@ table{ /*ตาราง*/
 #center{
 	text-align: center;
 }
-#info{
+#info{/*กล่องข้อมุล*/
+	float: left;
 	font-family: sans-serif;
 	background-color:#F8F8FF;
-	height: 75%;
-	width: 400px;
+	height: 800px;
+	width: 800px;
+	margin: 2% 25% 2% 25%;
 
+}
+#space{ /*เว้นช่องว่างระหว่างตาราง*/
+	margin: 5px 0 15px 0;
 }
