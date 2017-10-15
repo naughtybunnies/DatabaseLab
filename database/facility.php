@@ -5,20 +5,17 @@
 </head>
 
 <body>
+  <div id="menubar">
+    <!--แถบบน-->
+    <div id="logo"><a href="home.php">CU@MyPlace</a></div>
 
-    <div id="menubar">
-      <!--แถบบน-->
-      <div id="logo"><a href="home.php">CU@MyPlace</a></div>
-
-      <ul id="menu">
-        <li><a href="room.php">Room</a></li>
-        <li><a href="facility.php">Facility</a></li>
-        <li><a href="#">Special Offer</a></li>
-        <li><a href="#">Review</a></li>
-      </ul>
-    </div>
-
-
+    <ul id="menu">
+      <li><a href="room.php">Room</a></li>
+      <li><a href="facility.php">Facility</a></li>
+      <li><a href="review.php">Review</a></li>
+      <li><a href="login.php">Log In</a></li>
+    </ul>
+  </div>
     <table>
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
