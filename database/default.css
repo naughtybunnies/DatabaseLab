@@ -9,6 +9,7 @@ ul{
 	float:right;
 	margin: 0 30px 10px 0;
 }
+
 li{
 	float:left;
 	text-decoration: none;
@@ -120,7 +121,71 @@ table{ /*ตาราง*/
 	-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 				transform: translateY(-50%);
-	left: 50px;
+	left: 50px;}
+
 #space{ /*เว้นช่องว่างระหว่างตาราง*/
 	margin: 5px 0 15px 0;
+}
+
+#boxolduser{/*old user*/
+	font-family: sans-serif;
+	float: left;
+	background-color:#F5A9A9;
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	margin:7% 25% 7% 55%;
+	z-index: 1;
+}
+
+#boxnewuser{/*new user*/
+	font-family: sans-serif;
+	float: left;
+	background-color:#BEF781;
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	margin:7% 25% 7% 15%;
+	z-index: 1;
+}
+#list{
+	font-family: sans-serif;
+	float: left;
+	background-color:#BEF781;
+	height: 450px;
+	width: 300px;
+	position: absolute;
+	margin:7% 25% 7% 10%;
+	z-index: 1;
+}
+#list ul{
+	float: none;
+	padding:0; margin:10px;
+	height:46px;
+}
+#list li{
+	float: none;
+	text-decoration: none;
+	list-style:none;
+	text-align: center;
+	height:60px;
+	padding: 30px 20px 0 20px;
+	margin: 15px;
+}
+#list a{
+	background-color: white;
+	padding:30px;
+	
+
+
+}
+#page{
+	font-family: sans-serif;
+	float: left;
+	background-color:#BEF781;
+	height: 450px;
+	width: 850px;
+	position: absolute;
+	margin:7% 25% 7% 35%;
+	z-index: 1;
 }
