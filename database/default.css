@@ -176,7 +176,7 @@ table{ /*ตาราง*/
 	border: 5px solid black;
 }
 #list a{ /* พื้นที่ลิ้ง*/
-	padding: 30px 60px 40px 60px;
+	padding: 30px 50px 40px 50px;
 }
 #list li:hover {/*ขอบแว้บๆ*/
 		border:5px solid red;
