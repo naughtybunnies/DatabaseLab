@@ -28,7 +28,7 @@
       </div>
 
       <div id="page">
-
+        tae tae tae tae tae tae tae
       </div>
 
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
