@@ -35,7 +35,7 @@
       </div>
 
       <div id="boxolduser"><!--กล่อง Login-->
-        <form action="profile.php">
+        <form action="mainstaff.php">
 
           <br><h1>&nbsp;&nbsp;Existing user</h1><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>

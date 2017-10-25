@@ -13,7 +13,7 @@
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
       <li><a href="review.php">Review</a></li>
-      <li><a href="login.php">Log In</a></li>
+      <li><a href="login.php">Log Out</a></li>
     </ul>
   </div>
 
