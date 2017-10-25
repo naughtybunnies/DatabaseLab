@@ -171,17 +171,17 @@ table{ /*ตาราง*/
 	text-align: center;
 	height:60px;
 	padding: 30px 20px 0 20px;
-	margin: 15px;
-}
-#list a{
+	margin: 10px;
 	background-color: white;
-	padding:30px;
-
-
-
-
+	border: 5px solid black;
 }
-#page{/*ข้อมูล ลูกค้า&staff*/
+#list a{ /* พื้นที่ลิ้ง*/
+	padding: 30px 60px 40px 60px;
+}
+#list li:hover {/*ขอบแว้บๆ*/
+		border:5px solid red;
+}
+#page{ /*ข้อมูล ลูกค้า&staff*/
 	font-family: sans-serif;
 	float: left;
 	background-color:#BEF781;
