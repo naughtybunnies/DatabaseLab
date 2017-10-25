@@ -148,7 +148,7 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 15%;
 	z-index: 1;
 }
-#list{
+#list{/*list left*/
 	font-family: sans-serif;
 	float: left;
 	background-color:#BEF781;
@@ -160,8 +160,9 @@ table{ /*ตาราง*/
 }
 #list ul{
 	float: none;
-	padding:0; margin:10px;
-	height:46px;
+	padding:0;
+	margin: auto;
+
 }
 #list li{
 	float: none;
@@ -175,11 +176,12 @@ table{ /*ตาราง*/
 #list a{
 	background-color: white;
 	padding:30px;
-	
+
+
 
 
 }
-#page{
+#page{/*ข้อมูล ลูกค้า&staff*/
 	font-family: sans-serif;
 	float: left;
 	background-color:#BEF781;
