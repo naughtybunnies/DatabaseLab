@@ -1,6 +1,6 @@
 <?php
   require_once('connect.php');
-  
+
  ?>
 
 <html>
@@ -21,14 +21,9 @@
     </ul>
   </div>
 
-<<<<<<< HEAD
   <div id="boxnewuser">
     <h1>&nbsp;&nbsp;New user</h1><br>
     <div class="innercenterdiv">
-=======
-  <table class="fullwidth" id="hometable">
-    <div id="boxnewuser">
->>>>>>> f36ec32cbec454af7870c5ee969b78a15937e914
       <!--กล่อง register-->
       <form action="registeraction.php" method="POST">
         <br>
@@ -86,18 +81,7 @@
     </div>
   </div>
 
-<<<<<<< HEAD
-  <tr>
     <td><img src="img/view1.jpg" height="600" width="100%"></td>
-  </tr>
-  <!--รูปวิวบนสุด-->
-=======
-    <tr>
-      <td colspan="2"><img src="img/view1.jpg" height="600px" width="100%"></td>
-    </tr>
-    <!--รูปวิวบนสุด-->
-  </table>
->>>>>>> f36ec32cbec454af7870c5ee969b78a15937e914
 
   <table id="bar"><!--แถบรองสุดท้าย-->
     <tr><td><strong>CU@MyPlace : ITS322 Database System sec. 1</strong></td></tr>
