@@ -26,15 +26,15 @@
       <h1>&nbsp;&nbsp;Hotel Room</h1>
       <table>
         <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
+          <td><div id="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
           <td>Room1<br>something</td>
         </tr>
         <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
+          <td><div id="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
           <td>Room2<br>something</td>
         </tr>
         <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
+          <td><div id="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
           <td>Room3<br>something</td>
         </tr>
       </table>
@@ -52,19 +52,10 @@
       <tr><td></td></tr>     <!--เว้นช่องข้างล่าง-->
     </table>
 
-    <table id="lastbar">
-      <!--แถบสุดท้าย-->
-      <tr>
-        <td>
-          <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet felis a eleifend varius. Quisque sodales sem eleifend purus dignissim convallis. Nulla ut est sit amet ligula sodales blandit.<br> Nullam nec erat pulvinar nulla iaculis tincidunt. Mauris bibendum congue ornare. Pellentesque quis massa tempus tortor facilisis vestibulum. Phasellus dictum eleifend tincidunt. Fusce congue dui et magna consequat,<br> at accumsan nisi consequat. Fusce ac nisl sem. Duis sed elit justo. Sed rhoncus fringilla lacinia. Integer posuere metus eu nibh feugiat,<br> semper efficitur diam luctus. Proin pellentesque dapibus tortor, ac condimentum tortor dictum suscipit.</div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="center">Powered by M150</div>
-        </td>
-      </tr>
+    <table id="lastbar"> <!--แถบสุดท้าย-->
+      <tr><td><div id="center">adsasdasdasddasdsadasdadasdadasdasdsadadadasd</div></td></tr>
+      <tr><td><div id="center">Powered by M150</div></td></tr>
 
     </table>
 
-  </body>
+</body>
