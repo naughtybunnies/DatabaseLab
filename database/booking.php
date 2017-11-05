@@ -1,3 +1,7 @@
+<html>
+<head>
+<title>CU@MyPlace</title>
+<link rel="stylesheet" href="default.css">
 </head>
 
 <body>
