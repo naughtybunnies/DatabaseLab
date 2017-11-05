@@ -18,7 +18,7 @@
   </div>
 
     <table>
-      <div id="listcus">
+      <div id="list">
         <ul>
           <li><a href="#">Create Booking</a></li>
           <li><a href="#">Staff Profile</a></li>

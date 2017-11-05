@@ -288,7 +288,7 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 15%;
 	z-index: 1;
 }
-#listcus{/*list left customer*/
+#list{/*list left*/
 	font-family: sans-serif;
 	float: left;
 	background-color:#BEF781;
@@ -298,13 +298,13 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 10%;
 	z-index: 1;
 }
-#listcus ul{
+#list ul{
 	float: none;
 	padding:0;
 	margin: auto;
 
 }
-#listcus li{
+#list li{
 	float: none;
 	text-decoration: none;
 	list-style:none;
@@ -315,10 +315,10 @@ table{ /*ตาราง*/
 	background-color: white;
 	border: 5px solid black;
 }
-#listcus a{ /* พื้นที่ลิ้ง*/
+#list a{ /* พื้นที่ลิ้ง*/
 	padding: 30px 50px 40px 50px;
 }
-#listcus li:hover {/*ขอบแว้บๆ*/
+#list li:hover {/*ขอบแว้บๆ*/
 		border:5px solid red;
 }
 #page{ /*ข้อมูล ลูกค้า&staff*/
@@ -331,6 +331,7 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 35%;
 	z-index: 1;
 }
+<<<<<<< HEAD
 #boxnotice{
 	font-family: sans-serif;
 	float: left;
@@ -351,3 +352,5 @@ table{ /*ตาราง*/
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
 =======
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
+=======
+>>>>>>> parent of 616372c... done

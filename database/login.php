@@ -31,7 +31,7 @@
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
     <table>
       <div id="boxnewuser"><!--กล่อง register-->
-        <form action="notice.php">
+        <form>
 
           <br><h1>&nbsp;&nbsp;New user</h1><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
@@ -47,7 +47,7 @@
       </div>
 
       <div id="boxolduser"><!--กล่อง Login-->
-        <form action="#">
+        <form action="mainstaff.php">
 
           <br><h1>&nbsp;&nbsp;Existing user</h1><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>

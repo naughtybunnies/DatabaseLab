@@ -18,17 +18,17 @@
   </div>
 
     <table>
-      <div id="listcus">
+      <div id="list">
         <ul>
-          <li><a href="booking.php">Booking</a></li>
-          <li><a href="request.php">Request</a></li>
-          <li><a href="mybooking.php">My Booking</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Request</a></li>
+          <li><a href="#">My Booking</a></li>
           <li><a href="#">My Guest</a></li>
         </ul>
       </div>
 
       <div id="page">
-        Mani customer er er
+        tae tae tae tae tae tae tae
       </div>
 
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
