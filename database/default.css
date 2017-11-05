@@ -1,201 +1,220 @@
 body {
-	background-color: #C0E7E8;
-	font-family:sans-serif;
-	margin:0;
-	padding: 0;
-	width: 100%;
-}
-ul{
-	float:right;
-	margin: 0 30px 10px 0;
+  background-color: #C0E7E8;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-li{
-	float:left;
-	text-decoration: none;
-	list-style: none;
-	padding: 0 0 0 30px;
-
+ul {
+  float: right;
+  margin: 0 30px 10px 0;
 }
 
-a{ /*link*/
-	text-decoration: none;
-	color: black;
+li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  padding: 0 0 0 30px;
 }
 
-table{ /*ตาราง*/
+a {
+  /*link*/
+  text-decoration: none;
+  color: black;
+}
+
+table {
+  /*ตาราง*/
   width: 100%;
   float: left;
   table-layout: fixed;
- }
+}
 
-#logo{
-	position: absolute;
+#logo {
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-	font-size: 1.5em;
-	left: 50px;
-}
-#menu{
-	padding: 0px;
-	margin: 0px;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-	float: right;
-	right: 100px;
-
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  left: 50px;
 }
 
-
-
-#menubar{ /*แถบบน*/
-	font-family: sans-serif;
-	background-color: #E6E6E6;
-	position: fixed;
-	width: 100%;
-	height: 3em;
-	z-index: 2;
+#menu {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: right;
+  right: 100px;
 }
 
-#bar{ /*แถบข้างล่าง*/
-	font-size: 1em;
-	font-family: sans-serif;
-	font-weight:400;
-	padding: 10px;
-	text-align:left;
-	background-color:#8FBC8F;
-	width: 100%;
-	height: 200px;
-	color:black;
+#menubar {
+  /*แถบบน*/
+  font-family: sans-serif;
+  background-color: #E6E6E6;
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  z-index: 2;
 }
 
-
-#box{/*booking*/
-	font-family: sans-serif;
-	float: left;
-	background-color:#F8F8FF;
-	height: 300px;
-	width: 400px;
-	position: absolute;
-	margin:7% 25% 7% 70%;
-	z-index: 1;
+#bar {
+  /*แถบข้างล่าง*/
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  text-align: left;
+  background-color: #8FBC8F;
+  width: 100%;
+  height: 200px;
+  color: black;
 }
 
-.center input[type="submit"]{      /*ปุ่ม*/
-	text-align: center;
-	background: black;
-	color: white;
-	padding: 10px 20px;
+#box {
+  /*booking*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 70%;
+  z-index: 1;
 }
 
-.center{
-	text-align: center;
-}
-#info{/*กล่องข้อมุล*/
-	float: left;
-	font-family: sans-serif;
-	background-color:#F8F8FF;
-	height: 800px;
-	width: 800px;
-	margin: 2% 25% 2% 25%;
-
+.center input[type="submit"] {
+  /*ปุ่ม*/
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 10px 20px;
 }
 
-#formcontainer{
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-				transform: translateY(-50%);
-	left: 50px;}
-
-#space{ /*เว้นช่องว่างระหว่างตาราง*/
-	margin: 5px 0 15px 0;
+.center {
+  text-align: center;
 }
 
-#boxolduser{/*old user*/
-	font-family: sans-serif;
-	float: left;
-	background-color:#F5A9A9;
-	height: 450px;
-	width: 400px;
-	position: absolute;
-	margin:7% 25% 7% 55%;
-	z-index: 1;
+#info {
+  /*กล่องข้อมุล*/
+  float: left;
+  font-family: sans-serif;
+  background-color: #F8F8FF;
+  height: 800px;
+  width: 800px;
+  margin: 2% 25% 2% 25%;
 }
 
-#boxnewuser{/*new user*/
-	font-family: sans-serif;
-	float: left;
-	background-color:#BEF781;
-	height: 450px;
-	width: 400px;
-	position: absolute;
-	margin:7% 25% 7% 15%;
-	z-index: 1;
-}
-#listcus{/*list left customer*/
-	font-family: sans-serif;
-	float: left;
-	background-color:#BEF781;
-	height: 450px;
-	width: 300px;
-	position: absolute;
-	margin:7% 25% 7% 10%;
-	z-index: 1;
-}
-#listcus ul{
-	float: none;
-	padding:0;
-	margin: auto;
-
-}
-#listcus li{
-	float: none;
-	text-decoration: none;
-	list-style:none;
-	text-align: center;
-	height:60px;
-	padding: 30px 20px 0 20px;
-	margin: 10px;
-	background-color: white;
-	border: 5px solid black;
-}
-#listcus a{ /* พื้นที่ลิ้ง*/
-	padding: 30px 50px 40px 50px;
-}
-#listcus li:hover {/*ขอบแว้บๆ*/
-		border:5px solid red;
-}
-#page{ /*ข้อมูล ลูกค้า&staff*/
-	font-family: sans-serif;
-	float: left;
-	background-color:#BEF781;
-	height: 450px;
-	width: 850px;
-	position: absolute;
-	margin:7% 25% 7% 35%;
-	z-index: 1;
+#formcontainer {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50px;
 }
 
-#boxnotice{
-	font-family: sans-serif;
-	float: left;
-	background-color:#BEF781;
-	height: 250px;
-	width: 550px;
-	position: absolute;
-	margin:14% 30% 7% 33%;
-	z-index: 1;
+#space {
+  /*เว้นช่องว่างระหว่างตาราง*/
+  margin: 5px 0 15px 0;
 }
-#boxnotice .center input[type="submit"]{      /*ปุ่ม*/
-	text-align: center;
-	background: yellow;
-	color: black;
-	padding: 10px 20px;
+
+#boxolduser {
+  /*old user*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #F5A9A9;
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 55%;
+  z-index: 1;
+}
+
+#boxnewuser {
+  /*new user*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 15%;
+  z-index: 1;
+}
+
+#listcus {
+  /*list left customer*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  margin: 7% 25% 7% 10%;
+  z-index: 1;
+}
+
+#listcus ul {
+  float: none;
+  padding: 0;
+  margin: auto;
+}
+
+#listcus li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  height: 60px;
+  padding: 30px 20px 0 20px;
+  margin: 10px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+#listcus a {
+  /* พื้นที่ลิ้ง*/
+  padding: 30px 50px 40px 50px;
+}
+
+#listcus li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px solid red;
+}
+
+#page {
+  /*ข้อมูล ลูกค้า&staff*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 450px;
+  width: 850px;
+  position: absolute;
+  margin: 7% 25% 7% 35%;
+  z-index: 1;
+}
+
+#boxnotice {
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 250px;
+  width: 550px;
+  position: absolute;
+  margin: 14% 30% 7% 33%;
+  z-index: 1;
+}
+
+#boxnotice .center input[type="submit"] {
+  /*ปุ่ม*/
+  text-align: center;
+  background: yellow;
+  color: black;
+  padding: 10px 20px;
 }
