@@ -9,6 +9,10 @@
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
 =======
 
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
@@ -21,7 +25,10 @@
   </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
     <table>
       <div id="boxnewuser"><!--กล่อง register-->
         <form action="notice.php">
@@ -55,6 +62,9 @@
 
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
+<<<<<<< HEAD
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
+=======
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
 
     <table id="bar">     <!--แถบรองสุดท้าย-->
@@ -71,6 +81,7 @@
     </table>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <table id="lastbar"> <!--แถบสุดท้าย-->
       <tr><td><div id="center">adsasdasdasddasdsadasdadasdadasdasdsadadadasd</div></td></tr>
       <tr><td><div id="center">Powered by M150</div></td></tr>
@@ -79,6 +90,8 @@
 
 </body>
 =======
+=======
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
     <table id="lastbar">
       <!--แถบสุดท้าย-->
       <tr>
@@ -95,4 +108,7 @@
     </table>
 
   </body>
+<<<<<<< HEAD
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
+=======
 >>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
