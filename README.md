@@ -3,6 +3,4 @@
 This is the repo for CU@MyPlace Project
 Started On Sun Oct 15, 2017
 
-wari
-
-tonny
+Kriddanai roonguthai 5822780334
