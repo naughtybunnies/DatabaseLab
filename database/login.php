@@ -5,11 +5,13 @@
 </head>
 
 <body>
-
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
     <ul id="menu">
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
@@ -18,27 +20,43 @@
     </ul>
   </div>
 
-
+<<<<<<< HEAD
+=======
     <table>
+      <div id="boxnewuser"><!--กล่อง register-->
+        <form action="notice.php">
+
+          <br><h1>&nbsp;&nbsp;New user</h1><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firstname:&nbsp;<input type="text"><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname:&nbsp;<input type="text"><br><br><br><br>
+
+          <div class="center"> <!--ปุ่ม-->
+            <input type="submit" value="Register" />
+          </div>
+
+        </form>
+      </div>
+
+      <div id="boxolduser"><!--กล่อง Login-->
+        <form action="#">
+
+          <br><h1>&nbsp;&nbsp;Existing user</h1><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br><br><br>
+
+          <div class="center"> <!--ปุ่ม-->
+            <input type="submit" value="Login" />
+          </div>
+
+        </form>
+      </div>
+
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
-    <div id="info">
-      <h1>&nbsp;&nbsp;Hotel Room</h1>
-      <table>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room1<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room2<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room3<br>something</td>
-        </tr>
-      </table>
-    </div>
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
+
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
 
@@ -52,6 +70,15 @@
       <tr><td></td></tr>     <!--เว้นช่องข้างล่าง-->
     </table>
 
+<<<<<<< HEAD
+    <table id="lastbar"> <!--แถบสุดท้าย-->
+      <tr><td><div id="center">adsasdasdasddasdsadasdadasdadasdasdsadadadasd</div></td></tr>
+      <tr><td><div id="center">Powered by M150</div></td></tr>
+
+    </table>
+
+</body>
+=======
     <table id="lastbar">
       <!--แถบสุดท้าย-->
       <tr>
@@ -68,3 +95,4 @@
     </table>
 
   </body>
+>>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2

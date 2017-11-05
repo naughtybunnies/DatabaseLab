@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
@@ -14,31 +13,27 @@
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
       <li><a href="review.php">Review</a></li>
-      <li><a href="login.php">Log In</a></li>
+      <li><a href="login.php">Log Out</a></li>
     </ul>
   </div>
 
-
     <table>
+      <div id="listcus">
+        <ul>
+          <li><a href="#">Create Booking</a></li>
+          <li><a href="#">Staff Profile</a></li>
+          <li><a href="#">Charge Service</a></li>
+          <li><a href="#">See Payment</a></li>
+        </ul>
+      </div>
+
+      <div id="page">
+        tae tae tae tae tae tae tae
+      </div>
+
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
-    <div id="info">
-      <h1>&nbsp;&nbsp;Hotel Room</h1>
-      <table>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room1<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room2<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room3<br>something</td>
-        </tr>
-      </table>
-    </div>
+
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
 
