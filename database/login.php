@@ -1,3 +1,8 @@
+<?php
+  require_once('connect.php');
+
+ ?>
+
 <html>
 
 <head>
@@ -7,110 +12,100 @@
 
 <body>
   <div id="menubar">
-    <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
     <ul id="menu">
-      <li><a href="room.php">Room</a></li>
-      <li><a href="facility.php">Facility</a></li>
-      <li><a href="review.php">Review</a></li>
-      <li><a href="login.php">Log In</a></li>
+      <li class="topbartext"><a href="room.php">Room</a></li>
+      <li class="topbartext"><a href="facility.php">Facility</a></li>
+      <li class="topbartext"><a href="review.php">Review</a></li>
+      <li class="topbartext"><a href="login.php">Log In</a></li>
     </ul>
   </div>
 
-  <table>
-    <div id="boxnewuser">
+  <div id="boxnewuser">
+    <h1>&nbsp;&nbsp;New user</h1><br>
+    <div class="innercenterdiv">
       <!--กล่อง register-->
-      <form action="notice.php">
-
+      <form action="registeraction.php" method="POST">
         <br>
-        <h1>&nbsp;&nbsp;New user</h1><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" placeholder="eiei@gmail.com"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;
-        <input type="password"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firstname:&nbsp;
-        <input type="text"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname:&nbsp;
-        <input type="text"><br><br><br><br>
-
-        <div class="center">
-          <!--ปุ่ม-->
-          <input type="submit" value="Register" />
-        </div>
-
+        <table>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" placeholder="example@example.com" name="email"></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+          </tr>
+          <tr>
+            <td>Firstname</td>
+            <td><input type="text" name="fname"></td>
+          </tr>
+          <tr>
+            <td>Lastname</td>
+            <td><input type="text" name="lname"></td>
+          </tr>
+          <tr>
+            <br>
+            <td colspan="2">
+              <div class="innercenterdiv"><br><input type="submit" value="Register" class="blackbutton" /></div>
+            </td>
+          </tr>
+        </table>
       </form>
     </div>
+  </div>
 
-    <div id="boxolduser">
-      <!--กล่อง Login-->
-      <form action="#">
-
+  <div id="boxolduser" method="POST">
+    <!--กล่อง Login-->
+    <h1>&nbsp;&nbsp;Existing user</h1><br>
+    <div class="innercenterdiv">
+      <!--กล่อง register-->
+      <form action="registeraction.php" method="POST">
         <br>
-        <h1>&nbsp;&nbsp;Existing user</h1><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" placeholder="eiei@gmail.com"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;
-        <input type="password"><br><br><br><br>
-
-        <div class="center">
-          <!--ปุ่ม-->
-          <input type="submit" value="Login" />
-        </div>
-
+        <table>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" placeholder="example@example.com" name="email"></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="innercenterdiv"><br><input type="submit" value="Register" class="blackbutton" /></div>
+            </td>
+          </tr>
+        </table>
       </form>
     </div>
+  </div>
 
-    <tr>
-      <td><img src="img/view1.jpg" height="600" width="100%"></td>
-    </tr>
-    <!--รูปวิวบนสุด-->
-  </table>
+    <td><img src="img/view1.jpg" height="600" width="100%"></td>
 
-  <table id="bar">
-    <!--แถบรองสุดท้าย-->
-    <tr>
-      <td></td>
-    </tr>
-    <!--เว้นช่องข้างบน-->
-
-    <tr>
-      <td>
-        <h1>Database system</h1></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Tonny</td>
-    </tr>
-    <tr>
-      <td>Kateiiz</td>
-    </tr>
-    <tr>
-      <td>Tongkey</td>
-    </tr>
-    <tr>
-      <td>Wari</td>
-    </tr>
-    <tr>
-      <td></td>
-    </tr>
-
-    <tr>
-      <td></td>
-    </tr>
-    <!--เว้นช่องข้างล่าง-->
-  </table>
+  <table id="bar"><!--แถบรองสุดท้าย-->
+    <tr><td><strong>CU@MyPlace : ITS322 Database System sec. 1</strong></td></tr>
+    <tr><td>&nbsp;- Kriddanai Roong-uthai 5822780334</td></tr>
+    <tr><td>&nbsp;- Prompat Tipphakdee 5822771317</td></tr>
+    <tr><td>&nbsp;- Apiwat Thaiphakdee 5822770467</td></tr>
+    <tr><td>&nbsp;- Wari Maroengsit 5822771333</td></tr>
+    </table>
 
   <table id="lastbar">
     <!--แถบสุดท้าย-->
     <tr>
       <td>
-        <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet felis a eleifend varius. Quisque sodales sem eleifend purus dignissim convallis. Nulla ut est sit amet ligula sodales blandit.<br> Nullam nec erat pulvinar nulla iaculis
-          tincidunt. Mauris bibendum congue ornare. Pellentesque quis massa tempus tortor facilisis vestibulum. Phasellus dictum eleifend tincidunt. Fusce congue dui et magna consequat,<br> at accumsan nisi consequat. Fusce ac nisl sem. Duis sed elit
-          justo. Sed rhoncus fringilla lacinia. Integer posuere metus eu nibh feugiat,<br> semper efficitur diam luctus. Proin pellentesque dapibus tortor, ac condimentum tortor dictum suscipit.</div>
+        <div class="centerlastbar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet felis a eleifend varius. Quisque sodales sem eleifend purus dignissim convallis. Nulla ut est sit amet ligula sodales blandit. Nullam nec erat pulvinar nulla iaculist incidunt. Mauris bibendum congue ornare. Pellentesque quis massa tempus vestibulum. Phasellus dictum eleifend tincidunt. Fusce congue dui et magna consequat, at accumsan nisi consequat. Fusce ac nisl sem. Duis sed elit justo. Sed rhoncus fringilla lacinia. </div>
       </td>
     </tr>
     <tr>
       <td>
-        <div class="center">Powered by M150</div>
+        <div class="centerlastbar">Powered by M150</div>
       </td>
     </tr>
 
   </table>
 
 </body>
+
+</html>
