@@ -148,7 +148,7 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 15%;
 	z-index: 1;
 }
-#list{/*list left*/
+#listcus{/*list left customer*/
 	font-family: sans-serif;
 	float: left;
 	background-color:#BEF781;
@@ -158,13 +158,13 @@ table{ /*ตาราง*/
 	margin:7% 25% 7% 10%;
 	z-index: 1;
 }
-#list ul{
+#listcus ul{
 	float: none;
 	padding:0;
 	margin: auto;
 
 }
-#list li{
+#listcus li{
 	float: none;
 	text-decoration: none;
 	list-style:none;
@@ -175,10 +175,10 @@ table{ /*ตาราง*/
 	background-color: white;
 	border: 5px solid black;
 }
-#list a{ /* พื้นที่ลิ้ง*/
+#listcus a{ /* พื้นที่ลิ้ง*/
 	padding: 30px 50px 40px 50px;
 }
-#list li:hover {/*ขอบแว้บๆ*/
+#listcus li:hover {/*ขอบแว้บๆ*/
 		border:5px solid red;
 }
 #page{ /*ข้อมูล ลูกค้า&staff*/
@@ -190,4 +190,20 @@ table{ /*ตาราง*/
 	position: absolute;
 	margin:7% 25% 7% 35%;
 	z-index: 1;
+}
+#boxnotice{
+	font-family: sans-serif;
+	float: left;
+	background-color:#BEF781;
+	height: 250px;
+	width: 550px;
+	position: absolute;
+	margin:14% 30% 7% 33%;
+	z-index: 1;
+}
+#boxnotice .center input[type="submit"]{      /*ปุ่ม*/
+	text-align: center;
+	background: yellow;
+	color: black;
+	padding: 10px 20px;
 }

@@ -16,40 +16,27 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-
     <table>
-      <div id="boxnewuser"><!--กล่อง register-->
-        <form action="notice.php">
-
-          <br><h1>&nbsp;&nbsp;New user</h1><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firstname:&nbsp;<input type="text"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname:&nbsp;<input type="text"><br><br><br><br>
+      <div id="boxnotice"><!--กล่อง register-->
+        <form action="login.php">
 
           <div class="center"> <!--ปุ่ม-->
-            <input type="submit" value="Register" />
-          </div>
-
-        </form>
-      </div>
-
-      <div id="boxolduser"><!--กล่อง Login-->
-        <form action="#">
-
-          <br><h1>&nbsp;&nbsp;Existing user</h1><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br><br><br>
-
-          <div class="center"> <!--ปุ่ม-->
+            <br><h2>Thank you for register</h2><br><br><br>
             <input type="submit" value="Login" />
           </div>
 
         </form>
       </div>
-
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
+
+
+
+
+
+
+
+
 
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->

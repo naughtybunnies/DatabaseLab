@@ -13,39 +13,22 @@
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
       <li><a href="review.php">Review</a></li>
-      <li><a href="login.php">Log In</a></li>
+      <li><a href="login.php">Log Out</a></li>
     </ul>
   </div>
 
     <table>
-      <div id="boxnewuser"><!--กล่อง register-->
-        <form action="notice.php">
-
-          <br><h1>&nbsp;&nbsp;New user</h1><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firstname:&nbsp;<input type="text"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastname:&nbsp;<input type="text"><br><br><br><br>
-
-          <div class="center"> <!--ปุ่ม-->
-            <input type="submit" value="Register" />
-          </div>
-
-        </form>
+      <div id="listcus">
+        <ul>
+          <li><a href="booking.php">Booking</a></li>
+          <li><a href="request.php">Request</a></li>
+          <li><a href="mybooking.php">My Booking</a></li>
+          <li><a href="#">My Guest</a></li>
+        </ul>
       </div>
 
-      <div id="boxolduser"><!--กล่อง Login-->
-        <form action="#">
-
-          <br><h1>&nbsp;&nbsp;Existing user</h1><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="eiei@gmail.com"><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password"><br><br><br><br>
-
-          <div class="center"> <!--ปุ่ม-->
-            <input type="submit" value="Login" />
-          </div>
-
-        </form>
+      <div id="page">
+        Booking ing ing
       </div>
 
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
