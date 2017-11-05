@@ -18,16 +18,7 @@
   </div>
     <table>
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
-    </table>
-
-
-
-
-
-
-
-
-    
+    </table>    
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
 

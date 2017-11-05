@@ -1,11 +1,11 @@
 <html>
+
 <head>
-<title>CU@MyPlace</title>
-<link rel="stylesheet" href="default.css">
+  <title>CU@MyPlace</title>
+  <link rel="stylesheet" href="default.css">
 </head>
 
 <body>
-
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
@@ -17,54 +17,92 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-
-
+  <table>
+    <tr>
+      <td><img src="img/view1.jpg" height="600" width="100%"></td>
+    </tr>
+    <!--รูปวิวบนสุด-->
+  </table>
+  <div id="info">
+    <h1>&nbsp;&nbsp;Hotel Room</h1>
     <table>
-      <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
-    </table>
-    <div id="info">
-      <h1>&nbsp;&nbsp;Hotel Room</h1>
-      <table>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room1<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room2<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room3<br>something</td>
-        </tr>
-      </table>
-    </div>
-    <table id="bar">     <!--แถบรองสุดท้าย-->
-      <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
-
-      <tr><td><h1>Database system</h1></td> <td></td> <td></td> <td></td> </tr>
-      <tr><td>Tonny</td></tr>
-      <tr><td>Kateiiz</td></tr>
-      <tr><td>Tongkey</td></tr>
-      <tr><td>Wari</td></tr>
-      <tr><td></td></tr>
-
-      <tr><td></td></tr>     <!--เว้นช่องข้างล่าง-->
-    </table>
-
-    <table id="lastbar">
-      <!--แถบสุดท้าย-->
       <tr>
         <td>
-          <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet felis a eleifend varius. Quisque sodales sem eleifend purus dignissim convallis. Nulla ut est sit amet ligula sodales blandit.<br> Nullam nec erat pulvinar nulla iaculis tincidunt. Mauris bibendum congue ornare. Pellentesque quis massa tempus tortor facilisis vestibulum. Phasellus dictum eleifend tincidunt. Fusce congue dui et magna consequat,<br> at accumsan nisi consequat. Fusce ac nisl sem. Duis sed elit justo. Sed rhoncus fringilla lacinia. Integer posuere metus eu nibh feugiat,<br> semper efficitur diam luctus. Proin pellentesque dapibus tortor, ac condimentum tortor dictum suscipit.</div>
+          <div class="center">
+            <div id="space"><img src="img/view1.jpg" height="200" width="300"></div>
+          </div>
         </td>
+        <td>Room1<br>something</td>
       </tr>
       <tr>
         <td>
-          <div class="center">Powered by M150</div>
+          <div class="center">
+            <div id="space"><img src="img/view1.jpg" height="200" width="300"></div>
+          </div>
         </td>
+        <td>Room2<br>something</td>
       </tr>
-
+      <tr>
+        <td>
+          <div class="center">
+            <div id="space"><img src="img/view1.jpg" height="200" width="300"></div>
+          </div>
+        </td>
+        <td>Room3<br>something</td>
+      </tr>
     </table>
+  </div>
+  <table id="bar">
+    <!--แถบรองสุดท้าย-->
+    <tr>
+      <td></td>
+    </tr>
+    <!--เว้นช่องข้างบน-->
 
-  </body>
+    <tr>
+      <td>
+        <h1>Database system</h1></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tonny</td>
+    </tr>
+    <tr>
+      <td>Kateiiz</td>
+    </tr>
+    <tr>
+      <td>Tongkey</td>
+    </tr>
+    <tr>
+      <td>Wari</td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td></td>
+    </tr>
+    <!--เว้นช่องข้างล่าง-->
+  </table>
+
+  <table id="lastbar">
+    <!--แถบสุดท้าย-->
+    <tr>
+      <td>
+        <div class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet felis a eleifend varius. Quisque sodales sem eleifend purus dignissim convallis. Nulla ut est sit amet ligula sodales blandit.<br> Nullam nec erat pulvinar nulla iaculis
+          tincidunt. Mauris bibendum congue ornare. Pellentesque quis massa tempus tortor facilisis vestibulum. Phasellus dictum eleifend tincidunt. Fusce congue dui et magna consequat,<br> at accumsan nisi consequat. Fusce ac nisl sem. Duis sed elit
+          justo. Sed rhoncus fringilla lacinia. Integer posuere metus eu nibh feugiat,<br> semper efficitur diam luctus. Proin pellentesque dapibus tortor, ac condimentum tortor dictum suscipit.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="center">Powered by M150</div>
+      </td>
+    </tr>
+
+  </table>
+
+</body>
