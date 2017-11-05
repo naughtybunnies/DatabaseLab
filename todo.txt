@@ -1,23 +1,18 @@
 ------------- TODO -----------------
 
 Hotel Information
-  - Decorate bottombar
-      - fontsize, fontfamily
+
   - Booking portal
       - submit form to booking.php use new booking function
-  - New content in topbar?
+
 
 
 Customer Site
   * use [ user = wari@wari.com, password = wari ] for customer login
   - Create message board
-  - new booking function using      booking.php include see booking
-  - request function using          request.php
+  - booking function using      booking.php include see, new, edit booking
   - see my booking * remove                 .php
   - my guest                        .php
-  - transaction                     .php
-
-
 
 Staff Site
   NOT YET
@@ -28,7 +23,25 @@ DOING
  - session in customer sites    TONNY
  - side bar as php function     TONNY
 
+ - Decorate bottombar           WARI
+     - fontsize, fontfamily
+  - get full photo
 
+  - New content in topbar?      ALL
+
+  - request function using          request.php   TONG
+
+  - transaction                     .php          KATE
+  - my profile
+  - edit top bar        dashboard
 
 ------------------------------------
 DONE
+
+
+------------------------------------
+
+GIT
+- description
+- commit -> [pull->resolve merge upper=yours lower=others->commit] ->push
+xxxxxx revert !!!
