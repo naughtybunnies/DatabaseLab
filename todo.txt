@@ -45,3 +45,8 @@ GIT
 - description
 - commit -> [pull->resolve merge upper=yours lower=others->commit] ->push
 xxxxxx revert !!!
+
+
+---------------------
+
+I tong 
