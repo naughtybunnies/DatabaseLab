@@ -9,7 +9,7 @@ voyyyyy
 Hello it's me
 
 <<<<<<< HEAD
-i was wondering about if after on ...
+i was wondering about if after all ...
 =======
 Ms.Wari Maroengsit
 5822771333
