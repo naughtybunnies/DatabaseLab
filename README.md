@@ -3,27 +3,26 @@
 This is the repo for CU@MyPlace Project
 Started On Sun Oct 15, 2017
 
-#TODO
+# TODO
 
-Hotel Information
-
+## Hotel Information
+'''
   - Booking portal
       - submit form to booking.php use new booking function
-
-
-
-Customer Site
+'''
+## Customer Site
+'''
   * use [ user = wari@wari.com, password = wari ] for customer login
   - Create message board
   - booking function using      booking.php include see, new, edit booking
   - see my booking * remove                 .php
   - my guest                        .php
-
-Staff Site
+'''
+## Staff Site
   NOT YET
 
 
-DOING
+# DOING
  - session in customer sites    TONNY
  - side bar as php function     TONNY
 
@@ -39,13 +38,10 @@ DOING
   - my profile
   - edit top bar        dashboard
 
-------------------------------------
-DONE
+# DONE
 
 
-------------------------------------
-
-GIT
+# GIT
 - description
 - commit -> [pull->resolve merge upper=yours lower=others->commit] ->push
 xxxxxx revert !!!
