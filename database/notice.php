@@ -9,7 +9,6 @@
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
-
     <ul id="menu">
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
@@ -17,7 +16,6 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-  <table>
     <div id="boxnotice">
       <!--กล่อง register-->
       <form action="login.php">
@@ -35,7 +33,6 @@
       <td><img src="img/view1.jpg" height="600" width="100%"></td>
     </tr>
     <!--รูปวิวบนสุด-->
-  </table>
   <table id="bar">
     <!--แถบรองสุดท้าย-->
     <tr>
