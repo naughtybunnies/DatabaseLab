@@ -54,7 +54,7 @@
     <h1>&nbsp;&nbsp;Existing user</h1><br>
     <div class="innercenterdiv">
       <!--กล่อง register-->
-      <form action="registeraction.php" method="POST">
+      <form action="loginaction.php" method="POST">
         <br>
         <table>
           <tr>
@@ -67,7 +67,7 @@
           </tr>
           <tr>
             <td colspan="2">
-              <div class="innercenterdiv"><br><input type="submit" value="Register" class="blackbutton" /></div>
+              <div class="innercenterdiv"><br><input type="submit" value="Login" class="blackbutton" /></div>
             </td>
           </tr>
         </table>

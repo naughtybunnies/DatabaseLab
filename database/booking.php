@@ -13,14 +13,7 @@
     <?php menubar(); ?>
   </div>
 
-    <div id="listcus">
-      <ul>
-        <li><a href="booking.php">Booking</a></li>
-        <li><a href="request.php">Request</a></li>
-        <li><a href="mybooking.php">My Booking</a></li>
-        <li><a href="#">My Guest</a></li>
-      </ul>
-    </div>
+    <?php customer_sidebar(); ?>
 
     <div id="page">
       Booking ing ing

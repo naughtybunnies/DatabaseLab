@@ -1,0 +1,34 @@
+------------- TODO -----------------
+
+Hotel Information
+  - Decorate bottombar
+      - fontsize, fontfamily
+  - Booking portal
+      - submit form to booking.php use new booking function
+  - New content in topbar?
+
+
+Customer Site
+  * use [ user = wari@wari.com, password = wari ] for customer login
+  - Create message board
+  - new booking function using      booking.php include see booking
+  - request function using          request.php
+  - see my booking * remove                 .php
+  - my guest                        .php
+  - transaction                     .php
+
+
+
+Staff Site
+  NOT YET
+
+
+------------------------------------
+DOING
+ - session in customer sites    TONNY
+ - side bar as php function     TONNY
+
+
+
+------------------------------------
+DONE
