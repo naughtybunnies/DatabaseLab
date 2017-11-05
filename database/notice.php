@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
   <div id="menubar">
     <!--แถบบน-->
     <div id="logo"><a href="home.php">CU@MyPlace</a></div>
@@ -17,28 +16,28 @@
       <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-
-
     <table>
+      <div id="boxnotice"><!--กล่อง register-->
+        <form action="login.php">
+
+          <div class="center"> <!--ปุ่ม-->
+            <br><h2>Thank you for register</h2><br><br><br>
+            <input type="submit" value="Login" />
+          </div>
+
+        </form>
+      </div>
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
-    <div id="info">
-      <h1>&nbsp;&nbsp;Hotel Room</h1>
-      <table>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room1<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room2<br>something</td>
-        </tr>
-        <tr>
-          <td><div class="center"><div id="space"><img src="img/view1.jpg" height="200" width="300"></div></div></td>
-          <td>Room3<br>something</td>
-        </tr>
-      </table>
-    </div>
+
+
+
+
+
+
+
+
+
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
 
