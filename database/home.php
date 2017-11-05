@@ -31,15 +31,6 @@
     </table>
   </div>
 
-<<<<<<< HEAD
-  <div id="beforebottom">
-    DATABASE
-  </div>
-
-  <div id="bottombar">
-    H2
-  </div>
-=======
 
   <div id="box">
     <!--booking-->
@@ -135,7 +126,6 @@
     </tr>
 
   </table>
->>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
 
 </body>
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   body {
     font-family: sans-serif;
     margin: 0;
@@ -67,7 +66,7 @@
   }
 
   #lastbar {
-    font-size: 0.1em;
+    font-size: 0.5em;
     font-family: sans-serif;
     font-weight: 400;
     background-color: #2F4F4F;
@@ -137,7 +136,6 @@
 		width: 100%;
 		height:200px;
   }
-=======
 body {
 	background-color: #C0E7E8;
 	font-family:sans-serif;
@@ -214,15 +212,6 @@ table{ /*ตาราง*/
 	color:black;
 }
 
-#lastbar{
-	font-size: 0.1em;
-	font-family: sans-serif;
-	font-weight:400;
-	background-color:#2F4F4F;
-	width: 100%;
-	color:white;
-	height: 100px;
-}
 
 #box{/*booking*/
 	font-family: sans-serif;
@@ -347,4 +336,3 @@ table{ /*ตาราง*/
 	color: black;
 	padding: 10px 20px;
 }
->>>>>>> 616372ce8d28f606d9a597a387f296448540a4d2
