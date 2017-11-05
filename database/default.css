@@ -66,12 +66,12 @@ a {
   font-weight: 400;
   background-color:#A9D0F5;
   color: black;
-  height: 200px;
   width: 100%;
+  height: auto;
   float: left;
-  text-align:left;
-  padding: 2%;
-  font-size: 1.5em;
+  text-align:center;
+  padding: 5px;
+  font-size: 1em;
 }
 
 #lastbar{
