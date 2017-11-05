@@ -94,6 +94,13 @@ a {
   margin: 7% 25% 7% 70%;
   z-index: 1;
 }
+#box input[type="submit"] {
+  /*ปุ่มในกล่องบุ้กกิ้ง*/
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+}
 
 .center {
   text-align: center;
