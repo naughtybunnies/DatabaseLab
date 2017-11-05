@@ -37,6 +37,7 @@
           <p align="center">An outdoor poolside bar</p>
           <p align="center">Guests can enjoy soft drinks, fruit juices, cocktails or light-meals<br>
             and snacks while unwind at our outdoor swimming pool.<br><b>Seating Capacity:</b> 20<br>
+            <b>Service Hours:</b> 09:00 hrs - 20:00 hrs</p>
             <hr>
           </td>
       </tr>
