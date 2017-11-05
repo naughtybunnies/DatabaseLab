@@ -43,7 +43,7 @@
 
   <div id="box">
     <!--booking-->
-    <form>
+    <form action="login.php">
       <div id="formcontainer">
         &nbsp;&nbsp;&nbsp;&nbsp;Check availabity<br><br>
         <div class="center">

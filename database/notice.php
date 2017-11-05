@@ -13,26 +13,30 @@
       <li><a href="room.php">Room</a></li>
       <li><a href="facility.php">Facility</a></li>
       <li><a href="review.php">Review</a></li>
-      <li><a href="login.php">Log Out</a></li>
+      <li><a href="login.php">Log In</a></li>
     </ul>
   </div>
-
     <table>
-      <div id="listcus">
-        <ul>
-          <li><a href="booking.php">Booking</a></li>
-          <li><a href="request.php">Request</a></li>
-          <li><a href="mybooking.php">My Booking</a></li>
-          <li><a href="#">My Guest</a></li>
-        </ul>
-      </div>
+      <div id="boxnotice"><!--กล่อง register-->
+        <form action="login.php">
 
-      <div id="page">
-        Mani customer er er
-      </div>
+          <div class="center"> <!--ปุ่ม-->
+            <br><h2>Thank you for register</h2><br><br><br>
+            <input type="submit" value="Login" />
+          </div>
 
+        </form>
+      </div>
       <tr><td><img src="img/view1.jpg" height="600" width="100%"></td></tr> <!--รูปวิวบนสุด-->
     </table>
+
+
+
+
+
+
+
+
 
     <table id="bar">     <!--แถบรองสุดท้าย-->
       <tr><td></td></tr>     <!--เว้นช่องข้างบน-->
