@@ -16,7 +16,12 @@
   <?php customer_sidebar(); ?>
 
     <div id="page">
-      request est est
+      <div id="boxrequest1">
+        <a href="sendrequest.php">Send request</a>
+      </div>
+      <div id="boxrequest2">
+        <a href="viewrequest.php">View request</a>
+      </div>
     </div>
 
         <img src="img/view1.jpg" height="600px" width="100%">

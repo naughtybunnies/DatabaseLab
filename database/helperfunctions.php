@@ -10,12 +10,44 @@
 
   function bottombar(){
     echo '<table id="bar"><!--แถบรองสุดท้าย-->
-      <tr><td><strong>CU@MyPlace : ITS322 Database System sec. 1</strong></td></tr>
-      <tr><td>&nbsp;- Kriddanai Roong-uthai 5822780334</td></tr>
-      <tr><td>&nbsp;- Prompat Tipphakdee 5822771317</td></tr>
-      <tr><td>&nbsp;- Apiwat Thaiphakdee 5822770467</td></tr>
+      <tr>
+        <td><strong>CU@MyPlace : ITS322 Database System section 1</strong></td>
+        <td><strong>CONTACT US</strong></td>
+        <td><strong>SOCIAL MEDIA</strong></td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;- Kriddanai Roong-uthai 5822780334</td>
+        <td>17 Moo3 Chaweng Beach, Bophud <br />
+          Koh Samui Suratthani Thailand 84320</td>
+        <td><img src="img/fb.svg" height="35" width="35">CU@MyPlace</td>
+        <td><img src="img/message.png" height="35" width="35">CU@MyPlace</td>
+
+      </tr>
+
+      <tr>
+        <td>&nbsp;- Prompat Tipphakdee 5822771317</td>
+        <td></td>
+        <td><img src="img/twitter.png" height="35" width="35">CU@MyPlace</td>
+        <td><img src="img/ig.png" height="35" width="35">CU@MyPlace</td></tr>
+
+      </tr>
+
+      <tr>
+        <td>&nbsp;- Apiwat Thaiphakdee 5822770467</td>
+        <td></td>
+        <td><img src="img/LINE_icon01.png" height="35" width="35">CU@MyPlace</td>
+        <td><img src="img/web.png" height="35" width="35">CU@MyPlace</td>
+      </tr>
+      </tr>
       <tr><td>&nbsp;- Wari Maroengsit 5822771333</td></tr>
+      <td></td>
+
+
+
       </table>
+
+
 
     <table id="lastbar">
       <!--แถบสุดท้าย-->

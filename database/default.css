@@ -69,19 +69,19 @@ a {
   width: 100%;
   height: auto;
   float: left;
-  text-align:center;
+  text-align:left;
   padding: 5px;
   font-size: 1em;
 }
 
 #lastbar{
-	font-size: 0.5em;
-	font-family: sans-serif;
-	font-weight:400;
-	background-color:#2F4F4F;
-	width: 100%;
-	color:white;
-	height: 100px;
+ font-size: 0.5em;
+ font-family: sans-serif;
+ font-weight:400;
+ background-color:#2F4F4F;
+ width: 100%;
+ color:white;
+ height: 100px;
 }
 #box {
   /*booking*/
@@ -94,6 +94,7 @@ a {
   margin: 7% 25% 7% 70%;
   z-index: 1;
 }
+
 #box input[type="submit"] {
   /*ปุ่มในกล่องบุ้กกิ้ง*/
   text-align: center;
@@ -101,7 +102,51 @@ a {
   color: white;
   padding: 10px 20px;
 }
+#boxrequest1 {
+  /*request*/
+  font-family: sans-serif;
+  float: left;
+  text-align: center;
+  background-color: #F8F8FF;
+  position: absolute;
+  padding: 5%;
+  margin:30px 10px 20px 210px;
+  z-index: 1;
+  border: 5px solid ;
+  text-decoration: none;
+  color: black;
+}
+#boxrequest1 a {
+  /* พื้นที่ลิ้ง*/
+  font-size: 50px;
+}
+#boxrequest1:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px solid red;
+}
+#boxrequest2 {
+  /*request*/
+  font-family: sans-serif;
+  float: left;
+  text-align: center;
+  background-color: #F8F8FF;
+  position: absolute;
+  padding: 6%;
+  margin:230px 10px 20px 210px;
+  z-index: 1;
+  border: 5px solid ;
+  text-decoration: none;
+  color: black;
+}
+#boxrequest2 a {
+  /* พื้นที่ลิ้ง*/
+  font-size: 50px;
 
+}
+#boxrequest2:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px solid red;
+}
 .center {
   text-align: center;
 }
@@ -204,7 +249,7 @@ a {
   float: left;
   background-color: #BEF781;
   height: 450px;
-  width: 850px;
+  width: 800px;
   position: absolute;
   margin: 7% 25% 7% 35%;
   z-index: 1;
