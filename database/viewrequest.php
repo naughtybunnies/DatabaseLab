@@ -24,12 +24,10 @@
     </div>
 
     <div id="page">
-      <div id="boxrequest1">
-        <a href="sendrequest.php">Send request</a>
-      </div>
-      <div id="boxrequest2">
-        <a href="viewrequest.php">View request</a>
-      </div>
+        <div class="center">
+          <h1>Request Information</h1>
+        </div>
+        
     </div>
 
         <img src="img/view1.jpg" height="600px" width="100%">
