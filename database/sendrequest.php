@@ -13,17 +13,9 @@
     <?php menubar(); ?>
   </div>
 
-  <table class="fullwidth" id="hometable">
-    <div id="listcus">
-      <ul>
-        <li><a href="booking.php">Booking</a></li>
-        <li><a href="request.php">Request</a></li>
-        <li><a href="mybooking.php">My Booking</a></li>
-        <li><a href="#">My Guest</a></li>
-      </ul>
-    </div>
+<?php customer_sidebar(); ?>
 
-    <div id="page">
+  <div id="page">
         <div class="center">
           <h1>Request Form</h1>
         </div>

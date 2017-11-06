@@ -12,18 +12,9 @@
   <div id="menubar">
     <?php menubar(); ?>
   </div>
+<?php customer_sidebar(); ?>
 
-  <table class="fullwidth" id="hometable">
-    <div id="listcus">
-      <ul>
-        <li><a href="booking.php">Booking</a></li>
-        <li><a href="request.php">Request</a></li>
-        <li><a href="mybooking.php">My Booking</a></li>
-        <li><a href="#">My Guest</a></li>
-      </ul>
-    </div>
-
-    <div id="page">
+  <div id="page">
       <div id="boxrequest1">
         <a href="sendrequest.php">Send request</a>
       </div>

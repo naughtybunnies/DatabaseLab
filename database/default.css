@@ -370,6 +370,26 @@ a {
 	border: 1px solid black;
 
 }
+#viewrequest table{
+  text-align: center;
+  padding: 10px;
+  margin:2%;
+  height: auto;
+  width:96%;
+  border-collapse: collapse;
+}
+#viewrequest th{
+	border: 1px solid black;
+  background: yellow;
+}
+#viewrequest td{
+	border: 1px solid black;
+}
+#viewrequest p{   /*info of request page*/
+  text-align: center;
+  padding: 2px;
+  font-size: 1.5em;
+}
 /*        Tonny's CSS            */
 
 #hometable{
