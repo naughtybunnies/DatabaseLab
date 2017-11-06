@@ -67,7 +67,7 @@
   function menubar_logout(){
     echo '<div id="logo"><a href="home.php">CU@MyPlace</a></div>
     <ul id="menu">
-      <li class="topbartext"><a href="#">Dashboard</a></li>
+      <li class="topbartext"><a href="customer.php">Dashboard</a></li>
       <li class="topbartext"><a href="myprofile.php">My profile</a></li>
       <li class="topbartext"><a href="room.php">Room</a></li>
       <li class="topbartext"><a href="facility.php">Facility</a></li>
@@ -79,7 +79,7 @@
       <ul>
         <li><a href="booking.php">Booking</a></li>
         <li><a href="request.php">Request</a></li>
-        <li><a href="#">something</a></li>
+        <li><a href="mytransaction.php">Transactions</a></li>
         <li><a href="#">something</a></li>
       </ul>
     </div>';

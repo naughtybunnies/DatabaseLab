@@ -10,11 +10,13 @@
 <body>
 
   <div id="menubar">
-    <?php menubar(); ?>
+    <?php menubar_logout(); ?>
   </div>
 <?php customer_sidebar(); ?>
 
-  <div id="page">
+  <?php customer_sidebar(); ?>
+
+    <div id="page">
       <div id="boxrequest1">
         <a href="sendrequest.php">Send request</a>
       </div>
