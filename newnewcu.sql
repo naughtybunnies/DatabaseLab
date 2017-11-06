@@ -21,7 +21,7 @@ SET time_zone = "+00:00";\
 -- Database: `newnewcu`\
 --\
 \
--- --------------------------------------------------------\
+-- -------------------------------------------------------- \
 \
 --\
 -- Table structure for table `request`\
@@ -67,3 +67,7 @@ ALTER TABLE `request`\
 ALTER TABLE `request`\
   ADD CONSTRAINT `fk_request_staff1` FOREIGN KEY (`staff_idstaff`) REFERENCES `staff` (`idstaff`) ON DELETE NO ACTION ON UPDATE NO ACTION,\
   ADD CONSTRAINT `fk_request_user1` FOREIGN KEY (`user_iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;\
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 3356eefd7016018049a8a9f3ab76e4d6077c3cbd

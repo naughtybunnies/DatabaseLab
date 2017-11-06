@@ -31,7 +31,7 @@ DOING
 
   - request function using          request.php   TONG
 
-  - transaction                     .php          KATE
+  - transaction                    .php          KATE
   - my profile
   - edit top bar        dashboard
 
@@ -45,3 +45,8 @@ GIT
 - description
 - commit -> [pull->resolve merge upper=yours lower=others->commit] ->push
 xxxxxx revert !!!
+
+
+---------------------
+
+I tong 
