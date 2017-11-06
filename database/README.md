@@ -7,40 +7,57 @@ Started On Sun Oct 15, 2017
 
 ## Hotel Information
 ```
-  - Booking portal
-      - submit form to booking.php use new booking function
+  - Bottombar a bit weird -> should equally separated??
 ```
+
+
 ## Customer Site
 ```
+  - BEFORE NOV 12
   * use [ user = wari@wari.com, password = wari ] for customer login
-  - Create message board
-  - booking function using      booking.php include see, new, edit booking
-  - see my booking * remove                 .php
-  - my guest                        .php
+  - Create message board - see message in dashboard   customer.php
+  - What to do with something??
 ```
-## Staff Site
-  NOT YET
 
+## Staff Site
+```
+  NOT YET
+```
 
 # DOING
 ```
- - session in customer sites    TONNY
- - side bar as php function     TONNY
+  - DATABASE CONNECTION         KATE
+    - profile.php
+    - transaction.php
 
- - Decorate bottombar           WARI
-     - fontsize, fontfamily
-  - get full photo
+  - DATABASE CONNECTION         TONG
+    - request.php
+
+  - Test                        WARI
+    - check all anamolies
 
   - New content in topbar?      ALL
 
+  - Booking system              TONNY
+      - All booking system  - create booking, guest, payment
+      - my guest                        .php
+      - booking function using      booking.php include see, new, edit booking
+      - see my booking * remove                 .php
+```
+# DONE GOOD JOB!!!
+```
+  - session in customer sites    TONNY
+  - side bar as php function     TONNY
+  - Decorate bottombar           WARI
+      - fontsize, fontfamily
+  - get full photo                WARI
   - request function using          request.php   TONG
-
-  - transaction                     .php          KATE
+  - transaction                    .php          KATE
   - my profile
   - edit top bar        dashboard
-```
-# DONE
-```
+  - transaction                    .php          KATE
+  - my profile
+  - edit top bar        dashboard
 ```
 # GIT
 ```

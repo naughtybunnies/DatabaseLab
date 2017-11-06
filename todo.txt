@@ -6,7 +6,6 @@ Hotel Information
       - submit form to booking.php use new booking function
 
 
-
 Customer Site
   * use [ user = wari@wari.com, password = wari ] for customer login
   - Create message board
@@ -20,25 +19,32 @@ Staff Site
 
 ------------------------------------
 DOING
- - session in customer sites    TONNY
- - side bar as php function     TONNY
+  - DATABASE CONNECTION         KATE
+    - profile.php
+    - transaction.php
 
- - Decorate bottombar           WARI
-     - fontsize, fontfamily
-  - get full photo
+  - DATABASE CONNECTION         TONG
+    - request.php
+
+  - Test                        WARI
+    - check all anamolies
 
   - New content in topbar?      ALL
 
+------------------------------------
+DONE
+  - session in customer sites    TONNY
+  - side bar as php function     TONNY
+  - Decorate bottombar           WARI
+      - fontsize, fontfamily
+  - get full photo                WARI
   - request function using          request.php   TONG
-
   - transaction                    .php          KATE
   - my profile
   - edit top bar        dashboard
-
-------------------------------------
-DONE
-
-
+  - transaction                    .php          KATE
+  - my profile
+  - edit top bar        dashboard
 ------------------------------------
 
 GIT
@@ -48,5 +54,3 @@ xxxxxx revert !!!
 
 
 ---------------------
-
-I tong
