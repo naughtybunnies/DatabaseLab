@@ -12,22 +12,23 @@
   <div id="menubar">
     <?php menubar(); ?>
   </div>
-
-  <table class="fullwidth" id="hometable">
-    <div id="listcus">
-      <ul>
-        <li><a href="booking.php">Booking</a></li>
-        <li><a href="request.php">Request</a></li>
-        <li><a href="mybooking.php">My Booking</a></li>
-        <li><a href="#">My Guest</a></li>
-      </ul>
-    </div>
+  <?php customer_sidebar(); ?>
 
     <div id="page">
-        <div class="center">
-          <h1>Request Information</h1>
-        </div>
+        <div id="viewrequest">
+          <p><b>Request Information</b></p>
+        <table>
+          <tr><th>UserID</th><th>Name</th><th>Date/Time</th><th>Description</th></tr>
+          <tr><td>get from database</td><td>get from database</td><td>ger from sesstion</td>
+          <td><?php echo $_POST["description"]; ?></td></tr>
         
+        </table>
+        <form action="request.php" method="post">
+        <div class="center">
+          <br></br><input type="submit" name="submit" value="GO Back">
+        </div>
+      </form>
+      </div>
     </div>
 
         <img src="img/view1.jpg" height="600px" width="100%">

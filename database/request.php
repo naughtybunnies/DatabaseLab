@@ -12,6 +12,7 @@
   <div id="menubar">
     <?php menubar_logout(); ?>
   </div>
+<?php customer_sidebar(); ?>
 
   <?php customer_sidebar(); ?>
 
