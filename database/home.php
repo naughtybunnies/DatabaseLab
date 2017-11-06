@@ -66,13 +66,14 @@
         <br>
         <div class="center">
           <!--ปุ่ม-->
+          
           <input type="submit" value="Check Availability" />
         </div>
 
       </div>
     </form>
   </div>
-  
+
   <!-- edit here -->
   <?php bottombar(); ?>
 

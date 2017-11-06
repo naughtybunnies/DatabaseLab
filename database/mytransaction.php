@@ -13,7 +13,9 @@
   <div id="menubar">
     <?php menubar_logout(); ?>
   </div>
-  <div id="paypage">
+  <?php customer_sidebar(); ?>
+  
+  <div id="page">
     <div id="mypayment">
       <p><b>My payment</b></p>
     <table>

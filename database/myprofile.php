@@ -13,8 +13,9 @@
   <div id="menubar">
     <?php menubar_logout(); ?>
   </div>
-    <?php myprofile_sidebar(); ?>
-  <div id="profilepage">
+    <?php customer_sidebar(); ?>
+
+  <div id="page">
     <div id="myprofile">
       <p><b>My profile</b></p>
     </div>
