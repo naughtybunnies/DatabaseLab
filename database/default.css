@@ -69,7 +69,7 @@ a {
   width: 100%;
   height: auto;
   float: left;
-  text-align:center;
+  text-align:left;
   padding: 5px;
   font-size: 1em;
 }
@@ -274,6 +274,102 @@ a {
   padding: 10px 20px;
 }
 
+#listmyprofile{/*list in myprofile page on the left hand side*/
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  margin: 7% 25% 7% 10%;
+  z-index: 1;
+}
+
+#listmyprofile ul {
+  float: none;
+  padding: 0;
+  margin: auto;
+}
+
+#listmyprofile li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  height: 60px;
+  padding: 30px 20px 0 20px;
+  margin: 10px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+#listmyprofile a {
+  /* พื้นที่ลิ้ง*/
+  padding: 30px 50px 40px 50px;
+}
+
+#listmyprofile li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px solid yellow;
+}
+#profilepage { /*background ข้อมูลลูกค้า*/
+  font-family: sans-serif;
+  float: left;
+  background-color:white;
+  height: 450px;
+  width: 850px;
+  position: absolute;
+  margin: 7% 25% 7% 35%;
+  z-index: 1;
+}
+
+#myprofile ul{ /*list of customer's info*/
+  float: none;
+  padding: 10px;
+  margin: auto;
+}
+#myprofile li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  height: 30px;
+}
+#myprofile p{
+  text-align: center;
+  padding: 2px;
+  font-size: 1.5em;
+}
+#paypage { /*background of transaction page*/
+  font-family: sans-serif;
+  float: left;
+  background-color:white;
+  height: 450px;
+  width: 850px;
+  position: absolute;
+  margin: 7% 25% 7% 22%;
+  z-index: 1;
+}
+#mypayment p{   /*info of transaction page*/
+  text-align: center;
+  padding: 2px;
+  font-size: 1.5em;
+}
+#mypayment table{
+  text-align: center;
+  padding: 10px;
+  margin:2%;
+  height: auto;
+  width:96%;
+  border-collapse: collapse;
+}
+#mypayment th{
+	border: 1px solid black;
+  background: yellow;
+}
+#mypayment td{
+	border: 1px solid black;
+
+}
 /*        Tonny's CSS            */
 
 #hometable{
