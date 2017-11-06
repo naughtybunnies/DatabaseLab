@@ -1,5 +1,6 @@
 <?php
   require_once('helperfunctions.php');
+  session_start();
 ?>
 <html>
 <head>
@@ -9,9 +10,17 @@
 
 <body>
   <!-- edit here -->
-  <div id="menubar">
-    <?php menubar(); ?>
-  </div>
+  <?php
+  if (isset($_SESSION['user'])) {
+    echo '<div id="menubar">';
+    menubar_logout();
+    echo '</div>';
+  }else{
+    echo '<div id="menubar">';
+    menubar();
+    echo '</div>';
+  }
+   ?>
 
 
   <div id="content">
@@ -31,42 +40,45 @@
 
   <div id="box">
     <!--booking-->
-    <form action="login.php">
+    <form action="newbooking.php" method="POST">
       <div id="formcontainer">
         &nbsp;&nbsp;&nbsp;&nbsp;Check availabity<br><br>
         <div class="center">
-          Check in :&nbsp;&nbsp;<input type="date" placeholder="11/10/2560" /><br><br> Check out:&nbsp;&nbsp;<input type="date" placeholder="14/10/2560" /><br><br>
+          Check in :&nbsp;&nbsp;<input type="date" name="datein"/>
+          <br><br>
+          Check out:&nbsp;&nbsp;<input type="date" name="dateout"/><br><br>
         </div>
 
         &nbsp;&nbsp;&nbsp;&nbsp;Property<br><br>
         <div class="center">
           Room:
-          <select>
-                <option>-</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+          <select name="room">
+                <?php
+                  for ($i=1; $i < 21; $i++) {
+                    echo '<option value="'.$i.'">'.$i.'</option>';
+                  }
+                ?>
               </select>&nbsp;&nbsp;&nbsp; Adult:
-          <select>
-                <option>-</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+          <select name="adult">
+                <?php
+                  for ($i=1; $i < 21; $i++) {
+                    echo '<option value="'.$i.'">'.$i.'</option>';
+                  }
+                ?>
               </select>&nbsp;&nbsp;&nbsp; Children:
-          <select>
-                <option>-</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+          <select name="children">
+                <option value="0">0</option>
+                <?php
+                  for ($i=1; $i < 21; $i++) {
+                    echo '<option value="'.$i.'">'.$i.'</option>';
+                  }
+                ?>
               </select>
         </div>
         <br>
         <div class="center">
           <!--ปุ่ม-->
-          
+
           <input type="submit" value="Check Availability" />
         </div>
 

@@ -9,7 +9,8 @@
   }
 
   function bottombar(){
-    echo '<table id="bar"><!--แถบรองสุดท้าย-->
+    echo '
+    <table id="beforelastbar"><!--แถบรองสุดท้าย-->
       <tr>
         <td><strong>CU@MyPlace : ITS322 Database System section 1</strong></td>
         <td><strong>CONTACT US</strong></td>
@@ -42,13 +43,7 @@
       </tr>
       <tr><td>&nbsp;- Wari Maroengsit 5822771333</td></tr>
       <td></td>
-
-
-
       </table>
-
-
-
     <table id="lastbar">
       <!--แถบสุดท้าย-->
       <tr>

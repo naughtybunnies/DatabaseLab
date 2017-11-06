@@ -57,11 +57,11 @@ a {
   position: fixed;
   width: 100%;
   height: 3em;
-  z-index: 2;
+  z-index: 3;
 }
 
 #bar {/*แถบข้างล่าง*/
-  position: relatives;
+  position: absolute;
   font-family: sans-serif;
   font-weight: 400;
   background-color:#A9D0F5;
@@ -91,7 +91,7 @@ a {
   height: 300px;
   width: 400px;
   position: absolute;
-  margin: 7% 25% 7% 70%;
+  margin: 7% 25% 7% 60%;
   z-index: 1;
 }
 
@@ -339,16 +339,6 @@ a {
   padding: 2px;
   font-size: 1.5em;
 }
-#paypage { /*background of transaction page*/
-  font-family: sans-serif;
-  float: left;
-  background-color:white;
-  height: 450px;
-  width: 850px;
-  position: absolute;
-  margin: 7% 25% 7% 22%;
-  z-index: 1;
-}
 #mypayment p{   /*info of transaction page*/
   text-align: center;
   padding: 2px;
@@ -370,6 +360,9 @@ a {
 	border: 1px solid black;
 
 }
+
+
+
 /*        Tonny's CSS            */
 
 #hometable{
@@ -393,4 +386,36 @@ a {
   float: left;
   margin-left: 50px;
 }
+#bookingtable{
+  width: 100%;
+  text-align: center;
+}
+#viewpic{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+#bottomest{
+  position: relative;
+  width: 100%;
+  background-color: #A9D0F5;
+}
+#nosidebarpage {
+  font-family: sans-serif;
+  float: left;
+  background-color:white;
+  width: 80%;
+  position: relative;
+  margin: 100px 10%;
+  z-index: 2;
+}
+.aligntop{
+  vertical-align: top;
+}
+.roomtable{
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+}
+
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
