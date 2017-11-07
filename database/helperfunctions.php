@@ -10,40 +10,38 @@
 
   function bottombar(){
     echo '
-    <table id="beforelastbar"><!--แถบรองสุดท้าย-->
+    <div id="bar">
+    <table><!--แถบรองสุดท้าย-->
       <tr>
-        <td><strong>CU@MyPlace : ITS322 Database System section 1</strong></td>
-        <td><strong>CONTACT US</strong></td>
-        <td><strong>SOCIAL MEDIA</strong></td>
+        <th>CU@MyPlace : ITS322 Database System section 1</th>
+        <th>CONTACT US</th>
+        <th>SOCIAL MEDIA</th>
       </tr>
 
       <tr>
         <td>&nbsp;- Kriddanai Roong-uthai 5822780334</td>
-        <td>17 Moo3 Chaweng Beach, Bophud <br />
-          Koh Samui Suratthani Thailand 84320</td>
+        <td>17 Moo3 Chaweng Beach, Bophud Koh Samui Suratthani Thailand 84320</td>
+
         <td><img src="img/fb.svg" height="35" width="35">CU@MyPlace</td>
         <td><img src="img/message.png" height="35" width="35">CU@MyPlace</td>
-
       </tr>
 
       <tr>
-        <td>&nbsp;- Prompat Tipphakdee 5822771317</td>
-        <td></td>
+        <td colspan="2">&nbsp;- Prompat Tipphakdee 5822771317</td>
         <td><img src="img/twitter.png" height="35" width="35">CU@MyPlace</td>
-        <td><img src="img/ig.png" height="35" width="35">CU@MyPlace</td></tr>
-
+        <td><img src="img/ig.png" height="35" width="35">CU@MyPlace</td>
       </tr>
 
       <tr>
-        <td>&nbsp;- Apiwat Thaiphakdee 5822770467</td>
-        <td></td>
-        <td><img src="img/LINE_icon01.png" height="35" width="35">CU@MyPlace</td>
+        <td colspan="2">&nbsp;- Apiwat Thaiphakdee 5822770467</td>
         <td><img src="img/web.png" height="35" width="35">CU@MyPlace</td>
-      </tr>
-      </tr>
+        <td><img src="img/LINE_icon01.png" height="35" width="35">CU@MyPlace</td></tr>
+
       <tr><td>&nbsp;- Wari Maroengsit 5822771333</td></tr>
-      <td></td>
+
       </table>
+    </div>
+
     <table id="lastbar">
       <!--แถบสุดท้าย-->
       <tr>

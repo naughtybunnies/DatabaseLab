@@ -68,6 +68,7 @@
     </table>
   </div>
   <?php bottombar(); ?>
+  <?php beforelast(); ?>
 
 
 </body>
