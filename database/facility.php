@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require_once('helperfunctions.php');
 ?>
 <html>
@@ -8,9 +9,17 @@
 </head>
 
 <body>
-  <div id="menubar">
-    <?php menubar(); ?>
-  </div>
+  <?php
+  if (isset($_SESSION['user'])) {
+    echo '<div id="menubar">';
+    menubar_logout();
+    echo '</div>';
+  }else{
+    echo '<div id="menubar">';
+    menubar();
+    echo '</div>';
+  }
+   ?>
   <table class="fullwidth" id="hometable">
     <tr>
       <td colspan="2"><img src="img/view1.jpg" height="600px" width="100%"></td>
