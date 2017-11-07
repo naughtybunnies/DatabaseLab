@@ -20,7 +20,7 @@
 
       <tr>
         <td>&nbsp;- Kriddanai Roong-uthai 5822780334</td>
-        <td>17 Moo3 Chaweng Beach, Bophud Koh Samui Suratthani Thailand 84320</td>
+        <td align="center">17 Moo3 Chaweng Beach, Bophud Koh Samui <br>Suratthani Thailand 84320</td>
 
         <td><img src="img/fb.svg" height="35" width="35">CU@MyPlace</td>
         <td><img src="img/message.png" height="35" width="35">CU@MyPlace</td>
