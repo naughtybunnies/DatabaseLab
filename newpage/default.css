@@ -53,7 +53,7 @@ body{
   color: black;
 }
 
-#seaview{
+#seaview{ /*รูปบนสุด*/
   position: relative;
   width: 100%;
   background-color: lightblue;
