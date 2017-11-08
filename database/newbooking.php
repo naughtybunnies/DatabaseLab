@@ -56,7 +56,7 @@
 
 
   <div id="viewpic">
-    <img src="img/view1.jpg" height="600" width="100%">
+    <img src="img/home2.jpg" height="600" width="100%">
   </div>
 
   <div id="nosidebarpage">

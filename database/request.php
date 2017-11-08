@@ -24,7 +24,7 @@
       </div>
     </div>
 
-        <img src="img/view1.jpg" height="600px" width="100%">
+        <img src="img/home3.jpg" height="600px" width="100%">
 
 
 

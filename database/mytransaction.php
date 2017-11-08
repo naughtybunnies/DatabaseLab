@@ -14,7 +14,7 @@
     <?php menubar_logout(); ?>
   </div>
   <?php customer_sidebar(); ?>
-  
+
   <div id="page">
     <div id="mypayment">
       <p><b>My payment</b></p>
@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <td><img src="img/view1.jpg" height="600" width="100%"></td>
+  <td><img src="img/home3.jpg" height="600" width="100%"></td>
 
   <?php bottombar(); ?>
 
