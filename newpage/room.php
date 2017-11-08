@@ -20,7 +20,7 @@
     </div>
 
     <div id="content">
-    type something
+      <?php room();?>
     </div>
 
     <?php footer(); ?>

@@ -3,6 +3,10 @@ body{
   padding: 0px;
   margin: 0px;
 }
+.innercenterdiv{
+  width: 60%;
+  margin:0 auto;
+}
 .nodecorate{
   text-decoration: none;
   color: black;
@@ -67,11 +71,74 @@ body{
   position: relative;
   width: 100%;
 }
-
 #content table{
  width: 100%;
  border-collapse: collapse;
 }
+
+
+
+#room_outer_content{
+  position: relative;
+  background-color: #E0F2F7;
+  width: 100%;
+  height: 105%;
+}
+#room_inner_content{
+  position: absolute;
+  background-color: white;
+  width: 60%;
+  margin:1% 5% 1% 20% ;
+  height: auto;
+}
+#room_inner_content td{
+  padding:2px;
+}
+#room_inner_content table{
+  padding:2px;
+}
+
+
+
+
+/*#login_outer_content{
+  position: relative;
+  background-color: #E0F2F7;
+  width: 100%;
+  height: 105%;
+}*/
+#login_box1_content{
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 17%;
+  z-index: 1;
+}
+#login_box1_content input[type="submit"] {
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+}
+#login_box2_content{
+  font-family: sans-serif;
+  float: left;
+  background-color: #F5A9A9;
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 55%;
+  z-index: 1;
+}
+#login_box2_content input[type="submit"] {
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+}
+
+
 
 #footer{
   position: relative;
