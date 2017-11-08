@@ -1,5 +1,6 @@
 <?php
   require_once('helperfunctions.php');
+  require_once('connect.php');
 ?>
 <html>
 <head>
@@ -15,14 +16,19 @@
 
 <?php customer_sidebar(); ?>
 
-  <div id="page">
+<div id="page">
         <div class="center">
           <h1>Request Form</h1>
         </div>
         <div id="formcontainer">
         <form action="viewrequest.php" method="post">
-        <li><label>UserID : </label>get from database</li><br></br>
-        <li><label>Name : </label>get from database</li><br></br>
+<?php
+  $q="SELECT iduser , name , surname FROM user;";
+  $result=$mysqli->query($q);
+  $row=$result->fetch_array()
+  ?>
+        <li><label>UserID : </label><?=$row['iduser']?></li><br></br>
+        <li><label>Name : </label><?=$row['name']?> <?=$row['surname']?></li><br></br>
         <li><label>Date : </label>get from session</li><br></br>
         <li><label>Time : </label>get from session</li><br></br>
         <li><label>Description : </label><br>
