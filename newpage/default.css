@@ -43,6 +43,7 @@ body{
   display: inline;
   float: left;
 }
+
 .topbarelement a{
   text-decoration: none;
   color: black;
@@ -52,11 +53,53 @@ body{
   position: relative;
   width: 100%;
   background-color: lightblue;
-  height: 100px;
   z-index: 1;
+}
 
+.textonpic h1{
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  font-size: 5em;
 }
 
 #content{
   position: relative;
+  width: 100%;
+}
+
+#content table{
+ width: 100%;
+ border-collapse: collapse;
+}
+
+#footer{
+  position: relative;
+  width: 100%;
+}
+
+#beforebottombar{
+  position: relative;
+  width: 100%;
+  background-color: #A9D0F5;
+  height: auto;
+}
+
+#beforebottombar table{
+  width: 95%;
+  padding: 20px;
+}
+
+#bottombar{
+  position: relative;
+  width: 100%;
+  background: #2F4F4F;
+  height: auto;
+}
+
+#bottombar table{
+  width: 100%;
+  padding: 20px 500px 0 500px;
+  text-align: center;
+  font-size: 0.5em;
 }
