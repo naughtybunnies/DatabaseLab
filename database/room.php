@@ -22,7 +22,7 @@
    ?>
   <table class="fullwidth" id="hometable">
     <tr>
-      <td colspan="2"><img src="img/view1.jpg" height="600px" width="100%"></td>
+      <td colspan="2"><img src="img/home2.jpg" height="600px" width="100%"></td>
     </tr>
     <!--รูปวิวบนสุด-->
   </table>
