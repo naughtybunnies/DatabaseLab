@@ -15,8 +15,8 @@
         echo "STAFF LOGIN";
       }else{
         #echo "CUSTOMER LOGIN";
-        if (isset($_SESSION['myarray'])) {
-          header('Location: addguest.php');
+        if (isset($_SESSION['cart'])) {
+          header('Location: selectguest.php');
         }else{
           header('Location: customer.php');
         }

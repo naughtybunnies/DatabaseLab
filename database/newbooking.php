@@ -10,7 +10,10 @@
     $_SESSION['todate'] = $_POST['dateout'];
     $_SESSION['curadultcount']  = 0;
     $_SESSION['curchildcount'] = 0;
+    $_SESSION['cart'] = 1;
   }
+  $_SESSION['curadultcount']  = 0;
+  $_SESSION['curchildcount'] = 0;
   foreach ($_SESSION['myarray'] as $key => $value) {
     $q = "SELECT * FROM roomtype WHERE idroomtype=".$value.";";
     $result = $mysqli->query($q);
