@@ -74,6 +74,34 @@
           <b>Service Hours:</b> 06:00 hrs. - 23:00 hrs.</p>
           <hr></td>
       </tr>
+      <tr>
+        <td>
+          <div class="center">
+            <div id="space"><img src="img/fit.jpg" height="200" width="300"></div>
+          </div>
+        </td>
+        <td><h2 align="center">Fitness</h2>
+        <p align="center">Wonderful brand-new fitness room</p>
+        <p align="center"> We welcome you to our brand-new fitness which is located beside the pool.
+          The room is about 60 square meters and available for all our guests.
+          <br><b>Seating Capacity:</b> 30-40<br>
+          <b>Service Hours:</b> 09:00 hrs. - 21:00 hrs.</p>
+          <hr></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="center">
+            <div id="space"><img src="img/spa.jpg" height="200" width="300"></div>
+          </div>
+        </td>
+        <td><h2 align="center">Spa & Massage</h2>
+        <p align="center">Traditional Thai Massage</p>
+        <p align="center"> Our traditional Thai Massage is both deeply refreshing and extremely revitalizing.
+          Performed with slow movements and covers entire body and offers the deepest possible relaxation.
+          <br><b>Seating Capacity:</b> 30-40<br>
+          <b>Service Hours:</b> 09:00 hrs. - 20:00 hrs.</p>
+          <hr></td>
+      </tr>
     </table>
   </div>
   <?php bottombar(); ?>

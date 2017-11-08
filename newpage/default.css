@@ -1,0 +1,62 @@
+body{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.nodecorate{
+  text-decoration: none;
+  color: black;
+}
+.container{
+  width: 100%;
+}
+
+#topbar{
+  position: fixed;
+  width: 100%;
+  background-color: #E6E6E6;
+  height: 3em;
+  z-index: 10;
+}
+
+#logo{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  left: 50px;
+}
+
+#topbarmenu{
+  /*ul*/
+  float: right;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topbarelement{
+  /*li*/
+  padding: 1em 16px;
+  display: inline;
+  float: left;
+}
+.topbarelement a{
+  text-decoration: none;
+  color: black;
+}
+
+#seaview{
+  position: relative;
+  width: 100%;
+  background-color: lightblue;
+  height: 100px;
+  z-index: 1;
+
+}
+
+#content{
+  position: relative;
+}

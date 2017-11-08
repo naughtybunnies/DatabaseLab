@@ -163,7 +163,7 @@ a {
   float: left;
   font-family: sans-serif;
   background-color: #F8F8FF;
-  height: 800px;
+  /*height: 600;*/
   width: 800px;
   margin: 2% 25% 2% 25%;
 }
@@ -446,6 +446,9 @@ a {
   vertical-align: middle;
   text-align: center;
   margin: auto;
+}
+#container{
+  position: relative;
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
