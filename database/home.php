@@ -27,7 +27,7 @@
     <table class="fullwidth" id="hometable">
       <tr>
         <td colspan="2">
-          <img src="img/view1.jpg" height="600px" width="100%">
+          <img src="img/home1.jpg" height="600px" width="100%">
         </td>
       </tr>
       <tr>
