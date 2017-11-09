@@ -19,13 +19,12 @@
         topbar();
       }
        ?>
-
-      <?php  booking_sidebar(); ?>
-      <div id="booking_info">
-        type something
+      <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
+      <div class="tcontentbox">
+        
       </div>
 
-      <td><img src="img/home1.jpg" height="600" width="100%"></td>
+
 
 
   <?php footer(); ?>
