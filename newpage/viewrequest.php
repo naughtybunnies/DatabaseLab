@@ -19,7 +19,9 @@
         <tr><th>UserID</th><th>Name</th><th>Date/Time</th><th>Description</th></tr>
         <tr><td>get from database</td><td>get from database</td><td>ger from sesstion</td><td>ger</td></tr>
       </table>
+      <form action="request.php" method="post">
         <input type="submit" name="submit" value="Go Back">
+      </form>
       </div>
 
         <td><img src="img/home1.jpg" height="600" width="100%"></td>
