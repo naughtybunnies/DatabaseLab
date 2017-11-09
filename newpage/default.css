@@ -374,6 +374,41 @@ body{
 
 
 
+#mytransaction_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 20%;
+  z-index: 1;
+  text-align: center;
+}
+#mytransaction_info table{
+  position: relative;
+border-collapse: collapse;
+border: 1px solid black;
+text-align: center;
+margin: auto auto 2% auto ;
+width: 95%;
+}
+#mytransaction_info th{
+border-collapse: collapse;
+border: 1px solid black;
+width: auto;
+}
+#mytransaction_info td{
+border-collapse: collapse;
+border: 1px solid black;
+}
+#mytransaction_info tr{
+border-collapse: collapse;
+border: 1px solid black;
+}
+
+
+
 
 #footer{
   position: relative;
