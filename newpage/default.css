@@ -22,6 +22,7 @@ body{
   text-decoration: none;
   color: black;
 }
+
 .container{
   width: 100%;
 }
@@ -267,15 +268,13 @@ body{
 
 
 
-
-
 #booking_leftbar{
   text-align: center;
   float: left;
   height: 450px;
   width: 300px;
   position: absolute;
-  margin: 7% 25% 7% 10%;
+  margin: 7% 25% 7% 5%;
   z-index: 1;
 }
 #booking_leftbar a{
@@ -314,68 +313,64 @@ body{
   height: 450px;
   width: 800px;
   position: absolute;
-  margin: 7% 25% 7% 35%;
+  margin: 7% 25% 7% 30%;
   z-index: 1;
 }
 
-
-
-
-
-#request_leftbar{
-  text-align: center;
-  float: left;
-  height: 450px;
-  width: 300px;
-  position: absolute;
-  margin: 7% 25% 7% 10%;
-  z-index: 1;
-}
-#request_leftbar a{
+.button_requestpage a{
   text-decoration: none;
   color: black;
 }
-#request_leftbar ul {
-  float: none;
-  padding: 0;
-  margin: auto;
-}
 
-#request_leftbar li {
-  float: none;
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
+#sendrequest_button{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
   height: 60px;
-  padding: 30px 20px 0 20px;
-  margin: 10px;
-  background-color: #DFFEFC;
-  border: 5px outset lightblue;
+  width: 300px;
+  position: absolute;
+  margin: 12% 25% 7% 30%;
+  z-index: 1;
   border-radius: 120px;
+  text-align: center;
+  padding: 30px 20px 0 20px;
+}
+#sendrequest_button a{
+  text-decoration: none;
+  color: black;
 }
 
-#request_leftbar li:hover {
+#sendrequest_button a:hover {
   /*ขอบแว้บๆ*/
   border: 5px outset salmon;
   background-color: #F7DADA;
 }
 
-#request_info{
+
+
+#viewrequest_button{
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
-  height: 450px;
-  width: 800px;
+  height: 60px;
+  width: 300px;
   position: absolute;
-  margin: 7% 25% 7% 35%;
+  margin: 25% 25% 7% 30%;
   z-index: 1;
+  border-radius: 120px;
+  text-align: center;
+  padding: 30px 20px 0 20px;
+}
+#viewrequest_button a{
+  text-decoration: none;
+  color: black;
 }
 
-
-
-
-
-
+#viewrequest_button a:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
 
 
 #footer{
