@@ -54,28 +54,71 @@ body{
   color: black;
 }
 
+
+
+
 #seaview{ /*รูปบนสุด*/
   position: relative;
   width: 100%;
   background-color: lightblue;
   z-index: 1;
 }
-
 .textonpic h1{
   position: absolute;
   top: 70%;
-  left: 60%;
+  left: 33%;
   font-size: 5em;
 }
+
+
+
+.textonbooking_box b{
+  position: relative;
+  left: 5%;
+  text-align:left;
+}
+
+.textonbooking_box p{
+  position: relative;
+  left: 15%;
+  text-align:left;
+
+}
+
+#booking_box {
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 70%;
+  z-index: 2;
+}
+
+#booking_box input[type="submit"] {
+  position: absolute;
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+  top: 70%;
+  left: 30%;
+}
+
+
+
+
 
 #content{
   position: relative;
   width: 100%;
 }
 #content table{
- width: 100%;
+ width:100%;
  border-collapse: collapse;
 }
+
+
 
 
 
