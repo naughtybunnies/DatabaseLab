@@ -526,6 +526,30 @@ border: 1px solid black;
   font-size: 0.5em;
 }
 
+
+
+/*tonny*/
+.tcontentbox{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: 1200px;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+}
+
+#tviewpic{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  float: left;
+  left: 0;
+}
+
+/*tonny*/
+
 #profile_info li {
   list-style: none;
 }

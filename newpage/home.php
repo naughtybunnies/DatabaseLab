@@ -36,15 +36,10 @@
 
 
             <b>Property</b>
-
-              <p>Room:
-              <select name="room">
-                    <?php
-                      for ($i=1; $i < 21; $i++) {
-                        echo '<option value="'.$i.'">'.$i.'</option>';
-                      }
-                    ?>
-                  </select> Adult:
+            <br>
+            <br>
+              <p>
+              Adult:
               <select name="adult">
                     <?php
                       for ($i=1; $i < 21; $i++) {
