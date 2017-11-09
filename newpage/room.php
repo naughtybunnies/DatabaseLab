@@ -20,18 +20,9 @@
     </div>
 
     <div id="content">
-      <table>
-        <tr>
-          <th>
-            <img src="img/room1.jpg" width="100%" height="400px">
-          </th>
-          <th>
-            <img src="img/room2.jpg" width="100%" height="400px">
-          </th>
-        </tr>
-      </table>
+      <?php room();?>
     </div>
-    
+
     <?php footer(); ?>
   </div>
 </body>
