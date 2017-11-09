@@ -92,11 +92,9 @@ body{
   height: auto;
 }
 #room_inner_content td{
-  padding:1%;
+  padding:1% 5px;
 }
-#room_inner_content table{
-  padding:1%;
-}
+
 
 
 
