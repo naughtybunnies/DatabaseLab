@@ -11,17 +11,24 @@
 
     <div class="container">
       <?php topbar_logout();?>
+      <div class="button_requestpage">
+        <a href="#">
+          <div id="sendrequest_button">
+            Send Request
+          </div>
+        </a>
 
-      <?php  request_sidebar(); ?>
-      <div id="request_info">
-        type something
+        <a href="#">
+          <div id="viewrequest_button">
+            View Request
+          </div>
+        </a>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>
 
-
-  <?php footer(); ?>
-</div>
+      <?php footer(); ?>
+    </div>
 
   </body>
 
