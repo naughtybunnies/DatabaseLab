@@ -72,7 +72,7 @@
             <img src="img/room1.jpg" width="640px" height="400px">
           </th>
           <th>
-            <img src="img/room2.jpg" width="688px" height="400px">
+            <img src="img/room2.jpg" width="637px" height="400px">
           </th>
         </tr>
       </table>
