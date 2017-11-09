@@ -24,7 +24,7 @@
             <li class="topbarelement"><a href="myprofile.php">My Profile</a></li>
             <li class="topbarelement"><a href="room.php">Room</a></li>
             <li class="topbarelement"><a href="facility.php">Facility</a></li>
-            <li class="topbarelement"><a href="login.php">Log Out</a></li>
+            <li class="topbarelement"><a href="logout.php">Log Out</a></li>
           </ul>
         </div>';
   }

@@ -1,6 +1,7 @@
 <?php
   require_once('connect.php');
   require_once('helperfunction.php');
+  session_start();
 ?>
 
 <html>
@@ -12,7 +13,14 @@
 <body>
 
   <div class="container">
-    <?php topbar();?>
+    <?php
+    if (isset($_SESSION['userinfo'])) {
+      //logged in
+      topbar_logout();
+    }else{
+      topbar();
+    }
+     ?>
     <div id="login_box1_content">
       <h1>&nbsp;&nbsp;New User</h1>
       <div class="tloginbox">
