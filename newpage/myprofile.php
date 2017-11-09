@@ -12,13 +12,13 @@
   <div id="container">
     <?php topbar_logout(); ?>
 
-    <?php dashboard_sidebar(); ?>
+    <?php myprofile_sidebar(); ?>
 
     <div id="profile_info">
 
       <h2 align="center"><b>My profile</h2>
 
-    <img src="img/user.png" style="width:160px;height:160px;margin:5px 0 5px 340px;" alt="">
+    <img src="img/user.png" style="width:160px;height:160px;margin:5px 0 5px 340px;" alt="" align="center">
 
       <br>
 

@@ -50,6 +50,16 @@
     </div>';
   }
 
+  function myprofile_sidebar(){
+    echo '<div id="myprofile_leftbar">
+      <ul>
+        <a href="#"><li>Edit Profile</li></a>
+        <a href="#"><li>something</li></a>
+
+      </ul>
+    </div>';
+  }
+
 
   function room(){
     echo '
