@@ -205,7 +205,6 @@ body{
 #dashboard_leftbar{
   text-align: center;
   float: left;
-  background-color: #BEF781;
   height: 450px;
   width: 300px;
   position: absolute;
@@ -230,18 +229,21 @@ body{
   height: 60px;
   padding: 30px 20px 0 20px;
   margin: 10px;
-  background-color: white;
-  border: 5px solid black;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
 }
 
 #dashboard_leftbar li:hover {
   /*ขอบแว้บๆ*/
-  border: 5px solid red;
+  border: 5px outset salmon;
+  background-color: #F7DADA;
 }
 
 #dashboard_info{
+  border: 10px outset lightblue;
   float: left;
-  background-color: #BEF781;
+  background-color:#DFFEFC;
   height: 450px;
   width: 800px;
   position: absolute;
