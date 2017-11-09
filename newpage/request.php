@@ -12,9 +12,12 @@
     <div class="container">
       <?php topbar_logout();?>
 
-      <?php  request_sidebar(); ?>
-      <div id="request_info">
-        type something
+
+      <div id="request_button">
+        <ul>
+          <a href="#"><li>Send Request</li></a>
+          <a href="viewrequest.php"><li>View Request</li></a>
+        </ul>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>

@@ -22,6 +22,7 @@ body{
   text-decoration: none;
   color: black;
 }
+
 .container{
   width: 100%;
 }
@@ -264,6 +265,16 @@ body{
   z-index: 1;
 }
 
+#profile_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: 450px;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 30%;
+  z-index: 1;
+}
 
 
 
@@ -275,7 +286,7 @@ body{
   height: 450px;
   width: 300px;
   position: absolute;
-  margin: 7% 25% 7% 10%;
+  margin: 7% 25% 7% 5%;
   z-index: 1;
 }
 #booking_leftbar a{
@@ -314,7 +325,7 @@ body{
   height: 450px;
   width: 800px;
   position: absolute;
-  margin: 7% 25% 7% 35%;
+  margin: 7% 25% 7% 30%;
   z-index: 1;
 }
 
@@ -322,58 +333,115 @@ body{
 
 
 
-#request_leftbar{
+
+#request_button{
   text-align: center;
   float: left;
   height: 450px;
-  width: 300px;
+  width: 400px;
   position: absolute;
-  margin: 7% 25% 7% 10%;
+  margin: 15% 25% 7% 35%;
   z-index: 1;
 }
-#request_leftbar a{
+#request_button a{
   text-decoration: none;
   color: black;
 }
-#request_leftbar ul {
+#request_button ul {
   float: none;
   padding: 0;
   margin: auto;
 }
-
-#request_leftbar li {
+#request_button li {
   float: none;
   text-decoration: none;
   list-style: none;
   text-align: center;
   height: 60px;
   padding: 30px 20px 0 20px;
-  margin: 10px;
+  margin: 50px 0 0 0;
   background-color: #DFFEFC;
   border: 5px outset lightblue;
   border-radius: 120px;
 }
-
-#request_leftbar li:hover {
+#request_button li:hover {
   /*ขอบแว้บๆ*/
   border: 5px outset salmon;
   background-color: #F7DADA;
 }
 
-#request_info{
+#viewrequest_info{
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
-  height: 450px;
+  height: auto;
   width: 800px;
   position: absolute;
-  margin: 7% 25% 7% 35%;
+  margin: 7% 25% 7% 20%;
   z-index: 1;
+  text-align: center;
+}
+#viewrequest_info table{
+  position: relative;
+border-collapse: collapse;
+border: 1px solid black;
+text-align: center;
+margin: auto auto 2% auto ;
+width: 95%;
+}
+#viewrequest_info th{
+border-collapse: collapse;
+border: 1px solid black;
+width: auto;
+}
+#viewrequest_info td{
+border-collapse: collapse;
+border: 1px solid black;
+}
+#viewrequest_info tr{
+border-collapse: collapse;
+border: 1px solid black;
+}
+#viewrequest_info input[type="submit"] {
+  text-align: center;
+  background: black;
+  color: white;
+  margin: auto auto 1% auto;
 }
 
 
-
-
+#mytransaction_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 20%;
+  z-index: 1;
+  text-align: center;
+}
+#mytransaction_info table{
+  position: relative;
+border-collapse: collapse;
+border: 1px solid black;
+text-align: center;
+margin: auto auto 2% auto ;
+width: 95%;
+}
+#mytransaction_info th{
+border-collapse: collapse;
+border: 1px solid black;
+width: auto;
+}
+#mytransaction_info td{
+border-collapse: collapse;
+border: 1px solid black;
+}
+#mytransaction_info tr{
+border-collapse: collapse;
+border: 1px solid black;
+}
 
 
 
@@ -409,4 +477,8 @@ body{
   padding: 20px 500px 0 500px;
   text-align: center;
   font-size: 0.5em;
+}
+
+#profile_info li {
+  list-style: none;
 }

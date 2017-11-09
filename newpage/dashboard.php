@@ -30,8 +30,7 @@
         <h1>Welcome Khun <?php echo $_SESSION['userinfo']['fname']." ".$_SESSION['userinfo']['lname']; ?></h1>
       </div>
 
-      <td><img src="img/home1.jpg" height="600" width="100%"></td>
-
+      <img src="img/home1.jpg" height="600" width="100%">
 
   <?php footer(); ?>
 </div>
