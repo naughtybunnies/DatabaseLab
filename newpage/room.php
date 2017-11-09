@@ -1,4 +1,7 @@
-<?php require_once('helperfunction.php');?>
+<?php
+  require_once('helperfunction.php');
+  session_start();
+?>
 <html>
 <head>
   <title>CU@MyPlace</title>
@@ -8,7 +11,14 @@
 <body>
 
   <div class="container">
-    <?php topbar();?>
+    <?php
+    if (isset($_SESSION['userinfo'])) {
+      //logged in
+      topbar_logout();
+    }else{
+      topbar();
+    }
+     ?>
 
     <div id="seaview">
       <img src="img/home1.jpg" width="100%" height="600px">

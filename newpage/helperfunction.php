@@ -24,12 +24,34 @@
             <li class="topbarelement"><a href="myprofile.php">My Profile</a></li>
             <li class="topbarelement"><a href="room.php">Room</a></li>
             <li class="topbarelement"><a href="facility.php">Facility</a></li>
-            <li class="topbarelement"><a href="login.php">Log Out</a></li>
+            <li class="topbarelement"><a href="logout.php">Log Out</a></li>
           </ul>
         </div>';
   }
   function dashboard_sidebar(){
     echo '<div id="dashboard_leftbar">
+      <ul>
+        <a href="booking.php"><li>Booking</li></a>
+        <a href="request.php"><li>Request</li></a>
+        <a href="mytransaction.php"><li>Transactions</li></a>
+        <a href="#"><li>something</li></a>
+      </ul>
+    </div>';
+  }
+
+  function booking_sidebar(){
+    echo '<div id="booking_leftbar">
+      <ul>
+        <a href="booking.php"><li>Booking</li></a>
+        <a href="request.php"><li>Request</li></a>
+        <a href="mytransaction.php"><li>Transactions</li></a>
+        <a href="#"><li>something</li></a>
+      </ul>
+    </div>';
+  }
+
+  function request_sidebar(){
+    echo '<div id="booking_leftbar">
       <ul>
         <a href="booking.php"><li>Booking</li></a>
         <a href="request.php"><li>Request</li></a>
