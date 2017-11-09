@@ -28,6 +28,10 @@
         <li><b>Firstname:OITHIP</b></li>
         <li><b>Surname:Thaiphakdee</b></li>
         <li><b>E-mail:ไม่บอกหร๊อก</b></li>
+        <li><b>Address:</b></li>
+        <li><b>PersonalID:</b></li>
+
+
       </ul>
     </div>
 
