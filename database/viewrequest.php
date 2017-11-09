@@ -19,9 +19,8 @@
           <p><b>Request Information</b></p>
         <table>
           <tr><th>UserID</th><th>Name</th><th>Date/Time</th><th>Description</th></tr>
-          <tr><td>get from database</td><td>get from database</td><td>ger from sesstion</td>
-          <td><?php echo $_POST["description"]; ?></td></tr>
-        
+          <tr><td>get from database</td><td>get from database</td><td>ger from sesstion</td><td>Description</td></tr>
+
         </table>
         <form action="request.php" method="post">
         <div class="center">

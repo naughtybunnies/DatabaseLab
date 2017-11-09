@@ -16,7 +16,7 @@
       <div id="request_button">
         <ul>
           <a href="#"><li>Send Request</li></a>
-          <a href="#"><li>View Request</li></a>
+          <a href="viewrequest.php"><li>View Request</li></a>
         </ul>
       </div>
 
