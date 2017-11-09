@@ -27,7 +27,8 @@
 
       <?php  dashboard_sidebar(); ?>
       <div id="dashboard_info">
-        <h1>Welcome Khun <?php echo $_SESSION['userinfo']['fname']." ".$_SESSION['userinfo']['lname']; ?></h1>
+        <h1 align="center"> Welcome </h1>
+        <h1 align="center">  Khun <?php echo $_SESSION['userinfo']['fname']." ".$_SESSION['userinfo']['lname']; ?></h1>
       </div>
 
       <img src="img/home1.jpg" height="600" width="100%">
