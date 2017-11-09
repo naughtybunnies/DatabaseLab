@@ -2,6 +2,7 @@ body{
   width: 100%;
   padding: 0px;
   margin: 0px;
+  font-family: sans-serif;
 }
 .innercenterdiv{
   width: 60%;
@@ -63,6 +64,9 @@ body{
   color: black;
 }
 
+
+
+
 #seaview{ /*รูปบนสุด*/
   position: relative;
   width: 100%;
@@ -70,21 +74,70 @@ body{
   z-index: 1;
 }
 
+/*text on pic home*/
 .textonpic h1{
   position: absolute;
   top: 70%;
-  left: 60%;
+  left: 33%;
   font-size: 5em;
 }
+/*text on pic facility*/
+.textonpic_left{
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  font-size: 2em;
+}
+
+
+
+.textonbooking_box b{
+  position: relative;
+  left: 5%;
+  text-align:left;
+}
+
+.textonbooking_box p{
+  position: relative;
+  left: 15%;
+  text-align:left;
+
+}
+
+#booking_box {
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  margin: 7% 25% 7% 65%;
+  z-index: 2;
+}
+
+#booking_box input[type="submit"] {
+  position: absolute;
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+  top: 70%;
+  left: 30%;
+}
+
+
+
+
 
 #content{
   position: relative;
   width: 100%;
 }
 #content table{
- width: 100%;
+ width:100%;
  border-collapse: collapse;
 }
+
+
 
 
 
@@ -97,16 +150,27 @@ body{
 #room_inner_content{
   position: absolute;
   background-color: white;
-  width: 60%;
+  width: 65%;
   margin:1% 5% 1% 20% ;
   height: auto;
 }
 #room_inner_content td{
-  padding:1%;
+  padding:1% 5px;
 }
-#room_inner_content table{
-  padding:1%;
+#facility_outer_content{
+  position: relative;
+  background-color: #E0F2F7;
+  width: 100%;
+  height: 140%;
 }
+#facility_inner_content{
+  position: absolute;
+  background-color: white;
+  width: 65%;
+  margin:1% 5% 1% 20% ;
+  height: auto;
+}
+
 
 
 
@@ -151,11 +215,10 @@ body{
 #dashboard_leftbar{
   text-align: center;
   float: left;
-  background-color: #BEF781;
   height: 450px;
   width: 300px;
   position: absolute;
-  margin: 7% 25% 7% 10%;
+  margin: 7% 25% 7% 5%;
   z-index: 1;
 }
 #dashboard_leftbar a{
@@ -176,22 +239,25 @@ body{
   height: 60px;
   padding: 30px 20px 0 20px;
   margin: 10px;
-  background-color: white;
-  border: 5px solid black;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
 }
 
 #dashboard_leftbar li:hover {
   /*ขอบแว้บๆ*/
-  border: 5px solid red;
+  border: 5px outset salmon;
+  background-color: #F7DADA;
 }
 
 #dashboard_info{
+  border: 10px outset lightblue;
   float: left;
-  background-color: #BEF781;
+  background-color:#DFFEFC;
   height: 450px;
   width: 800px;
   position: absolute;
-  margin: 7% 25% 7% 35%;
+  margin: 7% 25% 7% 30%;
   z-index: 1;
 }
 
@@ -222,6 +288,8 @@ body{
 }
 
 #bottombar table{
+  text-decoration-color: white;
+
   width: 100%;
   padding: 20px 500px 0 500px;
   text-align: center;
