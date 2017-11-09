@@ -54,13 +54,15 @@ body{
   color: black;
 }
 
+
+
+
 #seaview{ /*รูปบนสุด*/
   position: relative;
   width: 100%;
   background-color: lightblue;
   z-index: 1;
 }
-
 .textonpic h1{
   position: absolute;
   top: 70%;
@@ -68,14 +70,19 @@ body{
   font-size: 5em;
 }
 
+
+
+
 #content{
   position: relative;
   width: 100%;
 }
 #content table{
- width: 100%;
+ width:100%;
  border-collapse: collapse;
 }
+
+
 
 
 

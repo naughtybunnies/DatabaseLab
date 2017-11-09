@@ -26,12 +26,12 @@
             <img src="img/room1.jpg" width="100%" height="400px">
           </th>
           <th>
-            <img src="img/room2.jpg" width="100%" height="400px">
+            <img src="img/room2.jpg" width="690px" height="400px">
           </th>
         </tr>
       </table>
     </div>
-    
+
     <?php footer(); ?>
   </div>
 </body>
