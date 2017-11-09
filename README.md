@@ -2,6 +2,7 @@
 
 This is the repo for CU@MyPlace Project
 Started On Sun Oct 15, 2017
+<<<<<<< HEAD
 
 # TODO
 
@@ -65,3 +66,8 @@ Started On Sun Oct 15, 2017
 - commit -> [pull->resolve merge upper=yours lower=others->commit] ->push
 xxxxxx revert !!!
 ```
+=======
+eiei
+voyyyyy
+ngarb
+>>>>>>> master
