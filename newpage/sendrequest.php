@@ -13,11 +13,20 @@
       <?php topbar_logout();?>
 
 
-      <div id="request_button">
+      <div id="sendrequest_info">
+        <div class="textinsendrequest">
+          <p>Request Informations</p>
         <ul>
-          <a href="sendrequest.php"><li>Send Request</li></a>
-          <a href="viewrequest.php"><li>View Request</li></a>
+
+          <li><b>UserID :</b></li>
+          <li><b>Name :</b></li>
+          <li><b>Date :</b></li>
+          <li><b>Time :</b></li>
+          <li><b>Description :</b></li>
+          <textarea name="description"></textarea>
+
         </ul>
+        </div>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>

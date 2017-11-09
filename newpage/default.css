@@ -417,6 +417,9 @@ body{
   background-color: #F7DADA;
 }
 
+
+
+
 #viewrequest_info{
   border: 10px outset lightblue;
   float: left;
@@ -455,6 +458,57 @@ border: 1px solid black;
   color: white;
   margin: auto auto 1% auto;
 }
+
+
+.textinsendrequest b{
+  position: relative;
+  left: 15%;
+}
+.textinsendrequest p{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+.textinsendrequest textarea{
+  position: relative;
+  height: auto;
+  left: 15%;
+  margin: auto auto 1% auto;
+}
+#sendrequest_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 20%;
+  z-index: 1;
+
+}
+#sendrequest_info ul {
+  float: none;
+  padding: 0;
+  margin: auto;
+  height: auto;
+}
+#sendrequest_info li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  height: 30px;
+}
+#sendrequest_info input[type="submit"] {
+  text-align: center;
+  background: black;
+  color: white;
+  margin: auto auto 1% auto;
+}
+
+
+
+
+
 
 
 #mytransaction_info{
