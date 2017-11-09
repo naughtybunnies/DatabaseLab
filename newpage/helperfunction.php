@@ -39,6 +39,28 @@
     </div>';
   }
 
+  function booking_sidebar(){
+    echo '<div id="booking_leftbar">
+      <ul>
+        <a href="booking.php"><li>Booking</li></a>
+        <a href="request.php"><li>Request</li></a>
+        <a href="mytransaction.php"><li>Transactions</li></a>
+        <a href="#"><li>something</li></a>
+      </ul>
+    </div>';
+  }
+
+  function request_sidebar(){
+    echo '<div id="booking_leftbar">
+      <ul>
+        <a href="booking.php"><li>Booking</li></a>
+        <a href="request.php"><li>Request</li></a>
+        <a href="mytransaction.php"><li>Transactions</li></a>
+        <a href="#"><li>something</li></a>
+      </ul>
+    </div>';
+  }
+
   function room(){
     echo '
   <div id="room_outer_content">

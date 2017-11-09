@@ -147,6 +147,9 @@ body{
 #room_inner_content td{
   padding:1% 5px;
 }
+
+
+
 #facility_outer_content{
   position: relative;
   background-color: #E0F2F7;
@@ -250,6 +253,118 @@ body{
   margin: 7% 25% 7% 35%;
   z-index: 1;
 }
+
+
+
+
+
+
+#booking_leftbar{
+  text-align: center;
+  float: left;
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  margin: 7% 25% 7% 10%;
+  z-index: 1;
+}
+#booking_leftbar a{
+  text-decoration: none;
+  color: black;
+}
+#booking_leftbar ul {
+  float: none;
+  padding: 0;
+  margin: auto;
+}
+
+#booking_leftbar li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  height: 60px;
+  padding: 30px 20px 0 20px;
+  margin: 10px;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
+}
+
+#booking_leftbar li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
+
+#booking_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: 450px;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 35%;
+  z-index: 1;
+}
+
+
+
+
+
+#request_leftbar{
+  text-align: center;
+  float: left;
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  margin: 7% 25% 7% 10%;
+  z-index: 1;
+}
+#request_leftbar a{
+  text-decoration: none;
+  color: black;
+}
+#request_leftbar ul {
+  float: none;
+  padding: 0;
+  margin: auto;
+}
+
+#request_leftbar li {
+  float: none;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  height: 60px;
+  padding: 30px 20px 0 20px;
+  margin: 10px;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
+}
+
+#request_leftbar li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
+
+#request_info{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: 450px;
+  width: 800px;
+  position: absolute;
+  margin: 7% 25% 7% 35%;
+  z-index: 1;
+}
+
+
+
+
+
 
 
 
