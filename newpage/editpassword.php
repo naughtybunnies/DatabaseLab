@@ -22,6 +22,11 @@
         <li><b>Password: <input type="password" placeholder=" type your password..."></b></li>
         <li><b>New Password: <input type="password" placeholder=" type your password..."></b></li>
       </ul>
+
+      <form action="myprofile.php">
+        <input type="submit" value="CONFIRM!">
+      </form>
+      
     </div>
 
 

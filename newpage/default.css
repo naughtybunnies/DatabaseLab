@@ -323,7 +323,10 @@ body{
   z-index: 1;
 }
 
-
+#profile_info b{
+  position: relative;
+  left: 20%;
+}
 
 
 
@@ -343,7 +346,12 @@ body{
   list-style: none;
   margin: 1% auto auto auto;
 }
-
+#editpassword input[type="submit"] {
+  text-align: center;
+  background: black;
+  color: white;
+  margin: auto auto 1% 45%;
+}
 
 
 

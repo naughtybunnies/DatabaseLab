@@ -53,8 +53,8 @@
   function myprofile_sidebar(){
     echo '<div id="myprofile_leftbar">
       <ul>
-        <a href="#"><li>Edit Password</li></a>
-        <a href="#"><li>Edit Address</li></a>
+        <a href="editpassword.php"><li>Edit Password</li></a>
+        <a href="editaddress.php"><li>Edit Address</li></a>
         <a href="#"><li>something</li></a>
 
       </ul>
@@ -65,7 +65,7 @@
     echo '<div id="myprofile_leftbar">
       <ul>
         <a href="#"><li>Edit Password</li></a>
-        <a href="#"><li>something</li></a>
+        <a href="#"><li>Edit Address</li></a>
 
       </ul>
     </div>';
