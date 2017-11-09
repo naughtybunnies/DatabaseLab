@@ -1,11 +1,11 @@
 <?php
 <<<<<<< HEAD
-  $mysqli = new mysqli('localhost', 'root',"root",'newnewcu');
+  $mysqli = new mysqli('localhost', 'root',"", 'newnewcu');
 =======
-  $mysqli = new mysqli('localhost', 'root', '', 'newnewcu');
->>>>>>> 2be05c9942cddb3f1a503e7b895df161c967c5e6
+  $mysqli = new mysqli('localhost', 'root', 'root', 'newnewcu');
+>>>>>>> fadcf1056174e89ce6a360a9d7059204931b305d
   if($mysqli->connect_errno){
-    #echo "Connection Error";
+    echo "Connection Error";
   }else{
     #echo "Connection Success";
   }
