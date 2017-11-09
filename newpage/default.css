@@ -82,7 +82,7 @@ body{
   position: relative;
   background-color: #E0F2F7;
   width: 100%;
-  height: 105%;
+  height: 110%;
 }
 #room_inner_content{
   position: absolute;
@@ -92,10 +92,10 @@ body{
   height: auto;
 }
 #room_inner_content td{
-  padding:2px;
+  padding:1%;
 }
 #room_inner_content table{
-  padding:2px;
+  padding:1%;
 }
 
 
