@@ -20,7 +20,6 @@
       }
        ?>
 
-      <?php  booking_sidebar(); ?>
       <div id="booking_info">
         type something
       </div>

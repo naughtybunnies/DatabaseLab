@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-      <?php topbar_logout(); ?>
+      <?php topbar_logout_staff(); ?>
       <div id="dashboard_staff">
         <ul>
           <a href="#"><li>Bookings <img src="img/i_booking1.png" style="width:40px;height:40px;" alt="" align="center"></li></a>

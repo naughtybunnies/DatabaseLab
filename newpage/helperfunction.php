@@ -28,6 +28,22 @@
           </ul>
         </div>';
   }
+
+  function topbar_logout_staff(){
+    echo'
+        <div id="topbar">
+          <div id="logo">
+            <a href="home.php" class="nodecorate">CU@MyPlace</a>
+          </div>
+          <ul id="topbarmenu">
+            <li class="topbarelement"><a href="dashboard_staff.php">Dashboard</a></li>
+            <li class="topbarelement"><a href="myprofile.php">My Profile</a></li>
+            <li class="topbarelement"><a href="room.php">Room</a></li>
+            <li class="topbarelement"><a href="facility.php">Facility</a></li>
+            <li class="topbarelement"><a href="logout.php">Log Out</a></li>
+          </ul>
+        </div>';
+  }
   function dashboard_sidebar(){
     echo '<div id="dashboard_leftbar">
       <ul>
@@ -39,7 +55,7 @@
     </div>';
   }
 
-  function booking_sidebar(){
+   /* function booking_sidebar(){
     echo '<div id="booking_leftbar">
       <ul>
         <a href="booking.php"><li>Booking</li></a>
@@ -48,7 +64,7 @@
         <a href="#"><li>something</li></a>
       </ul>
     </div>';
-  }
+  } */
 
   function myprofile_sidebar(){
     echo '<div id="myprofile_leftbar">
