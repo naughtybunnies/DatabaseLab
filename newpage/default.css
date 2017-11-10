@@ -322,17 +322,18 @@ body{
   margin: 7% 25% 7% 30%;
   z-index: 1;
 }
-
-#profile_info b{
-  position: relative;
-  left: 20%;
+#profile_info li{
+  list-style: none;
+  margin: 1% auto auto 5%;
 }
 
 
 
 
 
-#editpassword{
+
+
+#editmyprofile{
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
@@ -342,11 +343,11 @@ body{
   margin: 7% 25% 7% 30%;
   z-index: 1;
 }
-#editpassword li{
+#editmyprofile li{
   list-style: none;
-  margin: 1% auto auto auto;
+  margin: 1% auto auto 5%;
 }
-#editpassword input[type="submit"] {
+#editmyprofile input[type="submit"] {
   text-align: center;
   background: black;
   color: white;
