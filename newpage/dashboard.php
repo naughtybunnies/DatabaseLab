@@ -27,11 +27,15 @@
 
       <?php  dashboard_sidebar(); ?>
       <div id="dashboard_info">
-        <br>  <br><br>
-        <h1 align="center"> ... Welcome ...</h1>
+        <br><br>
+        <img src="img/i_welcome.png" height="25%" width="50%">
+        <br>
         <h1 align="center">  Khun <?php echo $_SESSION['userinfo']['fname']." ".$_SESSION['userinfo']['lname']; ?></h1>
         <br><br><br><br>
-        <h3 align="center">  We are glady welcome you guys<br>to our warmly Hotel</h3>
+        <h3 align="center">  It is our pleasure to have you here<br>
+          Thank you for choosing CU@MyPlace hotel<br>
+        Hope you are having a great day while staying here<br>
+        </h3>
       </div>
 
       <img src="img/home3.jpg" height="600" width="100%">

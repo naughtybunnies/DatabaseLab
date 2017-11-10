@@ -15,8 +15,8 @@
 
       <div id="request_button">
         <ul>
-          <a href="sendrequest.php"><li>Send Request</li></a>
-          <a href="viewrequest.php"><li>View Request</li></a>
+          <a href="sendrequest.php"><li>Send Request <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
+          <a href="viewrequest.php"><li>View Request <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
         </ul>
       </div>
 

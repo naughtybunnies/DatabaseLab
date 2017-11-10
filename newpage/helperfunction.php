@@ -47,10 +47,9 @@
   function dashboard_sidebar(){
     echo '<div id="dashboard_leftbar">
       <ul>
-        <a href="booking.php"><li>Booking</li></a>
-        <a href="request.php"><li>Request</li></a>
-        <a href="mytransaction.php"><li>Transactions</li></a>
-        <a href="#"><li>something</li></a>
+        <a href="booking.php"><li>Booking <img src="img/i_booking.png" style="width:40px;height:40px;" align="center"></li></a>
+        <a href="request.php"><li>Request <img src="img/i_request.png" style="width:40px;height:40px;" align="center"> </li></a>
+        <a href="mytransaction.php"><li>Transactions <img src="img/i_transaction.png" style="width:40px;height:40px;" align="center"></li></a>
       </ul>
     </div>';
   }

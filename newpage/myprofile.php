@@ -13,7 +13,7 @@
     <?php topbar_logout(); ?>
     <?php myprofile_sidebar(); ?>
     <div id="profile_info">
-      <h2 align="center">My profile</h2>
+      <h2 align="center"> My profile </h2>
 
     <img src="img/user.png" style="width:160px;height:160px;margin:auto auto auto 40%;" alt="" align="center">
 

@@ -270,7 +270,11 @@ body{
   z-index: 1;
 }
 
-
+#dashboard_info img{
+  position: relative;
+  margin: auto auto auto 25%;
+  z-index: 1;
+}
 
 
 
