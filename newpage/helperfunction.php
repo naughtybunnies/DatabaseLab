@@ -69,7 +69,7 @@
   function myprofile_sidebar(){
     echo '<div id="myprofile_leftbar">
       <ul>
-        <a href="editprofile.php"><li>Edit Profile</li></a>
+        <a href="editprofile.php"><li>Edit Profile <img src="img/i_edit.png" style="width:40px;height:40px;" align="center"></li></a>
       </ul>
     </div>';
   }
@@ -77,7 +77,7 @@
   function editmyprofile_sidebar(){
     echo '<div id="myprofile_leftbar">
       <ul>
-        <a href="myprofile.php"><li>Back</li></a>
+        <a href="myprofile.php"><li>Back <img src="img/i_back.png" style="width:40px;height:40px;" align="center"></li></a>
       </ul>
     </div>';
   }
