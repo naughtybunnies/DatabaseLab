@@ -6,9 +6,9 @@
             <a href="home.php" class="nodecorate">CU@MyPlace</a>
           </div>
           <ul id="topbarmenu">
-            <li class="topbarelement"><a href="room.php">Room</a></li>
-            <li class="topbarelement"><a href="facility.php">Facility</a></li>
-            <li class="topbarelement"><a href="login.php">Log In</a></li>
+            <a href="room.php"><li class="topbarelement">Room</li></a>
+            <a href="facility.php"><li class="topbarelement">Facility</li></a>
+            <a href="login.php"><li class="topbarelement">Log In</li></a>
           </ul>
         </div>';
   }
@@ -20,11 +20,11 @@
             <a href="home.php" class="nodecorate">CU@MyPlace</a>
           </div>
           <ul id="topbarmenu">
-            <li class="topbarelement"><a href="dashboard.php">Dashboard</a></li>
-            <li class="topbarelement"><a href="myprofile.php">My Profile</a></li>
-            <li class="topbarelement"><a href="room.php">Room</a></li>
-            <li class="topbarelement"><a href="facility.php">Facility</a></li>
-            <li class="topbarelement"><a href="logout.php">Log Out</a></li>
+            <a href="dashboard.php"><li class="topbarelement">Dashboard</li></a>
+            <a href="myprofile.php"><li class="topbarelement">My Profile</li></a>
+            <a href="room.php"><li class="topbarelement">Room</li></a>
+            <a href="facility.php"><li class="topbarelement">Facility</li></a>
+            <a href="logout.php"><li class="topbarelement">Log Out</li></a>
           </ul>
         </div>';
   }
@@ -47,9 +47,9 @@
   function dashboard_sidebar(){
     echo '<div id="dashboard_leftbar">
       <ul>
-        <a href="booking.php"><li>Booking <img src="img/i_booking1.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
-        <a href="request.php"><li>Request <img src="img/i_request.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
-        <a href="mytransaction.php"><li>Transactions <img src="img/i_transaction.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
+        <a href="booking.php"><li>Booking</li></a>
+        <a href="request.php"><li>Request</li></a>
+        <a href="mytransaction.php"><li>Transactions</li></a>
         <a href="#"><li>something</li></a>
       </ul>
     </div>';
