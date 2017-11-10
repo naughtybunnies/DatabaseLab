@@ -27,6 +27,9 @@
 
         </ul>
         </div>
+        <form action="viewrequest.php">
+        <input type="submit" value="Confirm">
+        </form>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>
