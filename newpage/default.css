@@ -59,7 +59,7 @@ body{
 
 .topbarelement{
   /*li*/
-  border-left:1px solid white;
+  border-left:1px solid #ABABAB;
   padding: 13px 16px;
   display: inline;
   float: left;
