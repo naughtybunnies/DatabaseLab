@@ -13,7 +13,11 @@
         // correct login
         session_start();
         $_SESSION['userinfo'] = $row;
-        header('Location: dashboard.php');
+        if(isset($_SESSION['cart'])){
+          header('Location: confirm.php');
+        }else{
+          header('Location: dashboard.php');          
+        }
       }else{
         header('Location: login.php?logstatus="INCORRECT EMAIL OR PASSWORD"');
       }
