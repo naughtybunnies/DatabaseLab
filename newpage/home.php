@@ -24,7 +24,7 @@
     <div id="seaview">
       <div id="booking_box">
 
-        <form action="newbooking.php" method="POST">
+        <form action="selectroom.php" method="POST">
           <div class="textonbooking_box">
             <br>
             <b>Check availabity</b>

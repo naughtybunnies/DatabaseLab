@@ -112,8 +112,8 @@
             foreach ($_SESSION['myarray'] as $key => $value) {
               // $value = idroomtype
               $q = "SELECT * FROM roomtype WHERE idroomtype=".$value.";";
-              $result = $mysqli->query($q);
-              $row = $result->fetch_array();
+              $result1 = $mysqli->query($q);
+              $row = $result1->fetch_array();
               echo "<tr>
                 <td>".($key+1)."</td>
                 <td>".$row['name']."</td>
