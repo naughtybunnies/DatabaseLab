@@ -15,14 +15,14 @@
       <?php
       if (isset($_SESSION['userinfo'])) {
         //logged in
-        topbar_logout();
+        topbar_logout_staff();
       }else{
         topbar();
       }
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_booking">
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {

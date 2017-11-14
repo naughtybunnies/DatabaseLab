@@ -15,7 +15,7 @@
       <?php
       if (isset($_SESSION['userinfo'])) {
         //logged in
-        topbar_logout();
+        topbar_logout_staff();
       }else{
         topbar();
       }

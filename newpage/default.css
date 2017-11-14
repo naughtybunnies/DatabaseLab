@@ -1101,7 +1101,21 @@ border: 1px solid black;
   z-index: 2;
   text-align: center;
   min-height: 400px;
-
+}
+.tcontentbox_booking{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 90%;
+  position: relative;
+  margin: 5% auto auto 4.5%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_booking table{
+  border-collapse: collapse;
 }
 .contentwrapper{
   position: relative;
