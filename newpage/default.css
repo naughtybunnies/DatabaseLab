@@ -1117,6 +1117,21 @@ border: 1px solid black;
 .tcontentbox_booking table{
   border-collapse: collapse;
 }
+.tcontentbox_staff{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 90%;
+  position: relative;
+  margin: 5% auto auto 4.5%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_staff table{
+  border-collapse: collapse;
+}
 .contentwrapper{
   position: relative;
   height:inherit;
