@@ -824,7 +824,7 @@ border: 1px solid black;
 #request_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 17%;
+  margin: 5% auto auto 22%;
 }
 #request_staff_button li {
   float: left;
@@ -851,9 +851,10 @@ border: 1px solid black;
   height: auto;
   width: 80%;
   position: relative;
-  margin: 7% 10%;
+  margin: auto;
   z-index: 2;
   text-align: center;
+  min-height: 400px;
 }
 .tcontentbox table{
   border-collapse: collapse;
