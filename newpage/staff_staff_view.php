@@ -56,7 +56,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='staff_staff_edit.php?id=".$row['idservice']."'>EDIT</a></td>";
+            echo "<td><a href='staff_staff_edit.php?id=".$row['idstaff']."'>EDIT</a></td>";
             echo "</tr>";
           }
 
