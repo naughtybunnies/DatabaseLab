@@ -3,18 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 09, 2017 at 02:52 PM
+-- Generation Time: Nov 14, 2017 at 11:18 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `CU_FINAL`
@@ -72,7 +66,10 @@ INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_
 (27, 21, 6, NULL, NULL, 27, '2017-11-06', '2017-11-07', 'unchecked'),
 (28, 14, 6, NULL, NULL, 28, '2017-11-10', '2017-11-15', 'unchecked'),
 (29, 20, 6, NULL, NULL, 29, '2017-11-16', '2017-11-20', 'unchecked'),
-(30, 22, 6, NULL, NULL, 30, '2017-11-23', '2017-11-26', 'unchecked');
+(30, 22, 6, NULL, NULL, 30, '2017-11-23', '2017-11-26', 'unchecked'),
+(62, 34, 4, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked'),
+(63, 34, 2, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked'),
+(64, 34, 1, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked');
 
 -- --------------------------------------------------------
 
@@ -100,44 +97,46 @@ CREATE TABLE `payment` (
   `user_iduser` int(11) NOT NULL,
   `method` enum('cash','creditcard') NOT NULL,
   `cardno` varchar(45) NOT NULL,
-  `staff_idstaff` int(11) DEFAULT NULL
+  `staff_idstaff` int(11) DEFAULT NULL,
+  `type` enum('booking','service','','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `payment`
 --
 
-INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`) VALUES
-(1, '2017-11-09 00:57:26', '20000.00', 23, 'creditcard', '4283', NULL),
-(2, '2017-11-09 01:00:44', '60000.00', 1, 'creditcard', '4283', NULL),
-(3, '2017-11-09 01:03:28', '40000.00', 20, 'cash', '', NULL),
-(4, '2017-11-09 01:06:59', '80000.00', 13, 'creditcard', '4283', NULL),
-(5, '2017-11-09 01:09:54', '20000.00', 2, 'cash', '', NULL),
-(6, '2017-11-09 01:12:52', '12000.00', 19, 'cash', '', NULL),
-(7, '2017-11-09 01:16:28', '36000.00', 23, 'creditcard', '4283', NULL),
-(8, '2017-11-09 01:18:23', '12000.00', 7, 'cash', '', NULL),
-(9, '2017-11-09 01:22:23', '48000.00', 3, 'creditcard', '4283', NULL),
-(10, '2017-11-09 01:25:00', '24000.00', 4, 'cash', '', NULL),
-(11, '2017-11-09 01:30:12', '12000.00', 19, 'creditcard', '4283', NULL),
-(12, '2017-11-09 01:33:35', '24000.00', 8, 'creditcard', '4283', NULL),
-(13, '2017-11-09 01:35:51', '36000.00', 10, 'creditcard', '4283', NULL),
-(14, '2017-11-09 01:39:11', '12000.00', 20, 'cash', '', NULL),
-(15, '2017-11-09 01:41:10', '48000.00', 5, 'creditcard', '4283', NULL),
-(16, '2017-11-09 01:44:23', '7000.00', 13, 'cash', '', NULL),
-(17, '2017-11-09 01:46:53', '28000.00', 6, 'creditcard', '4283', NULL),
-(18, '2017-11-09 01:48:58', '14000.00', 7, 'cash', '', NULL),
-(19, '2017-11-09 01:51:08', '21000.00', 9, 'creditcard', '4283', NULL),
-(20, '2017-11-09 01:54:25', '7000.00', 15, 'cash', '', NULL),
-(21, '2017-11-09 01:56:16', '7000.00', 16, 'cash', '', NULL),
-(22, '2017-11-09 01:58:28', '35000.00', 11, 'creditcard', '4283', NULL),
-(23, '2017-11-09 02:00:35', '21000.00', 12, 'creditcard', '4283', NULL),
-(24, '2017-11-09 02:03:12', '14000.00', 17, 'cash', '', NULL),
-(25, '2017-11-09 02:05:56', '42000.00', 23, 'creditcard', '4283', NULL),
-(26, '2017-11-09 02:08:09', '14000.00', 18, 'cash', '', NULL),
-(27, '2017-11-09 02:10:09', '7000.00', 21, 'cash', '', NULL),
-(28, '2017-11-09 02:12:14', '35000.00', 14, 'creditcard', '4283', NULL),
-(29, '2017-11-09 02:14:45', '28000.00', 20, 'creditcard', '4283', NULL),
-(30, '2017-11-09 02:17:05', '21000.00', 22, 'creditcard', '4283', NULL);
+INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`, `type`) VALUES
+(1, '2017-11-09 00:57:26', '20000.00', 23, 'creditcard', '4283', NULL, 'booking'),
+(2, '2017-11-09 01:00:44', '60000.00', 1, 'creditcard', '4283', NULL, 'booking'),
+(3, '2017-11-09 01:03:28', '40000.00', 20, 'cash', '', NULL, 'booking'),
+(4, '2017-11-09 01:06:59', '80000.00', 13, 'creditcard', '4283', NULL, 'booking'),
+(5, '2017-11-09 01:09:54', '20000.00', 2, 'cash', '', NULL, 'booking'),
+(6, '2017-11-09 01:12:52', '12000.00', 19, 'cash', '', NULL, 'booking'),
+(7, '2017-11-09 01:16:28', '36000.00', 23, 'creditcard', '4283', NULL, 'booking'),
+(8, '2017-11-09 01:18:23', '12000.00', 7, 'cash', '', NULL, 'booking'),
+(9, '2017-11-09 01:22:23', '48000.00', 3, 'creditcard', '4283', NULL, 'booking'),
+(10, '2017-11-09 01:25:00', '24000.00', 4, 'cash', '', NULL, 'booking'),
+(11, '2017-11-09 01:30:12', '12000.00', 19, 'creditcard', '4283', NULL, 'booking'),
+(12, '2017-11-09 01:33:35', '24000.00', 8, 'creditcard', '4283', NULL, 'booking'),
+(13, '2017-11-09 01:35:51', '36000.00', 10, 'creditcard', '4283', NULL, 'booking'),
+(14, '2017-11-09 01:39:11', '12000.00', 20, 'cash', '', NULL, 'booking'),
+(15, '2017-11-09 01:41:10', '48000.00', 5, 'creditcard', '4283', NULL, 'booking'),
+(16, '2017-11-09 01:44:23', '7000.00', 13, 'cash', '', NULL, 'booking'),
+(17, '2017-11-09 01:46:53', '28000.00', 6, 'creditcard', '4283', NULL, 'booking'),
+(18, '2017-11-09 01:48:58', '14000.00', 7, 'cash', '', NULL, 'booking'),
+(19, '2017-11-09 01:51:08', '21000.00', 9, 'creditcard', '4283', NULL, 'booking'),
+(20, '2017-11-09 01:54:25', '7000.00', 15, 'cash', '', NULL, 'booking'),
+(21, '2017-11-09 01:56:16', '7000.00', 16, 'cash', '', NULL, 'booking'),
+(22, '2017-11-09 01:58:28', '35000.00', 11, 'creditcard', '4283', NULL, 'booking'),
+(23, '2017-11-09 02:00:35', '21000.00', 12, 'creditcard', '4283', NULL, 'booking'),
+(24, '2017-11-09 02:03:12', '14000.00', 17, 'cash', '', NULL, 'booking'),
+(25, '2017-11-09 02:05:56', '42000.00', 23, 'creditcard', '4283', NULL, 'booking'),
+(26, '2017-11-09 02:08:09', '14000.00', 18, 'cash', '', NULL, 'booking'),
+(27, '2017-11-09 02:10:09', '7000.00', 21, 'cash', '', NULL, 'booking'),
+(28, '2017-11-09 02:12:14', '35000.00', 14, 'creditcard', '4283', NULL, 'booking'),
+(29, '2017-11-09 02:14:45', '28000.00', 20, 'creditcard', '4283', NULL, 'booking'),
+(30, '2017-11-09 02:17:05', '21000.00', 22, 'creditcard', '4283', NULL, 'booking'),
+(85, '2017-11-13 22:44:46', '29250.00', 34, 'creditcard', '8888', NULL, 'booking');
 
 -- --------------------------------------------------------
 
@@ -155,6 +154,17 @@ CREATE TABLE `request` (
   `timestamp` datetime DEFAULT NULL,
   `replytimestamp` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `request`
+--
+
+INSERT INTO `request` (`idrequest`, `user_iduser`, `staff_idstaff`, `message`, `status`, `replymessage`, `timestamp`, `replytimestamp`) VALUES
+(1, 34, NULL, '', 'open', NULL, '2017-11-14 04:44:08', NULL),
+(2, 34, NULL, 'kwai tong', 'open', NULL, '2017-11-14 04:45:30', NULL),
+(3, 34, 11, 'kwai tong', 'closed', 'yes kwai', '2017-11-14 04:45:30', '2017-11-14 17:09:59'),
+(4, 34, 11, 'kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong ', 'closed', 'I tong mang hua kuay', '2017-11-14 04:47:39', '2017-11-14 17:04:57'),
+(5, 34, 11, 'aoitip naruk', 'closed', 'i agree', '2017-11-14 05:08:27', '2017-11-14 17:09:24');
 
 -- --------------------------------------------------------
 
@@ -267,6 +277,14 @@ CREATE TABLE `specialoffer` (
   `status` enum('active','disabled') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `specialoffer`
+--
+
+INSERT INTO `specialoffer` (`idspecialoffer`, `staff_idstaff`, `code`, `discount`, `status`) VALUES
+(1, 11, 'god', '25.00', 'active'),
+(2, 11, 'NOCODE', '0.00', 'active');
+
 -- --------------------------------------------------------
 
 --
@@ -295,7 +313,8 @@ INSERT INTO `staff` (`idstaff`, `user_iduser`, `salary`, `position`, `status`) V
 (7, 30, '27000.00', 'Chef', 'active'),
 (8, 31, '27000.00', 'Chef', 'active'),
 (9, 32, '9000.00', 'Housekeeper', 'active'),
-(10, 33, '12000.00', 'Reception', 'active');
+(10, 33, '12000.00', 'Reception', 'active'),
+(11, 34, '20.00', 'inw', 'active');
 
 -- --------------------------------------------------------
 
@@ -354,8 +373,7 @@ INSERT INTO `user` (`iduser`, `usergroup_idusergroup`, `password`, `email`, `fna
 (32, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (33, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (34, 1, 'admin', 'admin', 'Kriddanai', 'Roonguthai', '', '0000-00-00', ''),
-(35, 1, 'tonny', 'ton_kriddanai@hotmail.com', 'Kriddanai', 'Roonguthai', '2/40', '1996-08-16', '11007'),
-(36, 1, 'tonny', 'ton_kriddanai@hotmail.com', 'Kriddanai', 'Roonguthai', '2/40', '1996-08-16', '11007');
+(35, 11, 'staff', 'staff', 'inw', 'god', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -499,7 +517,7 @@ ALTER TABLE `usergroup_has_message`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `idbooking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `idbooking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 --
 -- AUTO_INCREMENT for table `message`
 --
@@ -509,12 +527,12 @@ ALTER TABLE `message`
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `idpayment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `idpayment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `idrequest` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idrequest` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `room`
 --
@@ -539,17 +557,17 @@ ALTER TABLE `service_receipt`
 -- AUTO_INCREMENT for table `specialoffer`
 --
 ALTER TABLE `specialoffer`
-  MODIFY `idspecialoffer` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idspecialoffer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `idstaff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idstaff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `usergroup`
 --
@@ -628,7 +646,3 @@ ALTER TABLE `user`
 ALTER TABLE `usergroup_has_message`
   ADD CONSTRAINT `fk_usergroup_has_message_message1` FOREIGN KEY (`message_idmessage`) REFERENCES `message` (`idmessage`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_usergroup_has_message_usergroup1` FOREIGN KEY (`usergroup_idusergroup`) REFERENCES `usergroup` (`idusergroup`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
