@@ -760,7 +760,7 @@ border: 1px solid black;
 #staff_staff_button{
   text-align: center;
   float: left;
-  height: 450px;
+  height: auto;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -779,7 +779,7 @@ border: 1px solid black;
 #staff_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 7%;
+  margin: 5% auto auto 22%;
 }
 #staff_staff_button li {
   float: left;
@@ -804,7 +804,7 @@ border: 1px solid black;
 #message_staff_button{
   text-align: center;
   float: left;
-  height: 450px;
+  height: auto;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -823,7 +823,7 @@ border: 1px solid black;
 #message_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 7%;
+  margin: 5% auto auto 22%;
 }
 #message_staff_button li {
   float: left;
@@ -847,7 +847,7 @@ border: 1px solid black;
 #room_staff_button{
   text-align: center;
   float: left;
-  height: 450px;
+  height: auto;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -866,14 +866,14 @@ border: 1px solid black;
 #room_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 7%;
+  margin: 5% auto auto 22%;
 }
 #room_staff_button li {
   float: left;
   text-decoration: none;
   list-style: none;
   text-align: center;
-  margin: 25% auto auto 2%;
+  margin: 25% auto auto 22%;
   padding: 2%;
   width: 300px;
   background-color: #DFFEFC;
@@ -890,7 +890,7 @@ border: 1px solid black;
 #user_staff_button{
   text-align: center;
   float: left;
-  height: 450px;
+  height: auto;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -909,7 +909,7 @@ border: 1px solid black;
 #user_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 7%;
+  margin: 5% auto auto 22%;
 }
 #user_staff_button li {
   float: left;
@@ -932,7 +932,7 @@ border: 1px solid black;
 #service_staff_button{
   text-align: center;
   float: left;
-  height: 450px;
+  height: auto;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -951,7 +951,7 @@ border: 1px solid black;
 #service_staff_button ul {
   float: none;
   padding: 0;
-  margin: auto auto auto 7%;
+  margin: 5% auto auto 7%;
 }
 #service_staff_button li {
   float: left;
@@ -1004,7 +1004,7 @@ border: 1px solid black;
   text-decoration: none;
   list-style: none;
   text-align: center;
-  margin: 25% auto auto 2%;
+  margin: 25% auto auto 22%;
   padding: 2%;
   width: 300px;
   background-color: #DFFEFC;
@@ -1012,6 +1012,50 @@ border: 1px solid black;
   border-radius: 120px;
 }
 #request_staff_button li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
+
+
+
+#transaction_staff_button{
+  text-align: center;
+  float: left;
+  height:auto;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#transaction_staff_button p{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 5em;
+  color: yellow;
+}
+#transaction_staff_button a{
+  text-decoration: none;
+  color: black;
+}
+#transaction_staff_button ul {
+  float: none;
+  padding: 0;
+  margin: 5% auto auto 22%;
+}
+#transaction_staff_button li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 25% auto auto 22%;
+  padding: 2%;
+  width: 300px;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
+}
+#transaction_staff_button li:hover {
   /*ขอบแว้บๆ*/
   border: 5px outset salmon;
   background-color: #F7DADA;

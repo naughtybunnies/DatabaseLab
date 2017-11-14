@@ -46,7 +46,7 @@
             if ($printhead) {
               echo "<tr>";
               foreach ($row as $key => $value) {
-                echo "<th><a href='booking_staff_view.php?sort=".$key."'>".$key."</a></th>";
+                echo "<th><a href='booking_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
               echo "</tr>";
               $printhead=0;
