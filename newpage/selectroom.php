@@ -44,6 +44,7 @@
              $result = $mysqli->query($q);
              if(!$result){
                echo "error";
+               echo $mysqli->error;
              }else{
                if($result->num_rows != 0){
                  $_SESSION['availableroom'] = array('1'=>'0','2'=>'0','3'=>'0');
@@ -133,7 +134,7 @@
          </table>
 
     </div>
-  
+
 
 
   <?php footer(); ?>
