@@ -28,7 +28,7 @@
       }
        ?>
       <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
-      <div id="content_selectroom">
+
         <div class="tcontentbox">
           <h3>Booking Period=> From <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h3>
           <h1>Available Room</h1>
@@ -131,9 +131,9 @@
               <td colspan="2"><a href="logout.php">RESTART</a></td>
             </tr>
          </table>
-      </div>
-    </div>
 
+    </div>
+  
 
 
   <?php footer(); ?>

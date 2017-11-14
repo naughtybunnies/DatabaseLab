@@ -23,7 +23,7 @@
       <h2 align="center">Edit Profile</h2>
 
     <img src="img/user.png" style="width:160px;height:160px;margin:auto auto auto 40%;" alt="" align="center">
-
+        <form action="editprofileAction.php" method="POST">
       <ul>
         <form action="editprofileAction.php" method="POST">
         <li><b>E-mail: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
