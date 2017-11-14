@@ -36,9 +36,9 @@
             }
           }
           if (isset($_GET['sort'])) {
-            $q = "SELECT * FROM staff_viewbooking ORDER BY ".$_GET['sort'].";";
+            $q = "SELECT * FROM staff_viewstaff ORDER BY ".$_GET['sort']." ".$by1.";";
           }else{
-            $q = "SELECT * FROM staff_viewbooking;";
+            $q = "SELECT * FROM staff_viewstaff";
           }
           $result=$mysqli->query($q);
           $printhead = 1;
@@ -46,8 +46,9 @@
             if ($printhead) {
               echo "<tr>";
               foreach ($row as $key => $value) {
-                echo "<th><a href='booking_staff_view.php?sort=".$key."'>".$key."</a></th>";
+                echo "<th><a href='staff_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
+              echo "<th>EDIT</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -55,6 +56,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
+            echo "<td><a href='staff_staff_edit.php?id=".$row['idservice']."'>EDIT</a></td>";
             echo "</tr>";
           }
 
