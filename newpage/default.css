@@ -130,7 +130,38 @@ body{
   left: 30%;
 }
 
+.textonbooking_box_customer b{
+  position: relative;
+  left: 5%;
+  text-align:left;
+}
 
+.textonbooking_box_customer p{
+  position: relative;
+  left: 15%;
+  text-align:left;
+
+}
+
+#booking_box_customer {
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin: 7% 25% 7% 25%;
+  z-index: 2;
+}
+
+#booking_box_customer input[type="submit"] {
+  position: absolute;
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+  top: 70%;
+  left: 30%;
+}
 
 
 
@@ -415,7 +446,6 @@ body{
   position: absolute;
   margin: 7% 25% 7% 20%;
   z-index: 1;
-  text-align: center;
 }
 
 
@@ -669,20 +699,30 @@ border: 1px solid black;
   font-size: 0.5em;
 }
 
+#content_selectroom{
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height:auto;
 
+}
 
 /*tonny*/
 .tcontentbox{
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
-  height: 1200px;
+  height: auto;
   width: 80%;
   position: relative;
   margin: 7% 10%;
   z-index: 2;
+  text-align: center;
 }
-
+.tcontentbox table{
+  border-collapse: collapse;
+  margin: auto auto 2% auto;
+}
 #tviewpic{
   position: relative;
   z-index: 1;

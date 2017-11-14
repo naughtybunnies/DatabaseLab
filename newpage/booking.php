@@ -20,11 +20,11 @@
       }
        ?>
 
-      <div id="tbooking_info">
-        <div id="tbooking_box">
+      <div id="booking_info">
+        <div id="booking_box_customer">
 
           <form action="selectroom.php" method="POST">
-            <div class="textonbooking_box">
+            <div class="textonbooking_box_customer">
               <br>
               <b>Check availabity</b>
 
