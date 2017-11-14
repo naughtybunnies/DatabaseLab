@@ -13,7 +13,7 @@
     }
     else
     {
-      echo "sucess";
+      // echo "sucess";
     }
   }
   else
@@ -36,7 +36,7 @@
       <div id="viewrequest_info">
         <p><b>Request Informations</b></p>
       <table>
-        <tr><th>RequestID</th><th>UserID</th><th>Name</th><th>Message</th><th>Date/time</th><th>ReplyMessage</th><th>Reply Date/Time</th></tr>
+        <tr><th>RequestID</th><th>UserID</th><th>Name</th><th>Message</th><th>Date and Time</th><th>ReplyMessage</th><th>Reply Date and Time</th></tr>
 <?php while($row = $result->fetch_array()) { ?>
         <tr>
           <td><?php echo $row['idrequest']; ?></td>

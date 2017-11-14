@@ -1,5 +1,12 @@
 <?php
   require_once('helperfunction.php');
+  require_once('connect.php');
+  session_start();
+  if (isset($_SESSION['userinfo'])) {
+    #print_r($_SESSION['userinfo']);
+  }else{
+    header('Location: login.php');
+  }
 ?>
 <html>
 <head>
@@ -18,14 +25,14 @@
     <img src="img/user.png" style="width:160px;height:160px;margin:auto auto auto 40%;" alt="" align="center">
 
       <ul>
-        <li><b>E-mail: ไม่บอกหร๊อก</b></li>
-        <li><b>Password: <input type="text" value="eiei"></b></li>
-        <li><b>Firstname: <input type="text" value="OITHIP"></b></li>
-        <li><b>Surname: <input type="text" value="Thaiphakdee"></b></li>
-        <li><b>Address: <input type="text" value=""></b></li>
+        <li><b>E-mail: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
+        <li><b>Password: <input type="text" name="pass" value="<?php echo $_SESSION['userinfo']['password']; ?>"></b></li>
+        <li><b>Firstname: <input type="text" name="fname1" value="<?php echo $_SESSION['userinfo']['fname']; ?>"></b></li>
+        <li><b>Surname: <input type="text" name="lname1" value="<?php echo $_SESSION['userinfo']['lname']; ?>"></b></li>
+        <li><b>Address: <input type="text" name="address1" value="<?php echo $_SESSION['userinfo']['address']; ?>"></b></li>
       </ul>
 
-      <form action="myprofile.php">
+      <form action="editprofileAction.php">
         <input type="submit" value="CONFIRM!">
       </form>
 
