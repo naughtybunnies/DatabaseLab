@@ -37,13 +37,12 @@
           <li><b>Date : <?php echo $_SESSION['storeDate']; ?></b></li>
           <li><b>Time : <?php echo $_SESSION['storeTime']; ?></b></li>
           <li><b>Description :</b></li>
+          <form action="sendrequestAction.php" method="POST">
           <textarea name="description"></textarea>
-
-        </ul>
-        </div>
-        <form action="sendrequestAction.php">
-        <input type="submit" value="Confirm">
-        </form>
+          </ul>
+          </div>
+          <input type="submit" value="Confirm">
+          </form>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>
