@@ -1,5 +1,12 @@
 <?php
   require_once('helperfunction.php');
+  require_once('connect.php');
+  session_start();
+  if (isset($_SESSION['userinfo'])) {
+    #print_r($_SESSION['userinfo']);
+  }else{
+    header('Location: login.php');
+  }
 ?>
 <html>
 <head>
@@ -18,13 +25,13 @@
     <img src="img/user.png" style="width:160px;height:160px;margin:auto auto auto 40%;" alt="" align="center">
 
       <ul>
-        <li><b>Username: kenjitong</b></li>
-        <li><b>Password: eiei</b></li>
-        <li><b>Firstname: OITHIP</b></li>
-        <li><b>Surname: Thaiphakdee</b></li>
-        <li><b>E-mail: ไม่บอกหร๊อก</b></li>
-        <li><b>Address: </b></li>
-        <li><b>PersonalID: </b></li>
+        <li><b>Username: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
+        <li><b>Password: <?php echo $_SESSION['userinfo']['password']; ?></b></li>
+        <li><b>Firstname: <?php echo $_SESSION['userinfo']['fname']; ?></b></li>
+        <li><b>Surname: <?php echo $_SESSION['userinfo']['lname']; ?></b></li>
+        <li><b>E-mail: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
+        <li><b>Address: <?php echo $_SESSION['userinfo']['address']; ?></b></li>
+        <li><b>PersonalID: <?php echo $_SESSION['userinfo']['personalid']; ?></b></li>
 
 
       </ul>

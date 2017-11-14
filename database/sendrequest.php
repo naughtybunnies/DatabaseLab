@@ -23,7 +23,7 @@
         <div id="formcontainer">
         <form action="viewrequest.php" method="post">
 <?php
-  $q="SELECT iduser , name , surname FROM user;";
+  $q="SELECT iduser , name , surname FROM user ;";
   $result=$mysqli->query($q);
   $row=$result->fetch_array()
   ?>
