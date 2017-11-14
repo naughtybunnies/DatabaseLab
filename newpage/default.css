@@ -1101,7 +1101,9 @@ border: 1px solid black;
   z-index: 2;
   text-align: center;
   min-height: 400px;
-
+}
+.tcontentbox2 table{
+  border-collapse: collapse;
 }
 .contentwrapper{
   position: relative;
