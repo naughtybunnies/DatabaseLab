@@ -17,7 +17,7 @@
           header('Location: confirm.php');
         }else{
           // redirect staff or customer
-          if ($row['usergroup_idusergroup']==11) {
+          if ($row['usergroup_idusergroup']=='11') {
             //staff
             header('Location: dashboard_staff.php');
           }else{

@@ -14,7 +14,7 @@
       <div id="dashboard_staff">
         <ul>
           <a href="booking_staff.php"><li>Bookings <img src="img/i_booking1.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
-          <a href="staff.php"><li>Staffs  <img src="img/i_staff.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
+          <a href="staff_staff.php"><li>Staffs  <img src="img/i_staff.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
           <a href="message.php"><li>Messages <img src="img/i_message.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
           <a href="room_staff.php"><li>Rooms <img src="img/i_room1.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
           <a href="request_staff.php"><li>Requests <img src="img/i_request.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
