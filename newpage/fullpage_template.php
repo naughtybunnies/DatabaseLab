@@ -19,8 +19,9 @@
         topbar();
       }
        ?>
-       <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
-      <div class="tcontentbox">
+       <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
+       <div class="tcontentbox2">
+
         type something
       </div>
 
