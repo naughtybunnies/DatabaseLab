@@ -8,11 +8,13 @@ if(isset($_SESSION['userinfo']))
   $result = $mysqli->query($q);
   if(!$result)
   {
+    //echo "error";
     header('Location: sendrequest.php');
   }
   else
   {
-    header('Location: viewrequest.php?');
+    //echo "sucess";
+    header('Location: viewrequest.php');
   }
 }
 else

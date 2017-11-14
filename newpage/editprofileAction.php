@@ -12,6 +12,14 @@ if(isset($_SESSION['userinfo']))
   }
   else
   {
+    // echo "sucess";
+    $q = "SELECT * FROM user WHERE user.iduser = ".$_SESSION['userinfo']['iduser'].";";
+    $result = $mysqli->query($q);
+    $row = $result->fetch_array();
+
+    unset($_SESSION['userinfo']);
+    $_SESSION['userinfo']=array();
+    $_SESSION['userinfo']=$row;
     header('Location: myprofile.php');
   }
 }

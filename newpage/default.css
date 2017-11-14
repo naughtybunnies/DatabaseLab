@@ -755,6 +755,52 @@ border: 1px solid black;
 }
 
 
+
+
+
+
+#staff_staff_button{
+  text-align: center;
+  float: left;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#staff_staff_button p{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 5em;
+  color: yellow;
+}
+#staff_staff_button a{
+  text-decoration: none;
+  color: black;
+}
+#staff_staff_button ul {
+  float: none;
+  padding: 0;
+  margin: auto auto auto 7%;
+}
+#staff_staff_button li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 25% auto auto 2%;
+  padding: 2%;
+  width: 300px;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
+}
+#staff_staff_button li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
+
 /*tonny*/
 .tcontentbox{
   border: 10px outset lightblue;

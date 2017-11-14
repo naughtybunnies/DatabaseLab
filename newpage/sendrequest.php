@@ -36,13 +36,14 @@
           <li><b>Name : <?php echo $_SESSION['userinfo']['fname']." ".$_SESSION['userinfo']['lname']; ?></b></li>
           <li><b>Date : <?php echo $_SESSION['storeDate']; ?></b></li>
           <li><b>Time : <?php echo $_SESSION['storeTime']; ?></b></li>
-          <li><b>Description :</b></li>
-          <form action="sendrequestAction.php" method="POST">
-          <textarea name="description"></textarea>
-          </ul>
-          </div>
-          <input type="submit" value="Confirm">
-          </form>
+          <li><b>Message :</b></li>
+          <form action="sendrequestAction.php" method="post">
+          <textarea name="description" rows="10" cols="100"></textarea>
+
+        </ul>
+        </div>
+        <input type="submit" value="Confirm">
+        </form>
       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>
