@@ -16,7 +16,13 @@
         if(isset($_SESSION['cart'])){
           header('Location: confirm.php');
         }else{
-          header('Location: dashboard.php');          
+          // redirect staff or customer
+          if ($row['usergroup_idusergroup']==11) {
+            //staff
+            header('Location: dashboard_staff.php');
+          }else{
+            header('Location: dashboard.php');
+          }
         }
       }else{
         header('Location: login.php?logstatus="INCORRECT EMAIL OR PASSWORD"');
