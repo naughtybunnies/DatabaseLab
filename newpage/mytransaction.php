@@ -1,5 +1,8 @@
 <?php
   require_once('helperfunction.php');
+  require_once('connect.php');
+  session_start();
+
 ?>
 <html>
 <head>
@@ -16,10 +19,34 @@
       <div id="mytransaction_info">
         <p><b>My Transactions</b></p>
       <table>
-        <tr><th>list</th><th>price</th><th>date</th></tr>
-        <tr><td>yayoi</td><td>1528790</td><td>24-20-59</td></tr>
-        <tr><td>yayoi</td><td>1528790</td><td>24-20-59</td></tr>
-        <tr><td>yayoi</td><td>1528790</td><td>24-20-59</td></tr>
+        <tr>
+          <th>PAYMENT ID</th>
+          <th>TYPE</th>
+          <th>AMOUNT</th>
+          <th>TIMESTAMP</th>
+          <th>METHOD</th>
+          <th>STAFF ID</th>
+        </tr>
+        <?php
+        $q = "SELECT * FROM payment WHERE payment.user_iduser = ".$_SESSION['userinfo']['iduser'].";";
+        $result = $mysqli->query($q);
+        if (!$result) {
+          echo "error";
+        }else {
+          while ($row = $result->fetch_array()) {
+            echo "<tr>
+                    <td>".$row['idpayment']."</td>
+                    <td>".$row['type']."</td>
+                    <td>".$row['amount']."</td>
+                    <td>".$row['timestamp']."</td>
+                    <td>".$row['method']."</td>
+                    <td>".$row['staff_idstaff']."</td>
+            </tr>";
+          }
+
+        }
+
+         ?>
       </table>
       </div>
 
