@@ -1,5 +1,11 @@
 <?php
   require_once('helperfunction.php');
+  session_start();
+  if (isset($_SESSION['userinfo'])) {
+    #print_r($_SESSION['userinfo']);
+  }else{
+    header('Location: login.php');
+  }
 ?>
 <html>
 <head>
