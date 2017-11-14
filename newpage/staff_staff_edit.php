@@ -22,7 +22,7 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_staff">
            <form class="" action="index.html" method="post">
              <table border=1>
                <?php
