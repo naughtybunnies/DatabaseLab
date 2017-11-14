@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 14, 2017 at 11:18 AM
+-- Generation Time: Nov 14, 2017 at 01:07 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
@@ -319,6 +319,27 @@ INSERT INTO `staff` (`idstaff`, `user_iduser`, `salary`, `position`, `status`) V
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `staff_viewbooking`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewbooking` (
+`idbooking` int(11)
+,`user_iduser` int(11)
+,`roomname` varchar(45)
+,`specialoffer_idspecialoffer` int(11)
+,`staff_idstaff` int(11)
+,`payment_idpayment` int(11)
+,`fromdate` date
+,`todate` date
+,`status` enum('checked','unchecked')
+,`name` varchar(45)
+,`fname` varchar(45)
+,`lname` varchar(45)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -372,8 +393,8 @@ INSERT INTO `user` (`iduser`, `usergroup_idusergroup`, `password`, `email`, `fna
 (31, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (32, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (33, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
-(34, 1, 'admin', 'admin', 'Kriddanai', 'Roonguthai', '', '0000-00-00', ''),
-(35, 11, 'staff', 'staff', 'inw', 'god', NULL, NULL, NULL);
+(34, 1, 'admin', 'admin', 'Kriddanai', 'Roonguthai3', '', '0000-00-00', ''),
+(35, 11, 'staff', 'staff', 'inwnaja', 'godnaja', '', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -406,6 +427,15 @@ CREATE TABLE `usergroup_has_message` (
   `usergroup_idusergroup` int(11) NOT NULL,
   `message_idmessage` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewbooking`
+--
+DROP TABLE IF EXISTS `staff_viewbooking`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewbooking`  AS  select `cu_final`.`booking`.`idbooking` AS `idbooking`,`cu_final`.`booking`.`user_iduser` AS `user_iduser`,`cu_final`.`room`.`roomname` AS `roomname`,`cu_final`.`booking`.`specialoffer_idspecialoffer` AS `specialoffer_idspecialoffer`,`cu_final`.`booking`.`staff_idstaff` AS `staff_idstaff`,`cu_final`.`booking`.`payment_idpayment` AS `payment_idpayment`,`cu_final`.`booking`.`fromdate` AS `fromdate`,`cu_final`.`booking`.`todate` AS `todate`,`cu_final`.`booking`.`status` AS `status`,`cu_final`.`usergroup`.`name` AS `name`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname` from (((`cu_final`.`booking` left join `cu_final`.`user` on((`cu_final`.`user`.`iduser` = `cu_final`.`booking`.`user_iduser`))) left join `cu_final`.`room` on((`cu_final`.`room`.`idroom` = `cu_final`.`booking`.`room_idroom`))) left join `cu_final`.`usergroup` on((`cu_final`.`usergroup`.`idusergroup` = `cu_final`.`user`.`usergroup_idusergroup`))) ;
 
 --
 -- Indexes for dumped tables
