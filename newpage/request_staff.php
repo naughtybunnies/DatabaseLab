@@ -22,8 +22,7 @@
        <div id="request_staff_button">
          <p>Request</p>
          <ul>
-           <a href="#"><li>Reply/Edit <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
-           <a href="#"><li>View <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
+           <a href="request_staff_view.php"><li> Reply / Edit / View <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
 
          </ul>
        </div>

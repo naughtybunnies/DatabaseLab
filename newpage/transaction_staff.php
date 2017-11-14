@@ -19,7 +19,12 @@
         topbar();
       }
        ?>
-
+       <div id="transaction_staff_button">
+         <p>Transaction</p>
+         <ul>
+           <a href="transaction_staff_view.php"><li> View <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
+         </ul>
+       </div>
 
       <td><img src="img/home1.jpg" height="600" width="100%"></td>
 
