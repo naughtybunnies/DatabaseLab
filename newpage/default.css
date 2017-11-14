@@ -130,7 +130,38 @@ body{
   left: 30%;
 }
 
+.textonbooking_box_customer b{
+  position: relative;
+  left: 5%;
+  text-align:left;
+}
 
+.textonbooking_box_customer p{
+  position: relative;
+  left: 15%;
+  text-align:left;
+
+}
+
+#booking_box_customer {
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin: 7% 25% 7% 25%;
+  z-index: 2;
+}
+
+#booking_box_customer input[type="submit"] {
+  position: absolute;
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+  top: 70%;
+  left: 30%;
+}
 
 
 
@@ -415,7 +446,6 @@ body{
   position: absolute;
   margin: 7% 25% 7% 20%;
   z-index: 1;
-  text-align: center;
 }
 
 
@@ -669,6 +699,60 @@ border: 1px solid black;
   font-size: 0.5em;
 }
 
+#content_selectroom{
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height:auto;
+
+}
+
+
+
+
+
+/*Staff*/
+#booking_staff_button{
+  text-align: center;
+  float: left;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#booking_staff_button p{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 5em;
+  color: yellow;
+}
+#booking_staff_button a{
+  text-decoration: none;
+  color: black;
+}
+#booking_staff_button ul {
+  float: none;
+  padding: 0;
+  margin: auto auto auto 7%;
+}
+#booking_staff_button li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 25% auto auto 2%;
+  padding: 2%;
+  width: 300px;
+  background-color: #DFFEFC;
+  border: 5px outset lightblue;
+  border-radius: 120px;
+}
+#booking_staff_button li:hover {
+  /*ขอบแว้บๆ*/
+  border: 5px outset salmon;
+  background-color: #F7DADA;
+}
 
 
 /*tonny*/
@@ -676,13 +760,17 @@ border: 1px solid black;
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
-  height: 1200px;
+  height: auto;
   width: 80%;
   position: relative;
   margin: 7% 10%;
   z-index: 2;
+  text-align: center;
 }
-
+.tcontentbox table{
+  border-collapse: collapse;
+  margin: auto auto 2% auto;
+}
 #tviewpic{
   position: relative;
   z-index: 1;

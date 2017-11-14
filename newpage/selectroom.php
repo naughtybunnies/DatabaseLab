@@ -28,11 +28,12 @@
       }
        ?>
       <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
-      <div class="tcontentbox">
-        <h3>Booking Period=> From <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h3>
-        <h1>Available Room</h1>
-         <table border=1>
-           <tr>
+      <div id="content_selectroom">
+        <div class="tcontentbox">
+          <h3>Booking Period=> From <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h3>
+          <h1>Available Room</h1>
+          <table border=1>
+            <tr>
              <th>Roomtype</th>
              <th>Picture</th>
              <th>Description</th>
@@ -131,7 +132,7 @@
             </tr>
          </table>
       </div>
-
+    </div>
 
 
 
