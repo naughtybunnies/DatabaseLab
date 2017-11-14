@@ -23,7 +23,7 @@
       <h2 align="center">Edit Profile</h2>
 
     <img src="img/user.png" style="width:160px;height:160px;margin:auto auto auto 40%;" alt="" align="center">
-
+        <form action="editprofileAction.php" method="POST">
       <ul>
         <li><b>E-mail: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
         <li><b>Password: <input type="text" name="pass" value="<?php echo $_SESSION['userinfo']['password']; ?>"></b></li>
@@ -31,8 +31,6 @@
         <li><b>Surname: <input type="text" name="lname1" value="<?php echo $_SESSION['userinfo']['lname']; ?>"></b></li>
         <li><b>Address: <input type="text" name="address1" value="<?php echo $_SESSION['userinfo']['address']; ?>"></b></li>
       </ul>
-
-      <form action="editprofileAction.php">
         <input type="submit" value="CONFIRM!">
       </form>
 
