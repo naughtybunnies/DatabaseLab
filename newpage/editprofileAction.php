@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['userinfo']))
 {
   $q = "UPDATE user SET password = '".$_POST['pass']."' , fname = '".$_POST['fname1']."' , lname = '".$_POST['lname1']."' , address = '".$_POST['address1']."' WHERE iduser = '".$_SESSION['userinfo']['iduser']."';";
-  // echo "$q";
+  echo $q;
   $result = $mysqli->query($q);
   if(!$result)
   {
@@ -27,4 +27,4 @@ else
 {
   header('Location: login.php');
 }
- ?>
+?>
