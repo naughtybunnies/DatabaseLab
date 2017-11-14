@@ -21,7 +21,7 @@
           <a href="user_staff.php"><li>Users <img src="img/user.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
           <a href="service_staff.php"><li>Services <img src="img/i_service.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
           <a href="transaction_staff.php"><li>Transactions <img src="img/i_transaction.png" style="width:40px;height:40px;" alt="" align="center"></li></a>
-        
+
         </ul>
       </div>
 
