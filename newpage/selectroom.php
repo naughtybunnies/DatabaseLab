@@ -27,9 +27,10 @@
         topbar();
       }
        ?>
-      <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
+      <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-        <div class="tcontentbox">
+      <div class="tcontentbox">
+
           <h3>Booking Period=> From <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h3>
           <h1>Available Room</h1>
           <table border=1>
