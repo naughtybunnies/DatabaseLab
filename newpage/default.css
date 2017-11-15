@@ -724,6 +724,7 @@ border: 1px solid black;
   left: 40%;
   font-size: 5em;
   text-shadow: 2px 2px;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
   color: salmon;
 
 }
@@ -770,9 +771,11 @@ border: 1px solid black;
 #staff_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
 }
 #staff_staff_button a{
   text-decoration: none;
@@ -816,7 +819,8 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color: salmon;
 }
 #message_staff_button a{
   text-decoration: none;
@@ -857,9 +861,10 @@ border: 1px solid black;
 #room_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #room_staff_button a{
   text-decoration: none;
@@ -900,9 +905,10 @@ border: 1px solid black;
 #user_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #user_staff_button a{
   text-decoration: none;
@@ -944,7 +950,8 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color: salmon;
 }
 #service_staff_button a{
   text-decoration: none;
@@ -990,7 +997,9 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  color: salmon;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
 }
 #request_staff_button a{
   text-decoration: none;
@@ -1034,7 +1043,8 @@ border: 1px solid black;
   left: 35%;
   font-size: 5em;
   text-shadow: 2px 2px;
-  color: salmon;
+  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #transaction_staff_button a{
   text-decoration: none;
@@ -1087,11 +1097,11 @@ border: 1px solid black;
   left: 0;
 }
 
-#head p{
+/*#head p{
   background-color: grey;
   border-radius: 30%;
   margin: 7% 0 0 22%;
-}
+}*/
 
 /*tonny*/
 
@@ -1117,7 +1127,7 @@ border: 1px solid black;
   height: auto;
   width: 97%;
   position: relative;
-  margin: 5% auto auto 1%;
+  margin: 5% 1%;
   z-index: 2;
   text-align: center;
   min-height: 400px;
@@ -1125,15 +1135,30 @@ border: 1px solid black;
 .tcontentbox_booking table{
   border-collapse: collapse;
 }
-
+.tcontentbox_bookingck{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_bookingck table{
+  border-collapse: collapse;
+  margin: 7% auto;
+}
 .tcontentbox_staff{
   border: 10px outset lightblue;
   float: left;
   background-color:#DFFEFC;
   height: auto;
-  width: 90%;
+  width: 80%;
   position: relative;
-  margin: 5% auto auto 4.5%;
+  margin: 7% 10%;
   z-index: 2;
   text-align: center;
   min-height: 400px;
@@ -1149,9 +1174,9 @@ border: 1px solid black;
   float: left;
   background-color:#DFFEFC;
   height: auto;
-  width: 90%;
+  width: 80%;
   position: relative;
-  margin: 5% auto auto 4.5%;
+  margin: 7% 10%;
   z-index: 2;
   text-align: center;
   min-height: 400px;
@@ -1162,6 +1187,97 @@ border: 1px solid black;
   width: 90%;
 }
 
+
+
+.tcontentbox_room{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_room table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: auto;
+}
+.tcontentbox_request{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_request table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: auto;
+}
+
+.tcontentbox_user{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_user table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: 97%;
+}
+
+.tcontentbox_service{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_service table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: 70%;
+}
+
+
+.tcontentbox_transaction{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin: 7% 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_transaction table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: 90%;
+}
 
 
 .contentwrapper{
