@@ -1,5 +1,6 @@
 <?php
   require_once('helperfunction.php');
+  session_start();
   if (isset($_SESSION['userinfo'])) {
     if ($_SESSION['userinfo']['usergroup_idusergroup']=='11') {
       //header('Location: dashboard_staff.php');
