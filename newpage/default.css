@@ -1153,6 +1153,7 @@ border: 1px solid black;
 .tcontentbox_booking table{
   border-collapse: collapse;
 }
+
 .tcontentbox_bookingck{
   border: 10px outset lightblue;
   float: left;
@@ -1168,6 +1169,10 @@ border: 1px solid black;
 .tcontentbox_bookingck table{
   border-collapse: collapse;
   margin: 7% auto;
+  text-align: center;
+}
+.tcontentbox_bookingck tr{
+  background-color: salmon;
 }
 .tcontentbox_staff{
   border: 10px outset lightblue;
