@@ -22,7 +22,7 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_message">
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {
@@ -56,7 +56,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='message_staff_edit.php?id=".$row['idmessage']."'>EDIT</a></td>";
+            echo "<td><a href='message_staff_edit.php?id=".$row['message_idmessage']."'>EDIT</a></td>";
             echo "</tr>";
           }
 

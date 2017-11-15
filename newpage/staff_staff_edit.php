@@ -22,11 +22,11 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_staff">
            <form class="" action="index.html" method="post">
              <table border=1>
                <?php
-                 $q = "SELECT * FROM staff_viewservice WHERE staff_viewservice.idservice = ".$_GET['id'].";";
+                 $q = "SELECT * FROM staff_viewstaff WHERE staff_viewstaff.idstaff = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
                  foreach ($row as $key => $value) {
