@@ -1107,9 +1107,9 @@ border: 1px solid black;
   float: left;
   background-color:#DFFEFC;
   height: auto;
-  width: 90%;
+  width: 97%;
   position: relative;
-  margin: 5% auto auto 4.5%;
+  margin: 5% auto auto 1%;
   z-index: 2;
   text-align: center;
   min-height: 400px;
@@ -1117,6 +1117,7 @@ border: 1px solid black;
 .tcontentbox_booking table{
   border-collapse: collapse;
 }
+
 .tcontentbox_staff{
   border: 10px outset lightblue;
   float: left;
@@ -1132,7 +1133,29 @@ border: 1px solid black;
 .tcontentbox_staff table{
   border-collapse: collapse;
   margin: 2% auto;
+
 }
+
+.tcontentbox_message{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 90%;
+  position: relative;
+  margin: 5% auto auto 4.5%;
+  z-index: 2;
+  text-align: center;
+  min-height: 400px;
+}
+.tcontentbox_message table{
+  border-collapse: collapse;
+  margin: 2% auto;
+  width: 90%;
+}
+
+
+
 .contentwrapper{
   position: relative;
   height:inherit;
