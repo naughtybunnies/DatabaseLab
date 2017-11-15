@@ -1,5 +1,16 @@
 <?php
   require_once('helperfunction.php');
+  if (isset($_SESSION['userinfo'])) {
+    if ($_SESSION['userinfo']['usergroup_idusergroup']=='11') {
+      //header('Location: dashboard_staff.php');
+    }else{
+      header('Location: dashboard.php');
+    }
+
+    #print_r($_SESSION['userinfo']);
+  }else{
+    header('Location: login.php');
+  }
 ?>
 <html>
 <head>
