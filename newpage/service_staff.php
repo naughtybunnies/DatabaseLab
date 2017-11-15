@@ -20,11 +20,11 @@
       }
        ?>
        <div id="service_staff_button">
-         <p>Service</p>
+        <p> Service </p>
          <ul>
            <a href="service_staff_create.php"><li>Create <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
            <a href="service_staff_view.php"><li>Edit / View <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
-           <a href="service_staff_charge.php"><li>Charge money <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
+           <a href="service_staff_charge.php"><li>Charge money <img src="img/i_charge.png" style="width:40px;height:40px;" align="center"></li></a>
 
          </ul>
        </div>
