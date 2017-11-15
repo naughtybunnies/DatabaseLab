@@ -15,16 +15,26 @@
       <?php
       if (isset($_SESSION['userinfo'])) {
         //logged in
-        topbar_logout();
+        topbar_logout_staff();
       }else{
         topbar();
       }
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_booking">
            <table border='1'>
           <?php
+          if (!isset($_GET['by'])) {
+            $by = 'ASC';
+          }else{
+            $by1 = $_GET['by'];
+            if ($_GET['by']=='ASC') {
+              $by = 'DESC';
+            }else{
+              $by = 'ASC';
+            }
+          }
           if (isset($_GET['sort'])) {
             $q = "SELECT * FROM staff_viewbooking ORDER BY ".$_GET['sort'].";";
           }else{
@@ -36,7 +46,7 @@
             if ($printhead) {
               echo "<tr>";
               foreach ($row as $key => $value) {
-                echo "<th><a href='booking_staff_view.php?sort=".$key."'>".$key."</a></th>";
+                echo "<th><a href='booking_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
               echo "</tr>";
               $printhead=0;

@@ -26,7 +26,7 @@
            <form class="" action="index.html" method="post">
              <table border=1>
                <?php
-                 $q = "SELECT * FROM staff_viewservice WHERE staff_viewservice.idservice = ".$_GET['id'].";";
+                 $q = "SELECT * FROM staff_viewroom WHERE staff_viewroom.idroom = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
                  foreach ($row as $key => $value) {

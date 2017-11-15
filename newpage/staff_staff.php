@@ -19,12 +19,11 @@
         topbar();
       }
        ?>
-       <div id="service_staff_button">
-         <p>Service</p>
+       <div id="staff_staff_button">
+         <p>Staff</p>
          <ul>
-           <a href="#"><li>Create <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
-           <a href="#"><li>Edit <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
-           <a href="#"><li>View <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
+           <a href="staff_staff_create.php"><li>Create <img src="img/i_request.png" style="width:40px;height:40px;" align="center"></li></a>
+           <a href="staff_staff_view.php"><li>Edit / View <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
          </ul>
        </div>
       <td><img src="img/home1.jpg" height="600" width="100%"></td>

@@ -14,18 +14,13 @@
       <?php
       if (isset($_SESSION['userinfo'])) {
         //logged in
-        topbar_logout();
+        topbar_logout_staff();
       }else{
         topbar();
       }
        ?>
-       <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
-       <div class="tcontentbox2">
-
-        type something
-      </div>
-
-
+       
+      <td><img src="img/home1.jpg" height="600" width="100%"></td>
 
 
   <?php footer(); ?>
