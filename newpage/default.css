@@ -724,6 +724,7 @@ border: 1px solid black;
   left: 40%;
   font-size: 5em;
   text-shadow: 2px 2px;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
   color: salmon;
 
 }
@@ -770,9 +771,11 @@ border: 1px solid black;
 #staff_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
 }
 #staff_staff_button a{
   text-decoration: none;
@@ -816,7 +819,8 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color: salmon;
 }
 #message_staff_button a{
   text-decoration: none;
@@ -857,9 +861,10 @@ border: 1px solid black;
 #room_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #room_staff_button a{
   text-decoration: none;
@@ -900,9 +905,10 @@ border: 1px solid black;
 #user_staff_button p{
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
   font-size: 5em;
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #user_staff_button a{
   text-decoration: none;
@@ -944,7 +950,8 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color: salmon;
 }
 #service_staff_button a{
   text-decoration: none;
@@ -990,7 +997,9 @@ border: 1px solid black;
   top: 10%;
   left: 40%;
   font-size: 5em;
-  color: yellow;
+  color: salmon;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+
 }
 #request_staff_button a{
   text-decoration: none;
@@ -1034,7 +1043,8 @@ border: 1px solid black;
   left: 35%;
   font-size: 5em;
   text-shadow: 2px 2px;
-  color: salmon;
+  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #transaction_staff_button a{
   text-decoration: none;
@@ -1087,11 +1097,11 @@ border: 1px solid black;
   left: 0;
 }
 
-#head p{
+/*#head p{
   background-color: grey;
   border-radius: 30%;
   margin: 7% 0 0 22%;
-}
+}*/
 
 /*tonny*/
 
