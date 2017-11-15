@@ -163,7 +163,25 @@ body{
   left: 30%;
 }
 
+#booking_box_create {
+  float: left;
+  background-color: #F8F8FF;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  margin: 5% 30%;
+  z-index: 2;
+}
 
+#booking_box_create input[type="submit"] {
+  position: absolute;
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+  padding: 10px 20px;
+  top: 70%;
+  left: 30%;
+}
 
 #content{
   position: relative;
@@ -1135,6 +1153,7 @@ border: 1px solid black;
 .tcontentbox_booking table{
   border-collapse: collapse;
 }
+
 .tcontentbox_bookingck{
   border: 10px outset lightblue;
   float: left;
@@ -1150,6 +1169,10 @@ border: 1px solid black;
 .tcontentbox_bookingck table{
   border-collapse: collapse;
   margin: 7% auto;
+  text-align: center;
+}
+.tcontentbox_bookingck tr{
+  background-color: salmon;
 }
 .tcontentbox_staff{
   border: 10px outset lightblue;
