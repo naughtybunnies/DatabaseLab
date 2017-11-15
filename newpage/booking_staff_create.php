@@ -22,7 +22,7 @@
 
       <td><img src="img/home1.jpg" height="600" width="100%" id="tviewpic2"></td>
       <div class="tcontentbox2">
-        <div id="booking_box">
+        <div id="booking_box_create">
 
           <form action="selectroom.php" method="POST">
             <div class="textonbooking_box">
