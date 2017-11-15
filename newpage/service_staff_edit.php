@@ -34,7 +34,7 @@
                  print_r($row);
                 ?>
 
-              <tr> <td>idservice</td> <td><input name='id' disabled value="<?php echo $row['idservice'];?>"></td>  </tr>
+              <tr> <td>idservice</td> <td><input type="text" name='id' value="<?php echo $row['idservice'];?>"></td>  </tr>
                 <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>"></td>  </tr>
                 <tr> <td>price</td> <td><input type='text' name="price" value="<?php echo $row['price'];?>"></td>  </tr>
 

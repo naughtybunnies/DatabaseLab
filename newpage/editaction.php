@@ -3,9 +3,10 @@
   switch ($_POST['edittype']) {
     case 'EDITSERVICE':
       // edit query to become something like below
-      $q = "UPDATE staff_viewservice WHERE staff_viewservice.idservice = ".$_POST['id'].";";
+      $q = "UPDATE staff_viewservice SET name = '".$_POST['name']."' , price = '".$_POST['price']."' WHERE staff_viewservice.idservice = ".$_POST['id'].";";
+      // echo $q;
       $result = $mysqli->query($q);
-      header('Location: staff_view_service.php');
+      header('Location: service_staff_view.php');
       break;
 
     case 'EDITSTAFF':
