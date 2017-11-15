@@ -36,6 +36,7 @@
             <th>pic</th>
             <th>bookingid</th>
           </tr>
+          
           <?php
           foreach ($_SESSION['bookingid']as $key => $value) {
             $q = "SELECT * FROM booking LEFT JOIN room ON room.idroom=booking.room_idroom LEFT JOIN roomtype ON room.roomtype_idroomtype = roomtype.idroomtype WHERE idbooking = ".$value.";";
@@ -52,9 +53,10 @@
         </table>
         <h1>THANK YOU FOR STAING WITH US FROM <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h1>
         <h1>SEE YOU Juub Juub</h1>
-        
-        <!-- logout to destroy session -->
         <h2>GO <a href='logout.php'>HOME</a></h2>
+
+        <!-- logout to destroy session -->
+
       </div>
 
 

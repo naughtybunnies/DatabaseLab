@@ -22,7 +22,12 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
+<<<<<<< HEAD
          <div class="tcontentbox2">
+           <!-- 1. edit action -->
+=======
+         <div class="tcontentboxroom">
+>>>>>>> 7fe129d27898dca3d31fb134c543d7174edcdfbe
            <form class="" action="index.html" method="post">
              <table border=1>
                <?php

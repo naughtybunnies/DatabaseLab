@@ -22,7 +22,7 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox_message">
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {

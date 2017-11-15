@@ -21,8 +21,13 @@
        ?>
 
       <td><img src="img/home1.jpg" height="600" width="100%" id="tviewpic2"></td>
+<<<<<<< HEAD
       <div class="tcontentbox2">
+        <form action="checkin_action.php" method="post">
+=======
+      <div class="tcontentbox_bookingck">
         <form action="index.html" method="post">
+>>>>>>> 7fe129d27898dca3d31fb134c543d7174edcdfbe
           <table border="1">
             <tr>
               <td>BOOKING ID</td>
@@ -33,6 +38,11 @@
             <tr>
               <td><input type="submit" value="CHECK IN"></td>
             </tr>
+            <?php if (isset($_GET['status'])): ?>
+              <tr>
+                <h3><?php echo $_GET['status']; ?></h3>
+              </tr>
+            <?php endif; ?>
           </table>
         </form>
       </div>

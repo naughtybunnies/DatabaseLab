@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 14, 2017 at 01:07 PM
+-- Generation Time: Nov 15, 2017 at 02:05 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
@@ -65,11 +65,8 @@ INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_
 (26, 18, 6, NULL, NULL, 26, '2017-11-03', '2017-11-05', 'unchecked'),
 (27, 21, 6, NULL, NULL, 27, '2017-11-06', '2017-11-07', 'unchecked'),
 (28, 14, 6, NULL, NULL, 28, '2017-11-10', '2017-11-15', 'unchecked'),
-(29, 20, 6, NULL, NULL, 29, '2017-11-16', '2017-11-20', 'unchecked'),
-(30, 22, 6, NULL, NULL, 30, '2017-11-23', '2017-11-26', 'unchecked'),
-(62, 34, 4, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked'),
-(63, 34, 2, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked'),
-(64, 34, 1, NULL, NULL, 85, '2017-12-02', '2017-12-03', 'unchecked');
+(29, 20, 6, NULL, NULL, 29, '2017-11-16', '2017-11-20', 'checked'),
+(100, NULL, 4, NULL, 12, 121, '2017-12-13', '2017-12-14', 'checked');
 
 -- --------------------------------------------------------
 
@@ -84,6 +81,13 @@ CREATE TABLE `message` (
   `timestamp` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`idmessage`, `staff_idstaff`, `message`, `timestamp`) VALUES
+(1, 11, 'dear all customer we love you', '2017-11-14 21:49:05');
+
 -- --------------------------------------------------------
 
 --
@@ -94,49 +98,67 @@ CREATE TABLE `payment` (
   `idpayment` int(11) NOT NULL,
   `timestamp` datetime DEFAULT NULL,
   `amount` decimal(10,2) NOT NULL,
-  `user_iduser` int(11) NOT NULL,
+  `user_iduser` int(11) DEFAULT NULL,
   `method` enum('cash','creditcard') NOT NULL,
   `cardno` varchar(45) NOT NULL,
   `staff_idstaff` int(11) DEFAULT NULL,
-  `type` enum('booking','service','','') NOT NULL
+  `type` enum('booking','service','','') NOT NULL,
+  `remark` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `payment`
 --
 
-INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`, `type`) VALUES
-(1, '2017-11-09 00:57:26', '20000.00', 23, 'creditcard', '4283', NULL, 'booking'),
-(2, '2017-11-09 01:00:44', '60000.00', 1, 'creditcard', '4283', NULL, 'booking'),
-(3, '2017-11-09 01:03:28', '40000.00', 20, 'cash', '', NULL, 'booking'),
-(4, '2017-11-09 01:06:59', '80000.00', 13, 'creditcard', '4283', NULL, 'booking'),
-(5, '2017-11-09 01:09:54', '20000.00', 2, 'cash', '', NULL, 'booking'),
-(6, '2017-11-09 01:12:52', '12000.00', 19, 'cash', '', NULL, 'booking'),
-(7, '2017-11-09 01:16:28', '36000.00', 23, 'creditcard', '4283', NULL, 'booking'),
-(8, '2017-11-09 01:18:23', '12000.00', 7, 'cash', '', NULL, 'booking'),
-(9, '2017-11-09 01:22:23', '48000.00', 3, 'creditcard', '4283', NULL, 'booking'),
-(10, '2017-11-09 01:25:00', '24000.00', 4, 'cash', '', NULL, 'booking'),
-(11, '2017-11-09 01:30:12', '12000.00', 19, 'creditcard', '4283', NULL, 'booking'),
-(12, '2017-11-09 01:33:35', '24000.00', 8, 'creditcard', '4283', NULL, 'booking'),
-(13, '2017-11-09 01:35:51', '36000.00', 10, 'creditcard', '4283', NULL, 'booking'),
-(14, '2017-11-09 01:39:11', '12000.00', 20, 'cash', '', NULL, 'booking'),
-(15, '2017-11-09 01:41:10', '48000.00', 5, 'creditcard', '4283', NULL, 'booking'),
-(16, '2017-11-09 01:44:23', '7000.00', 13, 'cash', '', NULL, 'booking'),
-(17, '2017-11-09 01:46:53', '28000.00', 6, 'creditcard', '4283', NULL, 'booking'),
-(18, '2017-11-09 01:48:58', '14000.00', 7, 'cash', '', NULL, 'booking'),
-(19, '2017-11-09 01:51:08', '21000.00', 9, 'creditcard', '4283', NULL, 'booking'),
-(20, '2017-11-09 01:54:25', '7000.00', 15, 'cash', '', NULL, 'booking'),
-(21, '2017-11-09 01:56:16', '7000.00', 16, 'cash', '', NULL, 'booking'),
-(22, '2017-11-09 01:58:28', '35000.00', 11, 'creditcard', '4283', NULL, 'booking'),
-(23, '2017-11-09 02:00:35', '21000.00', 12, 'creditcard', '4283', NULL, 'booking'),
-(24, '2017-11-09 02:03:12', '14000.00', 17, 'cash', '', NULL, 'booking'),
-(25, '2017-11-09 02:05:56', '42000.00', 23, 'creditcard', '4283', NULL, 'booking'),
-(26, '2017-11-09 02:08:09', '14000.00', 18, 'cash', '', NULL, 'booking'),
-(27, '2017-11-09 02:10:09', '7000.00', 21, 'cash', '', NULL, 'booking'),
-(28, '2017-11-09 02:12:14', '35000.00', 14, 'creditcard', '4283', NULL, 'booking'),
-(29, '2017-11-09 02:14:45', '28000.00', 20, 'creditcard', '4283', NULL, 'booking'),
-(30, '2017-11-09 02:17:05', '21000.00', 22, 'creditcard', '4283', NULL, 'booking'),
-(85, '2017-11-13 22:44:46', '29250.00', 34, 'creditcard', '8888', NULL, 'booking');
+INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`, `type`, `remark`) VALUES
+(1, '2017-11-09 00:57:26', '20000.00', 23, 'creditcard', '4283', NULL, 'booking', ''),
+(2, '2017-11-09 01:00:44', '60000.00', 1, 'creditcard', '4283', NULL, 'booking', ''),
+(3, '2017-11-09 01:03:28', '40000.00', 20, 'cash', '', NULL, 'booking', ''),
+(4, '2017-11-09 01:06:59', '80000.00', 13, 'creditcard', '4283', NULL, 'booking', ''),
+(5, '2017-11-09 01:09:54', '20000.00', 2, 'cash', '', NULL, 'booking', ''),
+(6, '2017-11-09 01:12:52', '12000.00', 19, 'cash', '', NULL, 'booking', ''),
+(7, '2017-11-09 01:16:28', '36000.00', 23, 'creditcard', '4283', NULL, 'booking', ''),
+(8, '2017-11-09 01:18:23', '12000.00', 7, 'cash', '', NULL, 'booking', ''),
+(9, '2017-11-09 01:22:23', '48000.00', 3, 'creditcard', '4283', NULL, 'booking', ''),
+(10, '2017-11-09 01:25:00', '24000.00', 4, 'cash', '', NULL, 'booking', ''),
+(11, '2017-11-09 01:30:12', '12000.00', 19, 'creditcard', '4283', NULL, 'booking', ''),
+(12, '2017-11-09 01:33:35', '24000.00', 8, 'creditcard', '4283', NULL, 'booking', ''),
+(13, '2017-11-09 01:35:51', '36000.00', 10, 'creditcard', '4283', NULL, 'booking', ''),
+(14, '2017-11-09 01:39:11', '12000.00', 20, 'cash', '', NULL, 'booking', ''),
+(15, '2017-11-09 01:41:10', '48000.00', 5, 'creditcard', '4283', NULL, 'booking', ''),
+(16, '2017-11-09 01:44:23', '7000.00', 13, 'cash', '', NULL, 'booking', ''),
+(17, '2017-11-09 01:46:53', '28000.00', 6, 'creditcard', '4283', NULL, 'booking', ''),
+(18, '2017-11-09 01:48:58', '14000.00', 7, 'cash', '', NULL, 'booking', ''),
+(19, '2017-11-09 01:51:08', '21000.00', 9, 'creditcard', '4283', NULL, 'booking', ''),
+(20, '2017-11-09 01:54:25', '7000.00', 15, 'cash', '', NULL, 'booking', ''),
+(21, '2017-11-09 01:56:16', '7000.00', 16, 'cash', '', NULL, 'booking', ''),
+(22, '2017-11-09 01:58:28', '35000.00', 11, 'creditcard', '4283', NULL, 'booking', ''),
+(23, '2017-11-09 02:00:35', '21000.00', 12, 'creditcard', '4283', NULL, 'booking', ''),
+(24, '2017-11-09 02:03:12', '14000.00', 17, 'cash', '', NULL, 'booking', ''),
+(25, '2017-11-09 02:05:56', '42000.00', 23, 'creditcard', '4283', NULL, 'booking', ''),
+(26, '2017-11-09 02:08:09', '14000.00', 18, 'cash', '', NULL, 'booking', ''),
+(27, '2017-11-09 02:10:09', '7000.00', 21, 'cash', '', NULL, 'booking', ''),
+(28, '2017-11-09 02:12:14', '35000.00', 14, 'creditcard', '4283', NULL, 'booking', ''),
+(29, '2017-11-09 02:14:45', '28000.00', 20, 'creditcard', '4283', NULL, 'booking', ''),
+(30, '2017-11-09 02:17:05', '21000.00', 22, 'creditcard', '4283', NULL, 'booking', ''),
+(85, '2017-11-13 22:44:46', '29250.00', 34, 'creditcard', '8888', NULL, 'booking', ''),
+(86, '2017-11-15 17:44:01', '5000.00', NULL, 'cash', '', 11, 'booking', ''),
+(87, '2017-11-15 18:19:55', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(88, '2017-11-15 18:23:55', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(89, '2017-11-15 18:25:54', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(90, '2017-11-15 18:29:33', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(91, '2017-11-15 18:31:55', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(92, '2017-11-15 18:32:06', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(93, '2017-11-15 18:32:22', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(94, '2017-11-15 18:32:43', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(95, '2017-11-15 18:33:12', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(96, '2017-11-15 18:33:34', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(97, '2017-11-15 18:34:40', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(98, '2017-11-15 18:35:08', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(99, '2017-11-15 18:39:45', '9000.00', NULL, 'cash', '', 12, 'booking', ''),
+(103, '2017-11-15 19:08:47', '12000.00', NULL, 'cash', '', 12, 'booking', ''),
+(107, '2017-11-15 19:12:35', '200.00', NULL, 'cash', '', 11, 'booking', ''),
+(121, '2017-11-15 19:26:16', '7000.00', NULL, 'cash', '', 12, 'booking', '');
 
 -- --------------------------------------------------------
 
@@ -164,7 +186,8 @@ INSERT INTO `request` (`idrequest`, `user_iduser`, `staff_idstaff`, `message`, `
 (2, 34, NULL, 'kwai tong', 'open', NULL, '2017-11-14 04:45:30', NULL),
 (3, 34, 11, 'kwai tong', 'closed', 'yes kwai', '2017-11-14 04:45:30', '2017-11-14 17:09:59'),
 (4, 34, 11, 'kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong kwai tong ', 'closed', 'I tong mang hua kuay', '2017-11-14 04:47:39', '2017-11-14 17:04:57'),
-(5, 34, 11, 'aoitip naruk', 'closed', 'i agree', '2017-11-14 05:08:27', '2017-11-14 17:09:24');
+(5, 34, 11, 'aoitip naruk', 'closed', 'i agree', '2017-11-14 05:08:27', '2017-11-14 17:09:24'),
+(6, 34, NULL, 'sss', 'open', NULL, '2017-11-14 10:19:04', NULL);
 
 -- --------------------------------------------------------
 
@@ -314,7 +337,8 @@ INSERT INTO `staff` (`idstaff`, `user_iduser`, `salary`, `position`, `status`) V
 (8, 31, '27000.00', 'Chef', 'active'),
 (9, 32, '9000.00', 'Housekeeper', 'active'),
 (10, 33, '12000.00', 'Reception', 'active'),
-(11, 34, '20.00', 'inw', 'active');
+(11, 34, '20.00', 'inw', 'active'),
+(12, 35, '20.00', 'staff', 'active');
 
 -- --------------------------------------------------------
 
@@ -335,6 +359,115 @@ CREATE TABLE `staff_viewbooking` (
 ,`name` varchar(45)
 ,`fname` varchar(45)
 ,`lname` varchar(45)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewmessage`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewmessage` (
+`message_idmessage` int(11)
+,`name` varchar(45)
+,`message` text
+,`timestamp` datetime
+,`fname` varchar(45)
+,`lname` varchar(45)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewrequest`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewrequest` (
+`idrequest` int(11)
+,`staff_idstaff` int(11)
+,`user_iduser` int(11)
+,`status` enum('open','closed')
+,`timestamp` datetime
+,`replytimestamp` datetime
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewroom`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewroom` (
+`idroom` int(11)
+,`roomname` varchar(45)
+,`status` enum('open','closed')
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewservice`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewservice` (
+`idservice` int(11)
+,`name` varchar(45)
+,`price` decimal(6,2)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewstaff`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewstaff` (
+`idstaff` int(11)
+,`salary` decimal(8,2)
+,`position` varchar(45)
+,`status` enum('active','nonactive')
+,`email` varchar(45)
+,`fname` varchar(45)
+,`lname` varchar(45)
+,`address` varchar(100)
+,`dob` date
+,`personalid` varchar(15)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewtransaction`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewtransaction` (
+`user_iduser` int(11)
+,`fname` varchar(45)
+,`lname` varchar(45)
+,`amount` decimal(10,2)
+,`method` enum('cash','creditcard')
+,`cardno` varchar(45)
+,`type` enum('booking','service','','')
+,`staff_idstaff` int(11)
+,`timestamp` datetime
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `staff_viewuser`
+-- (See below for the actual view)
+--
+CREATE TABLE `staff_viewuser` (
+`iduser` int(11)
+,`usergroup_idusergroup` int(11)
+,`password` varchar(45)
+,`email` varchar(45)
+,`fname` varchar(45)
+,`lname` varchar(45)
+,`address` varchar(100)
+,`dob` date
+,`personalid` varchar(15)
 );
 
 -- --------------------------------------------------------
@@ -393,7 +526,7 @@ INSERT INTO `user` (`iduser`, `usergroup_idusergroup`, `password`, `email`, `fna
 (31, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (32, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
 (33, 11, '9999', 'dumdum', 'dumdum', 'dumdum', '', '0000-00-00', ''),
-(34, 1, 'admin', 'admin', 'Kriddanai', 'Roonguthai3', '', '0000-00-00', ''),
+(34, 1, 'admin', 'admin', 'Kriddanai55', 'Roonguthai3', 'sdsd', '0000-00-00', ''),
 (35, 11, 'staff', 'staff', 'inwnaja', 'godnaja', '', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -428,6 +561,15 @@ CREATE TABLE `usergroup_has_message` (
   `message_idmessage` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `usergroup_has_message`
+--
+
+INSERT INTO `usergroup_has_message` (`usergroup_idusergroup`, `message_idmessage`) VALUES
+(1, 1),
+(2, 1),
+(3, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -436,6 +578,69 @@ CREATE TABLE `usergroup_has_message` (
 DROP TABLE IF EXISTS `staff_viewbooking`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewbooking`  AS  select `cu_final`.`booking`.`idbooking` AS `idbooking`,`cu_final`.`booking`.`user_iduser` AS `user_iduser`,`cu_final`.`room`.`roomname` AS `roomname`,`cu_final`.`booking`.`specialoffer_idspecialoffer` AS `specialoffer_idspecialoffer`,`cu_final`.`booking`.`staff_idstaff` AS `staff_idstaff`,`cu_final`.`booking`.`payment_idpayment` AS `payment_idpayment`,`cu_final`.`booking`.`fromdate` AS `fromdate`,`cu_final`.`booking`.`todate` AS `todate`,`cu_final`.`booking`.`status` AS `status`,`cu_final`.`usergroup`.`name` AS `name`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname` from (((`cu_final`.`booking` left join `cu_final`.`user` on((`cu_final`.`user`.`iduser` = `cu_final`.`booking`.`user_iduser`))) left join `cu_final`.`room` on((`cu_final`.`room`.`idroom` = `cu_final`.`booking`.`room_idroom`))) left join `cu_final`.`usergroup` on((`cu_final`.`usergroup`.`idusergroup` = `cu_final`.`user`.`usergroup_idusergroup`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewmessage`
+--
+DROP TABLE IF EXISTS `staff_viewmessage`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewmessage`  AS  select `cu_final`.`usergroup_has_message`.`message_idmessage` AS `message_idmessage`,`cu_final`.`usergroup`.`name` AS `name`,`cu_final`.`message`.`message` AS `message`,`cu_final`.`message`.`timestamp` AS `timestamp`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname` from ((((`cu_final`.`usergroup_has_message` left join `cu_final`.`message` on((`cu_final`.`usergroup_has_message`.`message_idmessage` = `cu_final`.`message`.`idmessage`))) left join `cu_final`.`staff` on((`cu_final`.`staff`.`idstaff` = `cu_final`.`message`.`staff_idstaff`))) left join `cu_final`.`usergroup` on((`cu_final`.`usergroup_has_message`.`usergroup_idusergroup` = `cu_final`.`usergroup`.`idusergroup`))) left join `cu_final`.`user` on((`cu_final`.`user`.`iduser` = `cu_final`.`staff`.`user_iduser`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewrequest`
+--
+DROP TABLE IF EXISTS `staff_viewrequest`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewrequest`  AS  select `cu_final`.`request`.`idrequest` AS `idrequest`,`cu_final`.`request`.`staff_idstaff` AS `staff_idstaff`,`cu_final`.`request`.`user_iduser` AS `user_iduser`,`cu_final`.`request`.`status` AS `status`,`cu_final`.`request`.`timestamp` AS `timestamp`,`cu_final`.`request`.`replytimestamp` AS `replytimestamp` from `cu_final`.`request` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewroom`
+--
+DROP TABLE IF EXISTS `staff_viewroom`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewroom`  AS  select `cu_final`.`room`.`idroom` AS `idroom`,`cu_final`.`room`.`roomname` AS `roomname`,`cu_final`.`room`.`status` AS `status` from `cu_final`.`room` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewservice`
+--
+DROP TABLE IF EXISTS `staff_viewservice`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewservice`  AS  select `cu_final`.`service`.`idservice` AS `idservice`,`cu_final`.`service`.`name` AS `name`,`cu_final`.`service`.`price` AS `price` from `cu_final`.`service` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewstaff`
+--
+DROP TABLE IF EXISTS `staff_viewstaff`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewstaff`  AS  select `cu_final`.`staff`.`idstaff` AS `idstaff`,`cu_final`.`staff`.`salary` AS `salary`,`cu_final`.`staff`.`position` AS `position`,`cu_final`.`staff`.`status` AS `status`,`cu_final`.`user`.`email` AS `email`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname`,`cu_final`.`user`.`address` AS `address`,`cu_final`.`user`.`dob` AS `dob`,`cu_final`.`user`.`personalid` AS `personalid` from (`cu_final`.`staff` left join `cu_final`.`user` on((`cu_final`.`user`.`iduser` = `cu_final`.`staff`.`user_iduser`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewtransaction`
+--
+DROP TABLE IF EXISTS `staff_viewtransaction`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewtransaction`  AS  select `cu_final`.`payment`.`user_iduser` AS `user_iduser`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname`,`cu_final`.`payment`.`amount` AS `amount`,`cu_final`.`payment`.`method` AS `method`,`cu_final`.`payment`.`cardno` AS `cardno`,`cu_final`.`payment`.`type` AS `type`,`cu_final`.`payment`.`staff_idstaff` AS `staff_idstaff`,`cu_final`.`payment`.`timestamp` AS `timestamp` from (`cu_final`.`payment` left join `cu_final`.`user` on((`cu_final`.`user`.`iduser` = `cu_final`.`payment`.`user_iduser`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `staff_viewuser`
+--
+DROP TABLE IF EXISTS `staff_viewuser`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cu_final`.`staff_viewuser`  AS  select `cu_final`.`user`.`iduser` AS `iduser`,`cu_final`.`user`.`usergroup_idusergroup` AS `usergroup_idusergroup`,`cu_final`.`user`.`password` AS `password`,`cu_final`.`user`.`email` AS `email`,`cu_final`.`user`.`fname` AS `fname`,`cu_final`.`user`.`lname` AS `lname`,`cu_final`.`user`.`address` AS `address`,`cu_final`.`user`.`dob` AS `dob`,`cu_final`.`user`.`personalid` AS `personalid` from `cu_final`.`user` ;
 
 --
 -- Indexes for dumped tables
@@ -547,22 +752,22 @@ ALTER TABLE `usergroup_has_message`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `idbooking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `idbooking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `idmessage` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idmessage` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `idpayment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `idpayment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 --
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `idrequest` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idrequest` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `room`
 --
@@ -592,7 +797,7 @@ ALTER TABLE `specialoffer`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `idstaff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idstaff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `user`
 --
@@ -676,3 +881,103 @@ ALTER TABLE `user`
 ALTER TABLE `usergroup_has_message`
   ADD CONSTRAINT `fk_usergroup_has_message_message1` FOREIGN KEY (`message_idmessage`) REFERENCES `message` (`idmessage`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_usergroup_has_message_usergroup1` FOREIGN KEY (`usergroup_idusergroup`) REFERENCES `usergroup` (`idusergroup`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` FUNCTION `calc_coupon`(`amount` DECIMAL(10,2), `couponcode` VARCHAR(50)) RETURNS decimal(10,2) unsigned
+      NO SQL
+  BEGIN
+  	DECLARE dsc DECIMAL(10,2);
+  	SELECT discount into dsc FROM specialoffer WHERE specialoffer.code = couponcode;
+      IF (dsc = NULL) THEN
+      	return NULL;
+      ELSE
+      	SET dsc = amount*(100-dsc)/100;
+          return dsc;
+      END IF;
+
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` FUNCTION `return_ten`(`dummy` INT) RETURNS int(11)
+      NO SQL
+  BEGIN
+  	return 10;
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `addbooking`(IN `datefrom` DATE, IN `dateto` DATE, IN `userid` INT, IN `coupon` INT, IN `roomid` INT, OUT `bookingid` INT, OUT `paymentid` INT, IN `inmethod` VARCHAR(50), IN `cardno` VARCHAR(50), IN `inamount` DECIMAL, IN `staffid` VARCHAR(50))
+      NO SQL
+  BEGIN
+  	IF staffid = '' THEN INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`) VALUES (NULL, NOW(),inamount, userid, inmethod, cardno, NULL);
+      ELSE INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`) VALUES (NULL, NOW(),inamount, userid, inmethod, cardno, staffid);
+      END IF;
+      SET paymentid = (SELECT LAST_INSERT_ID());
+      IF coupon ='' THEN
+      	IF staffid = '' THEN INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, userid, roomid, NULL, NULL, paymentid, datefrom, dateto, 'unchecked');
+          ELSE INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, userid, roomid, NULL, staffid, paymentid, datefrom, dateto, 'unchecked');
+          END IF;
+       ELSE IF staffid = '' THEN INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, userid, roomid, coupon, NULL, paymentid, datefrom, dateto, 'unchecked');
+       	ELSE INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, userid, roomid, coupon, staffid, paymentid, datefrom, dateto, 'unchecked');
+          END IF;
+      END IF;
+      SET bookingid = (SELECT LAST_INSERT_ID());
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `availableroomtype`(IN `infromdate` DATE, IN `intodate` DATE)
+      NO SQL
+  BEGIN
+  	SELECT *,COUNT(*) FROM room LEFT JOIN roomtype ON room.roomtype_idroomtype = roomtype.idroomtype
+      WHERE (room.idroom
+      NOT IN (
+  	SELECT booking.room_idroom FROM booking WHERE (booking.fromdate < infromdate AND booking.todate > infromdate) OR (booking.fromdate between infromdate AND intodate - INTERVAL 1 DAY)) AND room.status = 'open')
+      GROUP BY roomtype.idroomtype;
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `assignroomtobooking`(IN `datein` DATE, IN `dateout` DATE, IN `type` INT, OUT `roomid` INT)
+      NO SQL
+  BEGIN
+  	SELECT room.idroom as roomid FROM room WHERE (room.idroom
+      NOT IN (
+  	SELECT booking.room_idroom FROM booking WHERE (booking.fromdate < datein AND booking.todate > datein) OR (booking.fromdate between datein AND dateout - INTERVAL 1 DAY)) AND room.status = 'open' AND room.roomtype_idroomtype = type) LIMIT 1;
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `createonlinebooking`(IN `datein` DATE, IN `dateout` DATE, IN `userid` INT, IN `roomid` INT, IN `coupon` VARCHAR(50), IN `paymentid` INT, OUT `bookingid` INT)
+      NO SQL
+  BEGIN
+  	DECLARE couponid INT;
+  	SELECT specialoffer.idspecialoffer as couponid FROM specialoffer WHERE specialoffer.code = coupon;
+  	INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, userid, roomid, couponid, NULL, paymentid, datein, dateout, 'unchecked');
+      SET bookingid = (SELECT LAST_INSERT_ID());
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `newwalkin`(OUT `paymentid` INT, OUT `bookingid` INT, IN `inamount` DECIMAL, IN `inmethod` VARCHAR(20), IN `incardno` VARCHAR(20), IN `instaffid` INT, IN `inroomid` INT, IN `offer` INT, IN `infromdate` DATE, IN `intodate` DATE)
+      NO SQL
+  BEGIN
+  	DECLARE codeid INT;
+  	SELECT specialoffer.idspecialoffer AS codeid FROM specialoffer WHERE specialoffer.code = offer;
+  	INSERT INTO payment VALUES (NULL, NOW(), inamount, NULL, inmethod, incardno, instaffid, 'booking','');
+      SET paymentid = (SELECT LAST_INSERT_ID());
+      INSERT INTO booking VALUES (NULL, NULL, inroomid, codeid, instaffid, paymentid, infromdate, intodate, 'unchecked');
+      SET bookingid = (SELECT LAST_INSERT_ID());
+  END$$
+  DELIMITER ;
+
+  DELIMITER $$
+  CREATE DEFINER=`root`@`localhost` PROCEDURE `createonlinepayment`(IN `amount` DECIMAL(10,2), IN `uid` INT, IN `cardno` VARCHAR(50), OUT `paymentid` INT)
+      NO SQL
+  BEGIN
+  	INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`,`type`) VALUES (NULL, NOW(), amount, uid, 'creditcard', cardno, NULL,'booking');
+      SET paymentid = (SELECT LAST_INSERT_ID());
+  END$$
+  DELIMITER ;

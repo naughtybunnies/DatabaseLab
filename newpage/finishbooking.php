@@ -25,29 +25,73 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
 
       <div class="tcontentbox">
-        <form action="createbookingpayment.php" method="post">
-          <table border='1'>
+
+        <?php if ($_SESSION['userinfo']['usergroup_idusergroup'] == 11): ?>
+          <h3>STAFF-Walking Booking</h3>
+          <table border=1>
             <tr>
-              <td>CREDIT CARD NO :</td>
-              <td><input type="text" name="cardno" id=""></td>
+              <th>CREDIT CARD</th>
+              <th>CASH</th>
             </tr>
             <tr>
-              <td>CVV</td>
-              <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-              <td>EXPIRE</td>
-              <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-              <td>CARDHOLDER NAME</td>
-              <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="submit" name="" id="" value="BOOK"></td>
+              <td><form action="walkinbooking.php" method="post">
+                <table border='1'>
+                  <tr>
+                    <td>CREDIT CARD NO :</td>
+                    <td><input type="text" name="cardno" id=""></td>
+                  </tr>
+                  <tr>
+                    <td>CVV</td>
+                    <td><input type="text" name="" id=""></td>
+                  </tr>
+                  <tr>
+                    <td>EXPIRE</td>
+                    <td><input type="text" name="" id=""></td>
+                  </tr>
+                  <tr>
+                    <td>CARDHOLDER NAME</td>
+                    <td><input type="text" name="" id=""></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="submit" name="type" id="" value="CREDITCARD"></td>
+                  </tr>
+                </table>
+              </form></td>
+              <td><form action="walkinbooking.php" method="post">
+                <input type="submit" name="type" value="CASH">
+              </form></td>
             </tr>
           </table>
-        </form>
+
+
+        <?php else: ?>
+          <form action="createbookingpayment.php" method="post">
+            <table border='1'>
+              <tr>
+                <td>CREDIT CARD NO :</td>
+                <td><input type="text" name="cardno" id=""></td>
+              </tr>
+              <tr>
+                <td>CVV</td>
+                <td><input type="text" name="" id=""></td>
+              </tr>
+              <tr>
+                <td>EXPIRE</td>
+                <td><input type="text" name="" id=""></td>
+              </tr>
+              <tr>
+                <td>CARDHOLDER NAME</td>
+                <td><input type="text" name="" id=""></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="submit" name="" id="" value="BOOK"></td>
+              </tr>
+            </table>
+          </form>
+
+        <?php endif; ?>
+
+
       </div>
 
 

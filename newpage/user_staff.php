@@ -26,7 +26,7 @@
            <a href="user_staff_view.php"><li> Edit / View <img src="img/i_view.png" style="width:40px;height:40px;" align="center"></li></a>
          </ul>
        </div>
-      <td><img src="img/home1.jpg" height="600" width="100%"></td>
+      <td><img src="img/home4.jpg" height="600" width="100%"></td>
 
 
   <?php footer(); ?>
