@@ -29,13 +29,13 @@
                  $q = "SELECT * FROM staff_viewservice WHERE staff_viewservice.idservice = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 foreach ($row as $key => $value) {
-                   echo "<tr>
-                   <td>".$key."</td>
-                   <td><input type='text' value='".$value."'></td>
-                   </tr>";
-                 }
+                 print_r($row);
                 ?>
+
+              <tr> <td>idservice</td> <td><input name='id' disabled value="<?php echo $row['idservice'];?>"></td>  </tr>
+                <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>"></td>  </tr>
+                <tr> <td>price</td> <td><input type='text' name="price" value="<?php echo $row['price'];?>"></td>  </tr>
+
                 <tr>
                   <td colspan="2">
                     <input type="submit" name="" value="EDIT">

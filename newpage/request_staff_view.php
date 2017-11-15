@@ -48,7 +48,7 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='request_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
-              echo "<th>EDIT</th>";
+              echo "<th>REPLY</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -56,7 +56,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='request_staff_edit.php?id=".$row['idrequest']."'>EDIT</a></td>";
+            echo "<td><a href='request_staff_edit.php?id=".$row['idrequest']."'>REPLY</a></td>";
             echo "</tr>";
           }
 

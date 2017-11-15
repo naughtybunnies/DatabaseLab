@@ -48,6 +48,7 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='booking_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
+              echo "<th>EDIT</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -55,6 +56,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
+            echo "<td><a href='booking_staff_edit.php?id=".$row['idbooking']."'>EDIT</a></td>";
             echo "</tr>";
           }
 

@@ -26,19 +26,19 @@
            <form class="" action="index.html" method="post">
              <table border=1>
                <?php
-                 $q = "SELECT * FROM staff_viewmessage WHERE staff_viewmessage.message_idmessage = ".$_GET['id'].";";
+                 $q = "SELECT * FROM staff_viewrequest WHERE staff_viewrequest.idrequest = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
                  print_r($row);
 
                 ?>
 
-                <tr> <td>message_idmessage</td> <td><input type='text' value="<?php echo $row['message_idmessage'];?>"></td>  </tr>
-                <tr> <td>name</td> <td><input type='text' value="<?php echo $row['name'];?>"></td>  </tr>
-                <tr> <td>message</td> <td><input type='text' value="<?php echo $row['message'];?>"></td>  </tr>
-                <tr> <td>timestamp</td> <td><input type='text' value="<?php echo $row['timestamp'];?>"></td> </tr>
-                <tr> <td>fname</td> <td><input type='text' value="<?php echo $row['fname'];?>"></td>  </tr>
-                <tr> <td>lname</td> <td><input type='text' value="<?php echo $row['lname'];?>"></td>  </tr>
+                <tr> <td>idrequest</td> <td><input disabled value="<?php echo $row['idrequest'];?>"></td>  </tr>
+                <tr> <td>staff_idstaff</td> <td><input disabled value="<?php echo $row['staff_idstaff'];?>"></td>  </tr>
+                <tr> <td>user_iduser</td> <td><input disabled value="<?php echo $row['user_iduser'];?>"></td>  </tr>
+                <tr> <td>status</td> <td><input type='text' name="requeststatus" value="<?php echo $row['status'];?>"></td> </tr>
+                <tr> <td>timestamp</td> <td><input disabled value="<?php echo $row['timestamp'];?>"></td>  </tr>
+                <tr> <td>replytimestamp</td> <td><input type='text' name="replytimestamp" value="<?php echo $row['replytimestamp'];?>"></td>  </tr>
 
 
                 <tr>
