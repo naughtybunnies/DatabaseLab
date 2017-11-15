@@ -23,9 +23,11 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox2">
-           <form class="" action="index.html" method="post">
+           <!-- 1. change action to editaction.php -->
+           <form class="" action="editaction.php" method="post">
              <table border=1>
                <?php
+                // 3. copy query below to editaction.php
                  $q = "SELECT * FROM staff_viewservice WHERE staff_viewservice.idservice = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
@@ -38,7 +40,8 @@
                 ?>
                 <tr>
                   <td colspan="2">
-                    <input type="submit" name="" value="EDIT">
+                    <!-- 2. change name to edittype and value to EDIT_____ -->
+                    <input type="submit" name="edittype" value="EDITSERVICE">
                   </td>
                 </tr>
              </table>
