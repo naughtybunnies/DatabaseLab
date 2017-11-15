@@ -329,7 +329,7 @@ body{
   margin: auto;
 }
 
-#dashboard_staff li {
+#dashboard_staff li { /*ปุ่ม*/
   float: left;
   text-decoration: none;
   list-style: none;
@@ -337,8 +337,8 @@ body{
   font-size: 20px;
   width: 300px;
   height: 60px;
-  padding: 30px 20px 0 20px;
-  margin: 1% auto auto 5%;
+  padding: 30px 20px 0 20px; /*ปุ่มกว้าง*/
+  margin: 4% auto auto 5%; /*แต่ละปุ่มห่างกัน*/
   background-color: #DFFEFC;
   border: 5px outset lightblue;
   border-radius: 120px;
