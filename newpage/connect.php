@@ -1,5 +1,5 @@
 <?php
-  $mysqli = new mysqli('192.168.1.95', 'tong', 'tong', 'CU_FINAL');
+  $mysqli = new mysqli('localhost', 'root', '', 'cu_final');
   if($mysqli->connect_errno){
     #echo "Connection Error";
   }else{
