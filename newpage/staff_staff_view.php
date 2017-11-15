@@ -66,9 +66,6 @@
 
          </div>
 
-
-
-
   <?php footer(); ?>
 </div>
 

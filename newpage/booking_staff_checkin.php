@@ -21,7 +21,7 @@
        ?>
 
       <td><img src="img/home1.jpg" height="600" width="100%" id="tviewpic2"></td>
-      <div class="tcontentbox2">
+      <div class="tcontentbox_bookingck">
         <form action="index.html" method="post">
           <table border="1">
             <tr>
