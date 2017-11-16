@@ -97,7 +97,7 @@
             <tr>
               <br>
               <td colspan="2">
-                <br><input type="submit" value="Register" />
+                <br><input type="submit" value="Login" />
               </td>
             </tr>
           </table>
