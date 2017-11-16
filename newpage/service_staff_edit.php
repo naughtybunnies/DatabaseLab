@@ -33,8 +33,8 @@
                  $row = $result->fetch_assoc();
                  print_r($row);
                 ?>
-
-              <tr> <td>idservice</td> <td><input type="text" name='id' value="<?php echo $row['idservice'];?>"></td>  </tr>
+                    <input type="hidden" name='idservice' value="<?php echo $row['idservice'];?>">
+                <tr> <td>idservice</td> <td><label><?php echo $row['idservice'];?></label></td>  </tr>
                 <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>"></td>  </tr>
                 <tr> <td>price</td> <td><input type='text' name="price" value="<?php echo $row['price'];?>"></td>  </tr>
 
