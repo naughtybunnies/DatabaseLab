@@ -33,6 +33,13 @@
       header('Location: request_staff_view.php');
       break;
 
+    case 'EDITMESSAGE':
+      $q = "UPDATE staff_viewmessage SET message = '".$_POST['message']."' WHERE staff_viewmessage.message_idmessage = ".$_POST['message_idmessage'].";";
+      $result = $mysqli->query($q);
+
+      header('Location: message_staff_view.php');
+      break;
+
 
     default:
       header('Location: dashboard.php');
