@@ -26,7 +26,7 @@
            <form class="" action="editaction.php" method="post">
              <table border=1>
                <?php
-                 $q = "SELECT * FROM staff_viewrequest WHERE staff_viewrequest.idrequest = ".$_GET['id'].";";
+                 $q = "SELECT * FROM request WHERE request.idrequest = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
                  print_r($row);
@@ -50,7 +50,7 @@
                           <input type='hidden' name="status" value="open">
                   <?php } ?>  </td>
                 </tr>
-                <tr> <td>timestamp</td> <td><input disabled value="<?php echo $row['timestamp'];?>"></td>  </tr>
+                <tr> <td>timestamp</td> <td><input type="text" name="timestamp" value="<?php echo $row['timestamp'];?>" disabled></td>  </tr>
                 <tr> <td>replytimestamp</td>
                         <td> <?php if(isset($row['replytimestamp']))
                         {?>

@@ -48,6 +48,7 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='request_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
+              echo "<th>MESSAGE</th>";
               echo "<th>REPLY</th>";
               echo "</tr>";
               $printhead=0;
@@ -56,7 +57,15 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='request_staff_edit.php?id=".$row['idrequest']."'>REPLY</a></td>";
+            echo "<td><a href='viewreqmessage.php?id=".$row['idrequest']."' target='_blank'>SEE MESSAGE</a></td>";
+            if(isset($row['replytimestamp']))
+            {
+            echo "<td>ALREADY REPLY</td>";
+            }
+            else
+            {
+            echo "<td><a href='request_staff_edit.php?id=".$row['idrequest']."'>WAIT FOR REPLY</a></td>";
+            }
             echo "</tr>";
           }
 
