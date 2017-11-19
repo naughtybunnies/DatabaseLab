@@ -30,13 +30,16 @@
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
                  print_r($row);
-
+                 date_default_timezone_set('Asia/Bangkok');
+                 $date2 = date('Y-m-d', time());
+                 $time2 = date('h:i:s', time());
                 ?>
                       <input type="hidden" name="message_idmessage" value="<?php echo $row['message_idmessage'];?>">
                 <tr> <td>message_idmessage</td> <td><label> <?php echo $row['message_idmessage'];?></label> </td>  </tr>
                 <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>" disabled></td>  </tr>
                 <tr> <td>message</td> <td><input type='text' name="message" value="<?php echo $row['message'];?>"></td>  </tr>
-                <tr> <td>timestamp</td> <td><input type='text' name="timestamp" value="<?php echo $row['timestamp'];?>" disabled></td>  </tr>
+                        <input type="hidden" name="timestamp" value="<?php echo $date2." ".$time2 ;?>">
+                <tr> <td>timestamp</td> <td><input type='text' name="timestamp" value="<?php echo $date2." ".$time2 ;?>" disabled></td>  </tr>
                 <tr> <td>fname</td> <td><input type='text' name="fname" value="<?php echo $row['fname'];?>" disabled></td>  </tr>
                 <tr> <td>lname</td> <td><input type='text' name="lname" value="<?php echo $row['lname'];?>" disabled></td>  </tr>
 

@@ -11,7 +11,7 @@
     }else{
       $row = $result->fetch_array();
       // this is customer's message
-      echo "YOUR MESSAGE <br><br>";
+      echo "CUSTOMER's MESSAGE <br><br>";
       echo $row['message'];
       if(isset($row['replymessage'])){
         echo "<br><br>";

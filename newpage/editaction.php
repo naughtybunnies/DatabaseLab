@@ -34,12 +34,18 @@
       break;
 
     case 'EDITMESSAGE':
-      $q = "UPDATE staff_viewmessage SET message = '".$_POST['message']."' WHERE staff_viewmessage.message_idmessage = ".$_POST['message_idmessage'].";";
+      $q = "UPDATE staff_viewmessage SET message = '".$_POST['message']."' , timestamp = '".$_POST['timestamp']."' WHERE staff_viewmessage.message_idmessage = ".$_POST['message_idmessage'].";";
       $result = $mysqli->query($q);
 
       header('Location: message_staff_view.php');
       break;
 
+   case 'EDITBOOKING':
+      $q = "UPDATE staff_viewbooking SET fromdate = '".$_POST['fromdate']."' , todate = '".$_POST['todate']."' WHERE staff_viewbooking.idbooking = ".$_POST['idbooking'].";";
+      $result = $mysqli->query($q);
+
+      header('Location: booking_staff_view.php');
+      break;
 
     default:
       header('Location: dashboard.php');
