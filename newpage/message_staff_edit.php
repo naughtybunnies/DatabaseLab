@@ -29,7 +29,6 @@
                  $q = "SELECT * FROM staff_viewmessage WHERE staff_viewmessage.message_idmessage = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 print_r($row);
                  date_default_timezone_set('Asia/Bangkok');
                  $date2 = date('Y-m-d', time());
                  $time2 = date('h:i:s', time());
