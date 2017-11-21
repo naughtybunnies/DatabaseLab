@@ -48,7 +48,6 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='transaction_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
-              echo "<th>EDIT</th>";
               echo "</tr>";
               $printhead=0;
             }

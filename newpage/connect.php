@@ -1,5 +1,5 @@
 <?php
-  /*$mysqli = new mysqli('localhost', 'root', 'root', 'cu_final');*/
+  $mysqli = new mysqli('localhost', 'root', 'root', 'CU_FINAL');
   if($mysqli->connect_errno){
     #echo "Connection Error";
   }else{
