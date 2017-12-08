@@ -24,7 +24,7 @@
 
          <div class="tcontentbox_staff">
            <form class="" action="editaction.php" method="post">
-             <table border=1>
+
                <?php
                  $q = "SELECT * FROM staff_viewmessage WHERE staff_viewmessage.message_idmessage = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
@@ -33,21 +33,23 @@
                  $date2 = date('Y-m-d', time());
                  $time2 = date('h:i:s', time());
                 ?>
+                <ul>
                       <input type="hidden" name="message_idmessage" value="<?php echo $row['message_idmessage'];?>">
-                <tr> <td>message_idmessage</td> <td><label> <?php echo $row['message_idmessage'];?></label> </td>  </tr>
-                <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>" disabled></td>  </tr>
-                <tr> <td>message</td> <td><input type='text' name="message" value="<?php echo $row['message'];?>"></td>  </tr>
-                        <input type="hidden" name="timestamp" value="<?php echo $date2." ".$time2 ;?>">
-                <tr> <td>timestamp</td> <td><input type='text' name="timestamp" value="<?php echo $date2." ".$time2 ;?>" disabled></td>  </tr>
-                <tr> <td>fname</td> <td><input type='text' name="fname" value="<?php echo $row['fname'];?>" disabled></td>  </tr>
-                <tr> <td>lname</td> <td><input type='text' name="lname" value="<?php echo $row['lname'];?>" disabled></td>  </tr>
+                      <input type="hidden" name="name" value="<?php echo $row['name'];?>">
+                      <input type="hidden" name="timestamp" value="<?php echo $date2." ".$time2 ;?>">
+                      <input type="hidden" name="fname" value="<?php echo $row['fname'];?>">
+                      <input type="hidden" name="lname" value="<?php echo $row['lname'];?>">
+                      <br>
+                <li><b>message_idmessage: <label> <?php echo $row['message_idmessage'];?></label></b></li><br>
+                <li><b>groupname: <label> <?php echo $row['name'];?></label></b></li><br>
+                <li><b>message: <input type='text' name="message" value="<?php echo $row['message'];?>"></b></li><br>
+                <li><b>timestamp: <label> <?php echo $row['timestamp'];?></label></b></li><br>
+                <li><b>fname: <label> <?php echo $row['fname'];?></label></b></li><br>
+                <li><b>lname: <label> <?php echo $row['lname'];?></label></b></li><br>
+              </ul>
 
-                <tr>
-                  <td colspan="2">
                     <input type="submit" name="edittype" value="EDITMESSAGE">
-                  </td>
-                </tr>
-             </table>
+
            </form>
 
 

@@ -24,31 +24,32 @@
 
          <div class="tcontentbox_staff">
            <form class="" action="editaction.php" method="post">
-             <table border=1>
+
                <?php
                  $q = "SELECT * FROM staff_viewuser WHERE staff_viewuser.iduser = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 print_r($row);
+
 
                 ?>
+                <ul>
                       <input type="hidden" name="iduser" value="<?php echo $row['iduser'];?>">
-                <tr> <td>iduser</td> <td><label> <?php echo $row['iduser'];?></label> </td>  </tr>
-                <tr> <td>usergroup_idusergroup</td> <td><input type='text' name="usergroup_idusergroup" value="<?php echo $row['usergroup_idusergroup'];?>"></td>  </tr>
-                <tr> <td>email</td> <td><input type='text' name="email" value="<?php echo $row['email'];?>"></td>  </tr>
-                <tr> <td>password</td> <td><input type='text' name="password" value="<?php echo $row['password'];?>"></td>  </tr>
-                <tr> <td>fname</td> <td><input type='text' name="fname" value="<?php echo $row['fname'];?>"></td>  </tr>
-                <tr> <td>lname</td> <td><input type='text' name="lname" value="<?php echo $row['lname'];?>"></td>  </tr>
-                <tr> <td>address</td> <td><input type='text'name="address" value="<?php echo $row['address'];?>"></td>  </tr>
-                <tr> <td>dob</td> <td><input type="text" name="dob" value="<?php echo $row['dob'];?>"disabled></td>  </tr>
-                <tr> <td>personalid</td> <td><input type="text" name="personalid" value="<?php echo $row['personalid'];?>"disabled></td>  </tr>
+                      <input type="hidden" name="dob" value="<?php echo $row['dob'];?>">
+                      <input type="hidden" name="personalid" value="<?php echo $row['personalid'];?>">
 
-                <tr>
-                  <td colspan="2">
+                <li><b>iduser: <label> <?php echo $row['iduser'];?></label></b></li><br>
+                <li><b>usergroup_idusergroup: <input type='text' name="usergroup_idusergroup" value="<?php echo $row['usergroup_idusergroup'];?>"></b></li><br>
+                <li><b>email: <input type='text' name="email" value="<?php echo $row['email'];?>"></b></li><br>
+                <li><b>password: <input type='text' name="password" value="<?php echo $row['password'];?>"></b></li><br>
+                <li><b>fname: <input type='text' name="fname" value="<?php echo $row['fname'];?>"></b></li><br>
+                <li><b>lname: <input type='text' name="lname" value="<?php echo $row['lname'];?>"></b></li><br>
+                <li><b>address: <input type='text'name="address" value="<?php echo $row['address'];?>"></b></li><br>
+                <li><b>dob: <label> <?php echo $row['dob'];?></label></b></li><br>
+                <li><b>personalid: <label> <?php echo $row['personalid'];?></label></b></li><br>
+              </ul>
+
                     <input type="submit" name="edittype" value="EDITUSER">
-                  </td>
-                </tr>
-             </table>
+
            </form>
 
 
