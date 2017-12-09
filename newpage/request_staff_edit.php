@@ -73,7 +73,7 @@
 
 
 
-                    <input type="submit" name="edittype" value="EDITREQUEST">
+                    <input type="submit" name="edittype" value="REPLY">
 
            </form>
 

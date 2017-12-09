@@ -3,7 +3,7 @@ require_once('connect.php');
 session_start();
 if(isset($_SESSION['userinfo']))
 {
-  $q = "UPDATE user SET password = '".$_POST['pass']."' , fname = '".$_POST['fname1']."' , lname = '".$_POST['lname1']."' , address = '".$_POST['address1']."' WHERE iduser = '".$_SESSION['userinfo']['iduser']."';";
+  $q = "UPDATE user SET password = '".$_POST['pass']."' , fname = '".$_POST['fname1']."' , lname = '".$_POST['lname1']."' , address = '".$_POST['address1']."' , personalid = '".$_POST['personalid']."' WHERE iduser = '".$_SESSION['userinfo']['iduser']."';";
   echo $q;
   $result = $mysqli->query($q);
   if(!$result)
@@ -20,7 +20,7 @@ if(isset($_SESSION['userinfo']))
     unset($_SESSION['userinfo']);
     $_SESSION['userinfo']=array();
     $_SESSION['userinfo']=$row;
-    header('Location: myprofile.php');
+    header('Location: myprofile.php?status=Edit Sucessful');
   }
 }
 else

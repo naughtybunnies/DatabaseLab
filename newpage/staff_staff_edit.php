@@ -35,9 +35,6 @@
                 <ul>
                       <input type="hidden" name="idstaff" value="<?php echo $row['idstaff'];?>">
                       <input type="hidden" name="email" value="<?php echo $row['email'];?>">
-                      <input type="hidden" name="dob" value="<?php echo $row['dob'];?>">
-                      <input type="hidden" name="personalid" value="<?php echo $row['personalid'];?>">
-
                 <li><b>idstaff: <label> <?php echo $row['idstaff'];?> </label></b></li><br>
                 <li><b>salary: <input type='text' name="salary" value="<?php echo $row['salary'];?>"></b></li><br>
                 <li><b>position:<input type='text' name="position" value="<?php echo $row['position'];?>"></b></li><br>
@@ -51,12 +48,12 @@
                           <input type='radio' name="status" value="active">active<input type='radio' name="status" value="nonactive" checked>nonactive
                   <?php } ?>
                 </b></li><br>
-                <li><b>email: <label> <?php echo $row['email'];?> </label></b></li><br>
-                <li><b>fname: <input type='text' name="fname" value="<?php echo $row['fname'];?>" ></b></li><br>
-                <li><b>lname: <input type='text' name="lname" value="<?php echo $row['lname'];?>" ></b></li><br>
-                <li><b>address: <input type='text' name="address" value="<?php echo $row['address'];?>"></b></li><br>
-                <li><b>dob :<label> <?php echo $row['dob'];?> </label></b></li><br>
-                <li><b>personalid: <label> <?php echo $row['personalid'];?> </label></b></li><br>
+                <li><b>Email: <label> <?php echo $row['email'];?> </label></b></li><br>
+                <li><b>First Name: <input type='text' name="fname" value="<?php echo $row['fname'];?>" ></b></li><br>
+                <li><b>Last Name: <input type='text' name="lname" value="<?php echo $row['lname'];?>" ></b></li><br>
+                <li><b>Address: <input type='text' name="address" value="<?php echo $row['address'];?>"></b></li><br>
+                <li><b>Date of Birth :<input type='date' name="dob" value="<?php echo $row['dob'];?>"></b></li><br>
+                <li><b>Personalid: <input type='text' name="personalid" value="<?php echo $row['personalid'];?>"></b></li><br>
               </ul>
 
                     <input type="submit" name="edittype" value="EDITSTAFF">

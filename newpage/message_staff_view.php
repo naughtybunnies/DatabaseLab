@@ -23,6 +23,19 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox_message">
+           <table>
+             <tr>
+               <td>
+             <?php if (isset($_GET['status']))
+                     {
+                       echo "<b>";
+                       echo $_GET['status'];
+                       echo "</b>";
+                     } ?>
+               </td>
+             </tr>
+           </table>
+           
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {
@@ -36,9 +49,9 @@
             }
           }
           if (isset($_GET['sort'])) {
-            $q = "SELECT * FROM staff_viewmessage ORDER BY ".$_GET['sort']." ".$by1.";";
+            $q = "SELECT * FROM staff_viewmessage2 ORDER BY ".$_GET['sort']." ".$by1.";";
           }else{
-            $q = "SELECT * FROM staff_viewmessage";
+            $q = "SELECT * FROM staff_viewmessage2";
           }
           $result=$mysqli->query($q);
           $printhead = 1;
@@ -48,7 +61,6 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='message_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
-              echo "<th>EDIT</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -56,8 +68,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='message_staff_edit.php?id=".$row['message_idmessage']."'>EDIT</a></td>";
-            echo "</tr>";
+              echo "</tr>";
           }
 
            ?>

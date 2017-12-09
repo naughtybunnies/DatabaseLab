@@ -19,8 +19,21 @@
           // redirect staff or customer
           if ($row['usergroup_idusergroup']=='11') {
             //staff
+            $_SESSION['groupname'] = 'staff';
             header('Location: dashboard_staff.php');
           }else{
+            if($row['usergroup_idusergroup']=='1')
+            {
+            $_SESSION['groupname'] = 'customer';
+            }
+            elseif($row['usergroup_idusergroup']=='2')
+            {
+            $_SESSION['groupname'] = 'goldcustomer';
+            }
+            else
+            {
+            $_SESSION['groupname'] = 'platinumcustomer';
+            }
             header('Location: dashboard.php');
           }
         }
