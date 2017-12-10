@@ -63,7 +63,7 @@
           </div>
         </form>
       </div>
-      <img src="img/home1.jpg" width="100%" height="600px">
+      <img src="img/home1.jpg" width="100%" height="100%">
       <div class="textonpic">
         <h1>
           CU@MyPlace
