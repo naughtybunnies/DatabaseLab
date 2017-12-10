@@ -26,7 +26,7 @@
       }
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
-      <div class="tcontentbox">
+      <div class="tcontentbox_confirm">
         <?php if (isset($_SESSION['userinfo'])) { ?>
           <h1>PLEASE REVIEW YOUR Booking</h1>
           <table border=1>
@@ -92,7 +92,7 @@
 
         <?php }else{ ?>
           <h1>PLEASE LOGIN OR REGISTER TO CONTINUE</h1>
-          <div id="login_box1_content">
+          <div id="login_box1_content2">
             <h1>&nbsp;&nbsp;New User</h1>
             <div class="tloginbox">
             <form action="registeraction.php" method="POST" id="loginform">
@@ -143,7 +143,7 @@
             </form>
           </div>
         </div>
-        <div id="login_box2_content">
+        <div id="login_box2_content2">
           <h1>&nbsp;&nbsp;Existing User</h1>
           <div class="tloginbox">
           <form action="loginaction.php" method="POST">
