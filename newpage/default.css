@@ -1173,20 +1173,20 @@ border: 1px solid black;
 }
 
 .tcontentbox_booking{
-  border: 10px outset lightblue;
+  border: 5px outset lightblue;
   float: left;
   background-color:#DFFEFC;
   height: auto;
-  width: 97%;
+  width:auto;
   position: relative;
-  margin: 5% 1%;
+  margin: 5% 0 5% 0;
   z-index: 2;
   text-align: center;
   min-height: 400px;
 }
 .tcontentbox_booking table{
   border-collapse: collapse;
-  width: 100%;
+  width:auto;
   text-align: center;
 }
 
