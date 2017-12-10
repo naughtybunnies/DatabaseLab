@@ -23,30 +23,58 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox_staff">
-           <form class="" action="index.html" method="post">
-             <table border=1>
+           <form class="" action="editaction.php" method="post">
+
                <?php
-                 $q = "SELECT * FROM staff_viewrequest WHERE staff_viewrequest.idrequest = ".$_GET['id'].";";
+                 $q = "SELECT * FROM request WHERE request.idrequest = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 print_r($row);
 
+                 date_default_timezone_set('Asia/Bangkok');
+                 $date1 = date('Y-m-d', time());
+                 $time1 = date('h:i:s', time());
                 ?>
+                <ul>
+                        <input type="hidden" name="idrequest" value="<?php echo $row['idrequest'];?>">
+                        <input type="hidden" name="staff_idstaff" value="<?php echo $row['staff_idstaff'];?>">
+                        <input type="hidden" name="user_iduser" value="<?php echo $row['user_iduser'];?>">
+                        <input type="hidden" name="timestamp" value="<?php echo $row['timestamp'];?>">
 
-                <tr> <td>idrequest</td> <td><input disabled value="<?php echo $row['idrequest'];?>"></td>  </tr>
-                <tr> <td>staff_idstaff</td> <td><input disabled value="<?php echo $row['staff_idstaff'];?>"></td>  </tr>
-                <tr> <td>user_iduser</td> <td><input disabled value="<?php echo $row['user_iduser'];?>"></td>  </tr>
-                <tr> <td>status</td> <td><input type='text' name="requeststatus" value="<?php echo $row['status'];?>"></td> </tr>
-                <tr> <td>timestamp</td> <td><input disabled value="<?php echo $row['timestamp'];?>"></td>  </tr>
-                <tr> <td>replytimestamp</td> <td><input type='text' name="replytimestamp" value="<?php echo $row['replytimestamp'];?>"></td>  </tr>
+                <li><b>idrequest: <label> <?php echo $row['idrequest'];?> </label></b></li><br>
+                <li><b>staff_idstaff: <label> <?php echo $row['staff_idstaff'];?> </label></b></li><br>
+                <li><b>user_iduser: <label> <?php echo $row['user_iduser'];?> </label></b></li><br>
+                <li><b>status:
+                        <?php if(isset($row['replytimestamp']))
+                        {?>
+                          <label>closed</label>
+                          <input type="hidden" name="status" value="closed" >
+                  <?php }
+                        else
+                        { ?>
+                          <label>open</label>
+                          <input type='hidden' name="status" value="open">
+                  <?php } ?>
+                </b></li><br>
+                <li><b>timestamp: <label> <?php echo $row['user_iduser'];?> </label></b></li><br>
+                <li><b>replytimestamp:
+                        <?php if(isset($row['replytimestamp']))
+                        {?>
+                          <input type='text' name="replytimestamp" value="<?php echo $row['replytimestamp'];?>" disabled>
+                          <input type="hidden" name="replytimestamp" value="<?php echo $row['replytimestamp'];?>">
+
+                  <?php }
+                        else
+                        { ?>
+                          <input type='text' name="replytimestamp" value="<?php echo $date1." ".$time1 ;?>">
+                  <?php } ?>
+                </b></li><br>
+                <li><b>replymessage: <textarea name="replymessage" value="texthere"></textarea></b></li><br>
+              </ul>
 
 
-                <tr>
-                  <td colspan="2">
-                    <input type="submit" name="" value="EDIT">
-                  </td>
-                </tr>
-             </table>
+
+                    <input type="submit" name="edittype" value="REPLY">
+
            </form>
 
 

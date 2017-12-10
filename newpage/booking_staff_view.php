@@ -36,7 +36,7 @@
             }
           }
           if (isset($_GET['sort'])) {
-            $q = "SELECT * FROM staff_viewbooking ORDER BY ".$_GET['sort'].";";
+            $q = "SELECT * FROM staff_viewbooking ORDER BY ".$_GET['sort']." ".$by1.";";
           }else{
             $q = "SELECT * FROM staff_viewbooking;";
           }

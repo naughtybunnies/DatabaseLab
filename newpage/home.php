@@ -24,7 +24,7 @@
     <div id="seaview">
       <div id="booking_box">
 
-        <form action="selectroom.php" method="POST">
+        <form action="checkdateAction.php" method="POST">
           <div class="textonbooking_box">
             <br>
             <b>Check availabity</b>
@@ -60,6 +60,10 @@
                 <br><br>
 
               <input type="submit" value="Check Availability" />
+              <?php if (isset($_GET['datestatus']))
+              {
+                echo $_GET['datestatus'];
+              } ?>
           </div>
         </form>
       </div>

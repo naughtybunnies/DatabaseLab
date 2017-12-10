@@ -23,6 +23,19 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox_service">
+           <table>
+             <tr>
+               <td>
+             <?php if (isset($_GET['status']))
+                     {
+                       echo "<b>";
+                       echo $_GET['status'];
+                       echo "</b>";
+                     } ?>
+               </td>
+             </tr>
+           </table>
+           
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {
@@ -59,6 +72,7 @@
             echo "<td><a href='service_staff_edit.php?id=".$row['idservice']."'>EDIT</a></td>";
             echo "</tr>";
           }
+
 
            ?>
          </table>
