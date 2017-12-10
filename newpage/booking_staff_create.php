@@ -24,7 +24,7 @@
       <div class="tcontentbox2">
         <div id="booking_box_create">
 
-          <form action="selectroom.php" method="POST">
+          <form action="checkdateAction.php" method="POST">
             <div class="textonbooking_box">
               <br>
               <b>Check availabity</b>
@@ -32,12 +32,11 @@
                 <p>Check in :<input type="date" name="datein"/>
                 <br><br>
                 Check out :<input type="date" name="dateout"/></p>
-
+                <br>
 
 
               <b>Property</b>
-              <br>
-              <br>
+
                 <p>
                 Adult:
                 <select name="adult">
@@ -60,6 +59,10 @@
                   <br><br>
 
                 <input type="submit" value="Check Availability" />
+                <?php if (isset($_GET['datestatus']))
+                {
+                  echo $_GET['datestatus'];
+                } ?>
             </div>
           </form>
         </div>

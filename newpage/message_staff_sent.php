@@ -22,31 +22,49 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox_staff">
-           <form class="" action="index.html" method="post">
-             <table border=1>
-               <?php
-                 $q = "SELECT * FROM staff_viewmessage WHERE staff_viewmessage.message_idmessage = ".$_GET['id'].";";
-                 $result = $mysqli->query($q);
-                 $row = $result->fetch_assoc();
-                 print_r($row);
+         <div class="tcontentbox2">
+           <!-- 1. change action to createaction.php -->
+           <form class="" action="createaction.php" method="post">
+             <?php
+              $q = "SELECT * FROM staff WHERE user_iduser = '".$_SESSION['userinfo']['iduser']."';";
+              $result = $mysqli->query($q);
+              $row = $result->fetch_assoc();
 
-                ?>
+              date_default_timezone_set('Asia/Bangkok');
+              $date9 = date('Y-m-d', time());
+              $time9 = date('h:i:s a', time());
+              $_SESSION['storeDate9'] = $date9;
+              $_SESSION['storeTime9'] = $time9;
+              $_SESSION['storeDateTime9'] = $date9." ".$time9;
+              ?>
+                <ul>
 
-                <tr> <td>message_idmessage</td> <td><input type='text' value="<?php echo $row['message_idmessage'];?>"></td>  </tr>
-                <tr> <td>name</td> <td><input type='text' value="<?php echo $row['name'];?>"></td>  </tr>
-                <tr> <td>message</td> <td><input type='text' value="<?php echo $row['message'];?>"></td>  </tr>
-                <tr> <td>timestamp</td> <td><input type='text' value="<?php echo $row['timestamp'];?>"></td> </tr>
-                <tr> <td>fname</td> <td><input type='text' value="<?php echo $row['fname'];?>"></td>  </tr>
-                <tr> <td>lname</td> <td><input type='text' value="<?php echo $row['lname'];?>"></td>  </tr>
+                    <br><br>
+                    <li>  <?php if (isset($_GET['status']))
+                              {
+                                echo "<b>";
+                                echo $_GET['status'];
+                                echo "</b>";
+                              } ?>
+                    </li><br>
+                    <input type="hidden" name="staff_idstaff" value="<?php echo $row['idstaff'];?>">
+                    <input type="hidden" name="timestamp" value="<?php echo $_SESSION['storeDateTime9'];?>">
+                <li><b>Staff ID:<label> <?php echo $row['idstaff'];?> </label> </b></li><br>
+                <li><b>Message: <input type='text' name="message" placeholder="Typing message to customer"></b></li><br>
+                <li><b>Sent to :</b>
+                  <select name="usergroup_idusergroup">
+                    <option value="1">Customer</option>
+                    <option value="2">Gold Customer</option>
+                    <option value="3">Platinum Customer</option>
+                  </select>
+                </li><br>
+                <li><b>Timestamp: <label> <?php echo $_SESSION['storeDateTime9'];?> </label></b></li><br>
+                </ul>
+
+                    <!-- 2. change name to createtype and value to CREATE_____ -->
+                    <input type="submit" name="createtype" value="CREATEMESSAGE">
 
 
-                <tr>
-                  <td colspan="2">
-                    <input type="submit" name="" value="EDIT">
-                  </td>
-                </tr>
-             </table>
            </form>
 
 

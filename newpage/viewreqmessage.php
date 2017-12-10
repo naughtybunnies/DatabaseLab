@@ -1,5 +1,6 @@
 <?php
   require_once('connect.php');
+  session_start();
   if(!isset($_GET['id'])){
     header('Location: home.php');
   }else{
@@ -11,7 +12,7 @@
     }else{
       $row = $result->fetch_array();
       // this is customer's message
-      echo "YOUR MESSAGE <br><br>";
+      echo "CUSTOMER's MESSAGE <br><br>";
       echo $row['message'];
       if(isset($row['replymessage'])){
         echo "<br><br>";
@@ -21,6 +22,13 @@
       }
     }
     echo "<br><br>";
-    echo "<a href='viewrequest.php'>GO BACK</a>";
+    if($_SESSION['userinfo']['usergroup_idusergroup'] =='11')
+    {
+      echo "<a href='request_staff_view.php'>GO BACK</a>";
+    }
+    else
+    {
+      echo "<a href='viewrequest.php'>GO BACK</a>";
+    }
   }
  ?>

@@ -32,8 +32,13 @@
         <li><b>E-mail: <?php echo $_SESSION['userinfo']['email']; ?></b></li>
         <li><b>Address: <?php echo $_SESSION['userinfo']['address']; ?></b></li>
         <li><b>PersonalID: <?php echo $_SESSION['userinfo']['personalid']; ?></b></li>
+        <li><?php if (isset($_GET['status']))
+                {
 
-
+                  echo $_GET['status'];
+                  
+                } ?>
+        </li>
       </ul>
     </div>
 

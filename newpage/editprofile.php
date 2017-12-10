@@ -31,7 +31,7 @@
         <li><b>Firstname: <input type="text" name="fname1" value="<?php echo $_SESSION['userinfo']['fname']; ?>"></b></li>
         <li><b>Surname: <input type="text" name="lname1" value="<?php echo $_SESSION['userinfo']['lname']; ?>"></b></li>
         <li><b>Address: <input type="text" name="address1" value="<?php echo $_SESSION['userinfo']['address']; ?>"></b></li>
-        <li><b>Personal ID: <input DISABLED type="text" name="address1" value="<?php echo $_SESSION['userinfo']['personalid']; ?>"></b></li>
+        <li><b>Personal ID: <input type="text" name="personalid" value="<?php echo $_SESSION['userinfo']['personalid']; ?>"></b></li>
       </ul>
 
         <input type="submit" value="CONFIRM!">

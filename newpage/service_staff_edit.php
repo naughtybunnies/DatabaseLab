@@ -25,26 +25,26 @@
          <div class="tcontentbox2">
            <!-- 1. change action to editaction.php -->
            <form class="" action="editaction.php" method="post">
-             <table border=1>
+
                <?php
                 // 3. copy query below to editaction.php
                  $q = "SELECT * FROM staff_viewservice WHERE staff_viewservice.idservice = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 print_r($row);
+
                 ?>
+                <ul>
+                    <input type="hidden" name='idservice' value="<?php echo $row['idservice'];?>">
+                    <br><br><br><br>
+                <li><b>idservice: <label><?php echo $row['idservice'];?></label></b></li><br>
+                <li><b>name: <input type='text' name="name" value="<?php echo $row['name'];?>"></b></li><br>
+                <li><b>price: <input type='text' name="price" value="<?php echo $row['price'];?>"></b></li><br>
+                </ul>
 
-              <tr> <td>idservice</td> <td><input name='id' disabled value="<?php echo $row['idservice'];?>"></td>  </tr>
-                <tr> <td>name</td> <td><input type='text' name="name" value="<?php echo $row['name'];?>"></td>  </tr>
-                <tr> <td>price</td> <td><input type='text' name="price" value="<?php echo $row['price'];?>"></td>  </tr>
-
-                <tr>
-                  <td colspan="2">
                     <!-- 2. change name to edittype and value to EDIT_____ -->
                     <input type="submit" name="edittype" value="EDITSERVICE">
-                  </td>
-                </tr>
-             </table>
+
+
            </form>
 
 

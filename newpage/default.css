@@ -266,7 +266,36 @@ body{
 }
 
 
-
+#login_box1_content2{
+  font-family: sans-serif;
+  float: left;
+  background-color: #BEF781;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin: 2% 25% 5% 10%;
+  z-index: 1;
+}
+#login_box1_content2 input[type="submit"] {
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+}
+#login_box2_content2{
+  font-family: sans-serif;
+  float: left;
+  background-color: #F5A9A9;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin: 2% 25% 5% 53%;
+  z-index: 1;
+}
+#login_box2_content2 input[type="submit"] {
+  text-align: center;
+  background: #04B4AE;
+  color: white;
+}
 
 
 
@@ -1138,20 +1167,27 @@ border: 1px solid black;
   text-align: center;
   min-height: 400px;
 }
+
+.tcontentbox2 li{
+  list-style: none;
+}
+
 .tcontentbox_booking{
-  border: 10px outset lightblue;
+  border: 5px outset lightblue;
   float: left;
   background-color:#DFFEFC;
   height: auto;
-  width: 97%;
+  width:auto;
   position: relative;
-  margin: 5% 1%;
+  margin: 5% 0 5% 0;
   z-index: 2;
   text-align: center;
   min-height: 400px;
 }
 .tcontentbox_booking table{
   border-collapse: collapse;
+  width:auto;
+  text-align: center;
 }
 
 .tcontentbox_bookingck{
@@ -1188,8 +1224,12 @@ border: 1px solid black;
 }
 .tcontentbox_staff table{
   border-collapse: collapse;
-  margin: 2% auto;
+  width: 100%;
+  text-align: center;
+}
 
+.tcontentbox_staff li{
+  list-style: none;
 }
 
 .tcontentbox_message{
@@ -1206,8 +1246,8 @@ border: 1px solid black;
 }
 .tcontentbox_message table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: 90%;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -1226,8 +1266,8 @@ border: 1px solid black;
 }
 .tcontentbox_room table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: auto;
+  width: 100%;
+  text-align: center;
 }
 .tcontentbox_request{
   border: 10px outset lightblue;
@@ -1243,8 +1283,8 @@ border: 1px solid black;
 }
 .tcontentbox_request table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .tcontentbox_user{
@@ -1261,8 +1301,8 @@ border: 1px solid black;
 }
 .tcontentbox_user table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: 97%;
+  width: 100%;
+  text-align: center;
 }
 
 .tcontentbox_service{
@@ -1279,8 +1319,9 @@ border: 1px solid black;
 }
 .tcontentbox_service table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: 70%;
+  width: 100%;
+  text-align: center;
+
 }
 
 
@@ -1298,10 +1339,25 @@ border: 1px solid black;
 }
 .tcontentbox_transaction table{
   border-collapse: collapse;
-  margin: 2% auto;
-  width: 90%;
+  width: 100%;
+  text-align: center;
 }
 
+.tcontentbox_confirm{
+  border: 10px outset lightblue;
+  float: left;
+  background-color:#DFFEFC;
+  height: auto;
+  width: 80%;
+  position:absolute;
+  margin: 5% 10% 0 10%;
+  z-index: 2;
+  text-align: center;
+  min-height: 500px;
+}
+.tcontentbox_confirm h1{
+  margin: auto;
+}
 
 .contentwrapper{
   position: relative;
