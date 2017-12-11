@@ -23,7 +23,20 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox_booking">
+           <table>
+             <tr>
+               <td>
+             <?php if (isset($_GET['status']))
+                     {
+                       echo "<b>";
+                       echo $_GET['status'];
+                       echo "</b>";
+                     } ?>
+               </td>
+             </tr>
+           </table>
            <table border='1'>
+
           <?php
           if (!isset($_GET['by'])) {
             $by = 'ASC';
@@ -48,7 +61,7 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='booking_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
-              echo "<th>EDIT</th>";
+              echo "<th>DEL</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -56,7 +69,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            echo "<td><a href='booking_staff_edit.php?id=".$row['idbooking']."'>EDIT</a></td>";
+            echo "<td><a href='deleteaction.php?id=".$row['idbooking']."'><img src='img/remove.png' width='20' /></a></td>";
             echo "</tr>";
           }
 
