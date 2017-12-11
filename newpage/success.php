@@ -35,8 +35,9 @@
             <th>name</th>
             <th>pic</th>
             <th>bookingid</th>
+            <th>roomnumber</th>
           </tr>
-          
+
           <?php
           foreach ($_SESSION['bookingid']as $key => $value) {
             $q = "SELECT * FROM booking LEFT JOIN room ON room.idroom=booking.room_idroom LEFT JOIN roomtype ON room.roomtype_idroomtype = roomtype.idroomtype WHERE idbooking = ".$value.";";
@@ -47,8 +48,17 @@
             <td>".$row['name']."</td>
             <td><img src='img/".$row['pic'].".jpg' width=300/></td>
             <td>".$value."</td>
+            <td>".$value."</td>
             </tr>";
-          }
+            $q = "UPDATE booking SET roomnumber = '".$value."' WHERE idbooking = ".$value.";";
+            $result = $mysqli->query($q);
+            if(!$result)
+            {
+              echo 'error';
+            }
+            }
+
+
            ?>
         </table>
         <h1>THANK YOU FOR STAING WITH US FROM <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h1>

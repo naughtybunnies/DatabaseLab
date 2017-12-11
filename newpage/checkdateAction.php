@@ -16,6 +16,12 @@ elseif(($_SESSION['checkdate']['checkin'] == '' || $_SESSION['checkdate']['check
 }
 else
 {
+  $checkout = $_SESSION['checkdate']['checkout'];
+  $checkin = $_SESSION['checkdate']['checkin'];
+  $date1=date_create("$checkout");
+  $date2=date_create("$checkin");
+  $diff=date_diff($date1,$date2);
+  $_SESSION['dateinterval'] = $diff->format("%a");
   header('Location: selectroom.php');
 }
 ?>

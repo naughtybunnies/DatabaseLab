@@ -10,8 +10,8 @@
       echo "error";
     }else{
       $row = $result->fetch_array();
-      $_SESSION['price']['total'] += $row['price'];
-      $_SESSION['price']['gtotal'] += $row['price'];
+      $_SESSION['price']['total'] += ($row['price'] * $_SESSION['dateinterval']) ;
+      $_SESSION['price']['gtotal'] += ($row['price'] * $_SESSION['dateinterval']);
     }
   }
   header('Location: selectroom.php');

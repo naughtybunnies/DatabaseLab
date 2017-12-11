@@ -71,6 +71,10 @@
 
              </tr>
              <tr>
+               <td colspan="2">How long that customer stay</td>
+               <td colspan=2><?php echo $_SESSION['dateinterval']+1; ?> Days <?php echo $_SESSION['dateinterval']; ?> Nights</td>
+             </tr>
+             <tr>
                <td colspan="2">TOTAL BEFORE DISCOUNT</td>
                <td colspan="2"><?php echo $_SESSION['price']['total']; ?></td>
              </tr>

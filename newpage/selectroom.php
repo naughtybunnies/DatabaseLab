@@ -35,6 +35,7 @@
       <div class="tcontentbox">
 
           <h3>Booking Period=> From <?php echo $_SESSION['bookinguser']['datefrom']; ?> TO <?php echo $_SESSION['bookinguser']['dateto']; ?></h3>
+          <h3>Total => <?php echo $_SESSION['dateinterval']+1; ?> Days <?php echo $_SESSION['dateinterval']; ?> Nights </h3>
           <h1>Available Room</h1>
           <table border=1>
             <tr>

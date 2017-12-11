@@ -6,11 +6,11 @@
     if ($_GET['do'] == 'reset') {
       unset($_SESSION['servicecart_item']);
       unset($_SESSION['servicecart_unit']);
-      unset($_SESSION['service_roomid']);
+      unset($_SESSION['service_roomnumber']);
     }
   }
-  if(isset($_POST['roomid'])){
-    $_SESSION['service_roomid'] = $_POST['roomid'];
+  if(isset($_POST['roomnumber'])){
+    $_SESSION['service_roomnumber'] = $_POST['roomnumber'];
   }
   if (!isset($_SESSION['servicecart_item'])) {
     $_SESSION['servicecart_item'] = array();
@@ -42,12 +42,12 @@
 
       <td><img src="img/home1.jpg" height="600" width="100%" id="tviewpic2"></td>
       <div class="tcontentbox_bookingck">
-        <?php if (!isset($_SESSION['service_roomid'])): ?>
+        <?php if (!isset($_SESSION['service_roomnumber'])): ?>
           <form action="service_staff_charge.php" method="post">
             <table>
               <tr>
-                <th>Room ID</th>
-                <td><input type="text" name='roomid'></td>
+                <th>Room Number</th>
+                <td><input type="text" name='roomnumber'></td>
               </tr>
               <tr>
                 <td colspan='2'><input type="submit" value='submit'></td>
@@ -55,7 +55,7 @@
             </table>
           </form>
         <?php else: ?>
-          <h3>Room ID : <?php echo $_SESSION['service_roomid']; ?> <a href="service_staff_charge.php?do=reset">Reset</a></h3>
+          <h3>Room Number : <?php echo $_SESSION['service_roomnumber']; ?> <a href="service_staff_charge.php?do=reset">Reset</a></h3>
 
           <form action="service_staff_charge.php" method="post">
             <table border='1'>
@@ -101,6 +101,9 @@
               </tr>
               <tr>
                 <td colspan="5"><a href='charge_money.php'>Charge Money</a></td>
+                <?php
+                $_SESSION['chargemoney'] = array('roomnumber' => $_SESSION['service_roomnumber'] , 'amount' => $total);
+                ?>
               </tr>
             </table>
 
