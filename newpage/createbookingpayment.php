@@ -1,6 +1,10 @@
 <?php
   session_start();
+
   require_once('connect.php');
+  if (!isset($_POST['cardno']) OR $_POST['cardno']='') {
+    header('Location:finishbooking.php');
+  }
   $_SESSION['bookingid'] = array();
   $_SESSION['paymentid'] = array();
 

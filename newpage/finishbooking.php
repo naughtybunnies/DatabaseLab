@@ -38,7 +38,7 @@
                 <table border='1'>
                   <tr>
                     <td>CREDIT CARD NO :</td>
-                    <td><input type="text" name="cardno" id=""></td>
+                    <td><input type="text" name="cardno"></td>
                   </tr>
                   <tr>
                     <td>CVV</td>
@@ -69,7 +69,7 @@
             <table border='1'>
               <tr>
                 <td>CREDIT CARD NO :</td>
-                <td><input type="text" name="cardno" id=""></td>
+                <td><input type="text" name="cardno"></td>
               </tr>
               <tr>
                 <td>CVV</td>

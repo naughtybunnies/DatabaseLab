@@ -58,6 +58,5 @@
     $_SESSION['bookingid'] = array();
     array_push($_SESSION['bookingid'],$row['@p1']);
     header('Location: success.php');
-
   }
  ?>
