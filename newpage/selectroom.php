@@ -2,13 +2,16 @@
   require_once('helperfunction.php');
   require_once('connect.php');
   session_start();
-  if(!isset($_SESSION['bookinguser'])){
-    $_SESSION['bookinguser'] = array('datefrom' => $_POST['datein'], 'dateto'=> $_POST['dateout'], 'numadult'=>$_POST['adult'], 'numchildren'=>$_POST['children'],'total'=>0,'gtotal'=>0);
-    $_SESSION['cart'] = array();
-    $_SESSION['availableroom'] = array('1'=>'0','2'=>'0','3'=>'0');
-    $_SESSION['selectedcount'] = array('1'=>'0','2'=>'0','3'=>'0');
-    $_SESSION['price'] = array();
-  }
+
+  if(!isset($_SESSION['bookinguser']))
+    {
+      $_SESSION['bookinguser'] = array('datefrom' => $_SESSION['checkdate']['checkin'], 'dateto'=> $_SESSION['checkdate']['checkout'], 'numadult'=>$_SESSION['checkdate']['numadult'], 'numchildren'=>$_SESSION['checkdate']['numchildren'],'total'=>0,'gtotal'=>0);
+      $_SESSION['cart'] = array();
+      $_SESSION['availableroom'] = array('1'=>'0','2'=>'0','3'=>'0');
+      $_SESSION['selectedcount'] = array('1'=>'0','2'=>'0','3'=>'0');
+      $_SESSION['price'] = array();
+    }
+
 ?>
 <html>
 <head>

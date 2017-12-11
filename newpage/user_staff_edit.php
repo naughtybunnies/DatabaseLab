@@ -24,31 +24,61 @@
 
          <div class="tcontentbox_staff">
            <form class="" action="editaction.php" method="post">
-             <table border=1>
+
                <?php
                  $q = "SELECT * FROM staff_viewuser WHERE staff_viewuser.iduser = ".$_GET['id'].";";
                  $result = $mysqli->query($q);
                  $row = $result->fetch_assoc();
-                 print_r($row);
+
 
                 ?>
+                <ul>
                       <input type="hidden" name="iduser" value="<?php echo $row['iduser'];?>">
-                <tr> <td>iduser</td> <td><label> <?php echo $row['iduser'];?></label> </td>  </tr>
-                <tr> <td>usergroup_idusergroup</td> <td><input type='text' name="usergroup_idusergroup" value="<?php echo $row['usergroup_idusergroup'];?>"></td>  </tr>
-                <tr> <td>email</td> <td><input type='text' name="email" value="<?php echo $row['email'];?>"></td>  </tr>
-                <tr> <td>password</td> <td><input type='text' name="password" value="<?php echo $row['password'];?>"></td>  </tr>
-                <tr> <td>fname</td> <td><input type='text' name="fname" value="<?php echo $row['fname'];?>"></td>  </tr>
-                <tr> <td>lname</td> <td><input type='text' name="lname" value="<?php echo $row['lname'];?>"></td>  </tr>
-                <tr> <td>address</td> <td><input type='text'name="address" value="<?php echo $row['address'];?>"></td>  </tr>
-                <tr> <td>dob</td> <td><input type="text" name="dob" value="<?php echo $row['dob'];?>"disabled></td>  </tr>
-                <tr> <td>personalid</td> <td><input type="text" name="personalid" value="<?php echo $row['personalid'];?>"disabled></td>  </tr>
+                      <input type="hidden" name="email" value="<?php echo $row['email'];?>">
 
-                <tr>
-                  <td colspan="2">
+
+                <li><b>Iduser: <label> <?php echo $row['iduser'];?></label></b></li><br>
+                <li><b>UserGroup:</b>
+        <?php if($row['usergroup_idusergroup'] == '11')
+                  { ?>
+                    <input type="hidden" name="usergroup_idusergroup" value="<?php echo $row['usergroup_idusergroup'];?>">
+                    <b><label> <?php echo 'Staff';?></label></b>
+            <?php }
+              else
+                  {?>
+                    <select name="usergroup_idusergroup">
+            <?php if($row['usergroup_idusergroup'] == '1')
+                    {?>
+                      <option value="1" selected>Customer</option>
+                      <option value="2">Gold Customer</option>
+                      <option value="3">Platinum Customer</option>
+              <?php }
+                  elseif($row['usergroup_idusergroup'] == '2')
+                    {?>
+                      <option value="1">Customer</option>
+                      <option value="2" selected>Gold Customer</option>
+                      <option value="3">Platinum Customer</option>
+              <?php }
+                    else
+                    {?>
+                      <option value="1">Customer</option>
+                      <option value="2">Gold Customer</option>
+                      <option value="3" selected>Platinum Customer</option>
+              <?php } ?>
+                    </select>
+            <?php } ?>
+                </li><br>
+                <li><b>Email: <label> <?php echo $row['email'];?></label></b></li><br>
+                <li><b>Password: <input type='text' name="password" value="<?php echo $row['password'];?>"></b></li><br>
+                <li><b>First Name: <input type='text' name="fname" value="<?php echo $row['fname'];?>"></b></li><br>
+                <li><b>Last Name: <input type='text' name="lname" value="<?php echo $row['lname'];?>"></b></li><br>
+                <li><b>Address: <input type='text'name="address" value="<?php echo $row['address'];?>"></b></li><br>
+                <li><b>Date of Birth: <input type='date'name="dob" value="<?php echo $row['dob'];?>"></b></li><br>
+                <li><b>Personalid: <input type='text'name="personalid" value="<?php echo $row['personalid'];?>"></b></li><br>
+              </ul>
+
                     <input type="submit" name="edittype" value="EDITUSER">
-                  </td>
-                </tr>
-             </table>
+
            </form>
 
 

@@ -23,7 +23,7 @@
       <div id="booking_info">
         <div id="booking_box_customer">
 
-          <form action="selectroom.php" method="POST">
+          <form action="checkdateAction.php" method="POST">
             <div class="textonbooking_box_customer">
               <br>
               <b>Check availabity</b>
@@ -59,6 +59,10 @@
                   <br><br>
 
                 <input type="submit" value="Check Availability" />
+                <?php if (isset($_GET['datestatus']))
+                {
+                  echo $_GET['datestatus'];
+                } ?>
             </div>
           </form>
         </div>

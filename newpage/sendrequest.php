@@ -38,7 +38,7 @@
           <li><b>Time : <?php echo $_SESSION['storeTime']; ?></b></li>
           <li><b>Message :</b></li>
           <form action="sendrequestAction.php" method="post">
-          <textarea name="description" rows="10" cols="100"></textarea>
+          <textarea name="description" rows="10" cols="50"></textarea>
 
         </ul>
         </div>
