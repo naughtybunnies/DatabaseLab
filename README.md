@@ -7,26 +7,31 @@ Started On Sun Oct 15, 2017
 
 ## Hotel Information
 ```
-  - Bottombar a bit weird -> should equally separated??
+ 
 ```
 
 
 ## Customer Site
 ```
-  - BEFORE NOV 12
-  * use [ user = wari@wari.com, password = wari ] for customer login
-  - Create message board - see message in dashboard   customer.php
-  - What to do with something??
+ 
 ```
 
 ## Staff Site
 ```
-  NOT YET
+  
 ```
 
 # DOING
 ```
-  - DATABASE CONNECTION         KATE
+  
+```
+# DONE GOOD JOB!!!
+```
+ - BEFORE NOV 12
+  * use [ user = wari@wari.com, password = wari ] for customer login
+  - Create message board - see message in dashboard   customer.php
+  - What to do with something??
+- DATABASE CONNECTION         KATE
     - profile.php
     - transaction.php
 
@@ -43,9 +48,7 @@ Started On Sun Oct 15, 2017
       - my guest                        .php
       - booking function using      booking.php include see, new, edit booking
       - see my booking * remove                 .php
-```
-# DONE GOOD JOB!!!
-```
+ - Bottombar a bit weird -> should equally separated??
   - session in customer sites    TONNY
   - side bar as php function     TONNY
   - Decorate bottombar           WARI
