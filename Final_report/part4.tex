@@ -1,0 +1,132 @@
+\begin{document}
+  \chapter{Explanation on Routines : Procedures and Functions}
+    \section{Procedure 1 : assignroomtobooking}
+    \ttfamily
+      \begin{lstlisting}[language=SQL]
+
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` PROCEDURE `assignroomtobooking`(IN `datein` DATE, IN `dateout` DATE, IN `type` INT, OUT `roomid` INT)
+      BEGIN
+        SELECT room.idroom as roomid FROM room WHERE (room.idroom
+          NOT IN (
+            SELECT booking.room_idroom FROM booking
+            WHERE (booking.fromdate < datein AND booking.todate > datein)
+              OR (booking.fromdate between datein AND dateout - INTERVAL 1 DAY))
+                AND room.status = 'open' AND room.roomtype_idroomtype = type) LIMIT 1;
+      END$$
+      DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure is used in booking function where after pressing confirm booking, the procedure will look for an available room and will output the roomid and will
+         be used when insert into the booking table.
+
+    \section{Procedure 2 : availableroomtype}
+      \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+        CREATE DEFINER=`root`@`localhost` PROCEDURE `availableroomtype`(IN `infromdate` DATE, IN `intodate` DATE)
+        BEGIN
+          SELECT *,COUNT(*) FROM room LEFT JOIN roomtype ON room.roomtype_idroomtype = roomtype.idroomtype
+          WHERE (room.idroom NOT IN (
+            SELECT booking.room_idroom FROM booking WHERE (booking.fromdate < infromdate AND booking.todate > infromdate) OR (booking.fromdate between infromdate AND intodate - INTERVAL 1 DAY)) AND room.status = 'open')
+            GROUP BY roomtype.idroomtype;
+        END$$
+      DELIMITER ;
+
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure return the roomtypes that are available for the customer in the time period which he/she selects.
+
+    \section{Procedure 3 : createonlinebooking}
+      \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` PROCEDURE `createonlinebooking`
+      (IN `datein` DATE, IN `dateout` DATE, IN `userid` INT, IN `roomid` INT, IN `coupon` VARCHAR(50), IN `paymentid` INT, OUT `bookingid` INT)
+        BEGIN
+          	DECLARE couponid INT;
+          	SELECT specialoffer.idspecialoffer as couponid FROM specialoffer WHERE specialoffer.code = coupon;
+          	INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`)
+            VALUES (NULL, userid, roomid, couponid, NULL, paymentid, datein, dateout, 'unchecked');
+              SET bookingid = (SELECT LAST_INSERT_ID());
+        END$$
+      DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure facilitate storing in the booking table for online booking.
+
+    \section{Procedure 4 : createonlinepayment}
+    \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` PROCEDURE `createonlinepayment`(IN `amount` DECIMAL(10,2), IN `uid` INT, IN `cardno` VARCHAR(50), OUT `paymentid` INT)
+      BEGIN
+        	INSERT INTO `payment` (`idpayment`, `timestamp`, `amount`, `user_iduser`, `method`, `cardno`, `staff_idstaff`,`type`)
+          VALUES (NULL, NOW(), amount, uid, 'creditcard', cardno, NULL,'booking');
+            SET paymentid = (SELECT LAST_INSERT_ID());
+        END$$
+      DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure store payment table for online booking.
+
+    \section{Procedure 5 : newwalkin}
+    \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` PROCEDURE `newwalkin`(IN `inamount` DECIMAL(10,2), IN `instaffid` INT, IN `incardno` VARCHAR(50), IN `inmethod` VARCHAR(20), OUT `paymentid` INT)
+      BEGIN
+
+        	INSERT INTO payment VALUES (NULL, NOW(), inamount, NULL, inmethod, incardno, instaffid, 'booking','');
+            SET paymentid = (SELECT LAST_INSERT_ID());
+        END$$
+      DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure store payment for walkin booking and is used in the website for creating booking for walkin customers.
+
+    \section{Procedure 6 : newwalkinbooking}
+    \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` PROCEDURE `newwalkinbooking`(IN `infromdate` DATE, IN `intodate` DATE, IN `instaffid` INT, IN `inroomid` INT, IN `offer` VARCHAR(50), IN `paymentid` INT, OUT `bookingid` INT)
+      BEGIN
+  	     DECLARE codeid INT;
+  	     SELECT specialoffer.idspecialoffer AS codeid FROM specialoffer WHERE specialoffer.code = offer;
+     	   INSERT INTO `booking` (`idbooking`, `user_iduser`, `room_idroom`, `specialoffer_idspecialoffer`, `staff_idstaff`, `payment_idpayment`, `fromdate`, `todate`, `status`) VALUES (NULL, NULL, inroomid, codeid, instaffid, paymentid, infromdate, intodate, 'unchecked');
+         SET bookingid = (SELECT LAST_INSERT_ID());
+     END$$
+     DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This procedure store booking for walkin customer  and is used in the website for creating booking for walkin customers.
+
+    \section{Function 1 : calc\_coupon}
+    \ttfamily
+      \begin{lstlisting}[language=SQL]
+      DELIMITER $$
+      CREATE DEFINER=`root`@`localhost` FUNCTION `calc_coupon`(`amount` DECIMAL(10,2), `couponcode` VARCHAR(50)) RETURNS decimal(10,2) unsigned
+      BEGIN
+        DECLARE dsc DECIMAL(10,2);
+        SELECT discount into dsc FROM specialoffer WHERE specialoffer.code = couponcode;
+        IF (dsc = NULL) THEN
+          return NULL;
+        ELSE
+          SET dsc = amount*(100-dsc)/100;
+            return dsc;
+        END IF;
+      END$$
+      DELIMITER ;
+      \end{lstlisting}
+      \rmfamily
+      \paragraph{}
+        This function check whether the coupon in valid or not and return discounted amount.
+
+
+\end{document}

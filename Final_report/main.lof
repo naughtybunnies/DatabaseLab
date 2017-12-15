@@ -1,0 +1,51 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ER Diagram}}{9}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Data Flow Diagram}}{10}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Context Diagram}}{11}{figure.2.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Detail}}{13}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Structure of booking table}}{15}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Structure of message table}}{15}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Structure of payment table}}{15}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Structure of request table}}{16}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure of room table}}{16}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Structure of roomtype table}}{16}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Structure of message table}}{16}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Structure of specialoffer table}}{16}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Structure of staff table}}{17}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Structure of user table}}{17}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Structure of usergroup table}}{17}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Structure of usergroup\_has\_message table}}{17}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Test dataset of Booking}}{18}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Test dataset of Message}}{18}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Test dataset of Payment}}{19}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Test dataset of Request}}{19}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Test dataset of Room}}{19}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Test dataset of Roomtype}}{20}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Test dataset of Service}}{20}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Test dataset of SpecialOffer}}{21}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Test dataset of Staff}}{21}{figure.3.22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Test dataset of User}}{22}{figure.3.23}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Test dataset of Usergroup}}{22}{figure.3.24}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Test dataset of Usergroup\_has\_message}}{23}{figure.3.25}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces User Interface of Staff Editting}}{23}{figure.3.26}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces User Interface of Homepage1}}{24}{figure.3.27}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces User Interface of Homepage2}}{24}{figure.3.28}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces User Interface of Homepage3}}{25}{figure.3.29}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces User Interface of login}}{25}{figure.3.30}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces User Interface of myprofile}}{26}{figure.3.31}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces User Interface of roomfunction}}{26}{figure.3.32}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces User Interface of staffdashboard}}{27}{figure.3.33}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces User Interface of transaction}}{27}{figure.3.34}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces User Interface of userdashboard}}{28}{figure.3.35}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Some views we used in the project}}{33}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Foreign Key constrains}}{34}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces PHPMyAdmin}}{35}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Running MySQL in Terminal}}{35}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces MySQL Workbench}}{36}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The Editor we were using}}{36}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Github : This is the actual repository of the project}}{37}{figure.5.7}
+\addvspace {10\p@ }

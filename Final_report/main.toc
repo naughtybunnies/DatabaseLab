@@ -1,0 +1,75 @@
+\contentsline {paragraph}{}{1}{section*.1}
+\contentsline {chapter}{\numberline {1}Introduction of The Project}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Tourism and Information Technology}{5}{section.1.1}
+\contentsline {paragraph}{}{5}{section*.4}
+\contentsline {paragraph}{}{5}{section*.5}
+\contentsline {paragraph}{}{5}{section*.6}
+\contentsline {section}{\numberline {1.2}Hotel Management System}{5}{section.1.2}
+\contentsline {paragraph}{}{5}{section*.7}
+\contentsline {paragraph}{}{5}{section*.8}
+\contentsline {paragraph}{}{6}{section*.9}
+\contentsline {paragraph}{}{6}{section*.10}
+\contentsline {paragraph}{}{6}{section*.11}
+\contentsline {section}{\numberline {1.3}What is a good Hotel Management System?}{6}{section.1.3}
+\contentsline {paragraph}{}{6}{section*.12}
+\contentsline {section}{\numberline {1.4}Database}{7}{section.1.4}
+\contentsline {paragraph}{}{7}{section*.13}
+\contentsline {paragraph}{}{7}{section*.14}
+\contentsline {section}{\numberline {1.5}Database and Hotel Management System}{7}{section.1.5}
+\contentsline {paragraph}{}{7}{section*.15}
+\contentsline {section}{\numberline {1.6}Hotel Management System : CU@MyPlace}{7}{section.1.6}
+\contentsline {paragraph}{}{7}{section*.16}
+\contentsline {paragraph}{}{7}{section*.17}
+\contentsline {paragraph}{}{7}{section*.18}
+\contentsline {paragraph}{}{7}{section*.19}
+\contentsline {chapter}{\numberline {2}Project}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}ER Diagram}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Data Flow Diagram}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Context Diagram}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Functional Design}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}UI and Test datasets}{12}{section.2.5}
+\contentsline {paragraph}{}{12}{section*.20}
+\contentsline {chapter}{\numberline {3}Implementation on the Database Management Systems}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}The System}{13}{section.3.1}
+\contentsline {paragraph}{}{13}{section*.21}
+\contentsline {section}{\numberline {3.2}Workflow and Methodology}{13}{section.3.2}
+\contentsline {paragraph}{}{13}{section*.22}
+\contentsline {paragraph}{}{14}{section*.23}
+\contentsline {paragraph}{}{14}{section*.24}
+\contentsline {paragraph}{}{14}{section*.25}
+\contentsline {paragraph}{}{14}{section*.26}
+\contentsline {section}{\numberline {3.3}The Database}{14}{section.3.3}
+\contentsline {paragraph}{}{14}{section*.27}
+\contentsline {paragraph}{}{14}{section*.28}
+\contentsline {paragraph}{}{15}{section*.29}
+\contentsline {section}{\numberline {3.4}The project:The Test Dataset}{18}{section.3.4}
+\contentsline {paragraph}{}{18}{section*.30}
+\contentsline {section}{\numberline {3.5}The project : User Interface}{23}{section.3.5}
+\contentsline {chapter}{\numberline {4}Explanation on Routines : Procedures and Functions}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Procedure 1 : assignroomtobooking}{29}{section.4.1}
+\contentsline {paragraph}{}{29}{section*.31}
+\contentsline {section}{\numberline {4.2}Procedure 2 : availableroomtype}{29}{section.4.2}
+\contentsline {paragraph}{}{30}{section*.32}
+\contentsline {section}{\numberline {4.3}Procedure 3 : createonlinebooking}{30}{section.4.3}
+\contentsline {paragraph}{}{30}{section*.33}
+\contentsline {section}{\numberline {4.4}Procedure 4 : createonlinepayment}{30}{section.4.4}
+\contentsline {paragraph}{}{31}{section*.34}
+\contentsline {section}{\numberline {4.5}Procedure 5 : newwalkin}{31}{section.4.5}
+\contentsline {paragraph}{}{31}{section*.35}
+\contentsline {section}{\numberline {4.6}Procedure 6 : newwalkinbooking}{31}{section.4.6}
+\contentsline {paragraph}{}{31}{section*.36}
+\contentsline {section}{\numberline {4.7}Function 1 : calc\_coupon}{31}{section.4.7}
+\contentsline {paragraph}{}{32}{section*.37}
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusion on Database Implementation}{33}{section.5.1}
+\contentsline {paragraph}{}{33}{section*.38}
+\contentsline {paragraph}{}{33}{section*.39}
+\contentsline {paragraph}{}{34}{section*.40}
+\contentsline {section}{\numberline {5.2}Conclusion on Web Implementation}{34}{section.5.2}
+\contentsline {paragraph}{}{34}{section*.41}
+\contentsline {paragraph}{}{34}{section*.42}
+\contentsline {chapter}{\numberline {A}Appendix}{38}{appendix.A}
+\contentsline {section}{\numberline {A.1}SQL Script}{38}{section.A.1}
+\contentsline {section}{\numberline {A.2}Lines count}{57}{section.A.2}
+\contentsline {section}{\numberline {A.3}Github URL}{60}{section.A.3}
+\contentsline {paragraph}{}{60}{section*.43}

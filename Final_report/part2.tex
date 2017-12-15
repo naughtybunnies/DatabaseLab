@@ -1,0 +1,85 @@
+\begin{document}
+\chapter{Project}
+
+\section{ER Diagram}
+\begin{center}
+
+	\begin{figure}[!h]
+		\includegraphics[width=\textwidth]{finaler}
+	\caption{ER Diagram}
+	\end{figure}
+\end{center}
+
+
+	The system includes total 12 entities.
+	\begin{enumerate}
+		\item booking - keep all booking using FK from other entities
+		\item message - keep every message
+		\item payment - keep transactions
+		\item request - keep every request and the status of it
+		\item room - represent each instance of a room
+		\item roomtype - used by room to indicate the type of the room
+		\item service - keep all service in the hotel
+		\item specialoffer - keep all coupon number as guest could use it for discount
+		\item staff - keep all information of every staffs
+		\item user - keep login info for each user
+		\item usergroup - keep the group of users
+		\item usergroup\_has\_message - records which group has which message - created from M:N Relationship
+	\end{enumerate}
+
+\newpage
+\section{Data Flow Diagram}
+	\begin{center}
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{finaldataflow}
+	\caption{Data Flow Diagram}
+	\end{figure}
+	\end{center}
+
+\newpage
+\section{Context Diagram}
+\begin{center}
+
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{context}
+	\caption{Context Diagram}
+	\end{figure}
+\end{center}
+\newpage
+\section{Functional Design}
+	\begin{enumerate}
+	\item Hotel Information - Main page before login system - this shows pictures of the hotels, general informations of the hotel, booking system interface and portal for login
+	\begin{enumerate}
+		\item Information about hotel/picture
+		\item facilities
+		\item contact us
+	\end{enumerate}
+
+	\item Customer System - Capable of handling customer actions
+	\begin{enumerate}
+		\item register/login system
+    		\item view/edit profile information
+    		\item booking system
+    		\item request to hotel
+    		\item payment
+    		\item view the message from admin
+	\end{enumerate}
+
+	\item Hotel Administration System - Capable for staff to manage the hotel
+	\begin{enumerate}
+	 	\item login system
+    		\item staff and customer profile
+    		\item view customer booking
+ 		\item room management
+    		\item message to customer
+    		\item payment system
+		\item charge money from customers
+	\end{enumerate}
+\end{enumerate}
+
+\section{UI and Test datasets}
+	\paragraph{}
+		Images of UI and the test dataset will be discussed in Chapter 4.
+
+
+\end{document}

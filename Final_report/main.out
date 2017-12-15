@@ -1,0 +1,34 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction of The Project}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Tourism and Information Technology}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Hotel Management System}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{What is a good Hotel Management System?}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Database}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Database and Hotel Management System}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Hotel Management System : CU@MyPlace}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Project}{}% 8
+\BOOKMARK [1][-]{section.2.1}{ER Diagram}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Data Flow Diagram}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Context Diagram}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Functional Design}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{UI and Test datasets}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Implementation on the Database Management Systems}{}% 14
+\BOOKMARK [1][-]{section.3.1}{The System}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Workflow and Methodology}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{The Database}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{The project:The Test Dataset}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{The project : User Interface}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Explanation on Routines : Procedures and Functions}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Procedure 1 : assignroomtobooking}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Procedure 2 : availableroomtype}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Procedure 3 : createonlinebooking}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Procedure 4 : createonlinepayment}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Procedure 5 : newwalkin}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.6}{Procedure 6 : newwalkinbooking}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.7}{Function 1 : calc\137coupon}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Conclusion on Database Implementation}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Conclusion on Web Implementation}{chapter.5}% 30
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 31
+\BOOKMARK [1][-]{section.A.1}{SQL Script}{appendix.A}% 32
+\BOOKMARK [1][-]{section.A.2}{Lines count}{appendix.A}% 33
+\BOOKMARK [1][-]{section.A.3}{Github URL}{appendix.A}% 34
