@@ -34,7 +34,7 @@
   }
   else
   {
-    header('Location: transaction_staff_view.php?status=Create Sucessful');
+    header('Location: transaction_staff_view.php?status=Charge Money Sucessful');
   }
 
 

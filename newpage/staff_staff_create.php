@@ -22,7 +22,7 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
-         <div class="tcontentbox2">
+         <div class="tcontentbox3">
            <!-- 1. change action to createaction.php -->
            <form class="" action="createaction.php" method="post">
 

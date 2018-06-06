@@ -24,7 +24,7 @@
        ?>
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic">
 
-      <div class="tcontentbox">
+      <div class="tcontentbox_confirm2">
 
         <?php if ($_SESSION['userinfo']['usergroup_idusergroup'] == 11): ?>
           <h3>STAFF-Walking Booking</h3>

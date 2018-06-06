@@ -91,6 +91,27 @@
     header('Location: message_staff_view.php?status=Create Sucessful');
     break;
 
+    case 'CREATEROOM':
+      // edit query to become something like below
+      $q = "SELECT * FROM staff_viewroom WHERE roomname LIKE '".$_POST['roomname']."' ;";
+      $result = $mysqli->query($q);
+      $row = $result->fetch_assoc();
+      if(isset($row))
+      {
+        header('Location: room_staff_create.php?status=This name already use');
+      }
+      elseif($_POST['roomname'] == '')
+      {
+        header('Location: room_staff_create.php?status=Please Typing Information');
+      }
+      else
+      {
+        $q = "INSERT INTO room (idroom , roomtype_idroomtype , roomname, status) VALUES (NULL, '".$_POST['roomtype_idroomtype']."' ,'".$_POST['roomname']."', 'open')";
+        $result = $mysqli->query($q);
+        header('Location: room_staff_view.php?status=Create Sucessful');
+      }
+      break;
+
     default:
       header('Location: dashboard.php');
       break;

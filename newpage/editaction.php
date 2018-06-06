@@ -67,12 +67,27 @@
       header('Location: message_staff_view.php');
       break;
 
-   case 'EDITBOOKING':
-      $q = "UPDATE staff_viewbooking SET fromdate = '".$_POST['fromdate']."' , todate = '".$_POST['todate']."' WHERE staff_viewbooking.idbooking = ".$_POST['idbooking'].";";
-      $result = $mysqli->query($q);
+      case 'EDITROOM':
+        // edit query to become something like below
+        $q = "SELECT * FROM staff_viewroom WHERE roomname LIKE '".$_POST['roomname']."' ;";
+        $result = $mysqli->query($q);
+        $row = $result->fetch_assoc();
+        if(isset($row) && $row['idroom'] != $_POST['idroom'])
+        {
+          header('Location: room_staff_view.php?status=This name already use');
+        }
+        elseif($_POST['roomname'] == '')
+        {
+          header('Location: room_staff_view.php?status=Please Typing Information');
+        }
+        else
+        {
+          $q = "UPDATE staff_viewroom SET roomname = '".$_POST['roomname']."' , status = '".$_POST['status']."' WHERE staff_viewroom.idroom = ".$_POST['idroom'].";";
+          $result = $mysqli->query($q);
+          header('Location: room_staff_view.php?status=Edit Sucessful');
+        }
+        break;
 
-      header('Location: booking_staff_view.php');
-      break;
 
     default:
       header('Location: dashboard.php');

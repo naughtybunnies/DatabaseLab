@@ -104,32 +104,32 @@
               <br>
               <table>
                 <tr>
-                  <td>Email</td>
+                  <td>Email:</td>
                   <td><input type="text" name="email"></td>
                 </tr>
                 <tr>
-                  <td>Password</td>
+                  <td>Password:</td>
                   <td><input type="password" name="password"></td>
                 </tr>
                 <tr>
-                  <td>Firstname</td>
+                  <td>Firstname:</td>
                   <td><input type="text" name="fname"></td>
                 </tr>
                 <tr>
-                  <td>Lastname</td>
+                  <td>Lastname:</td>
                   <td><input type="text" name="lname"></td>
                 </tr>
                 <tr>
-                  <td>Address</td>
+                  <td>Address:</td>
                   <td>
-                  <textarea name="address" form="loginform" rows="4" cols="30"></textarea></td>
+                  <textarea name="address" form="loginform" rows="4" cols="20"></textarea></td>
                 </tr>
                 <tr>
-                  <td>Date of Birth</td>
+                  <td>Date of Birth:</td>
                   <td><input type="date" name="dob"></td>
                 </tr>
                 <tr>
-                  <td>Personal ID</td>
+                  <td>Personal ID:</td>
                   <td><input type="text" name="personalid"></td>
                 </tr>
                 <tr>
@@ -155,11 +155,11 @@
             <br>
             <table>
               <tr>
-                <td>Email</td>
+                <td>Email:</td>
                 <td><input type="text" placeholder="example@example.com" name="email"></td>
               </tr>
               <tr>
-                <td>Password</td>
+                <td>Password:</td>
                 <td><input type="password" name="password"></td>
               </tr>
               <tr>
@@ -170,7 +170,7 @@
               <tr>
                 <br>
                 <td colspan="2">
-                  <br><input type="submit" value="Register" />
+                  <br><input type="submit" value="Login" />
                 </td>
               </tr>
             </table>

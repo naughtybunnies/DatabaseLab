@@ -23,6 +23,19 @@
        <img src="img/home1.jpg" height="600" width="100%" id="tviewpic2">
 
          <div class="tcontentbox_room">
+           <table>
+             <tr>
+               <td>
+             <?php if (isset($_GET['status']))
+                     {
+                       echo "<b>";
+                       echo $_GET['status'];
+                       echo "</b>";
+                     } ?>
+               </td>
+             </tr>
+           </table>
+           
            <table border='1'>
           <?php
           if (!isset($_GET['by'])) {
@@ -48,7 +61,7 @@
               foreach ($row as $key => $value) {
                 echo "<th><a href='room_staff_view.php?sort=".$key."&by=".$by."'>".$key."</a></th>";
               }
-              // echo "<th>EDIT</th>";
+              echo "<th>EDIT</th>";
               echo "</tr>";
               $printhead=0;
             }
@@ -56,7 +69,7 @@
             foreach ($row as $key => $value) {
               echo "<td>".$value."</td>";
             }
-            // echo "<td><a href='room_staff_edit.php?id=".$row['idroom']."'>EDIT</a></td>";
+            echo "<td><a href='room_staff_edit.php?id=".$row['idroom']."'>EDIT</a></td>";
 
             echo "</tr>";
           }
